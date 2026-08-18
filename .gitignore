@@ -1,0 +1,7 @@
+venv/
+*.grib
+*.grib.5b7b6.idx
+*.zip
+__pycache__/
+.ipynb_checkpoints/
+.DS_Store
