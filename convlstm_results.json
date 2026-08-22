@@ -1,0 +1,13 @@
+{
+    "model": "ConvLSTM (full Europe/France grid)",
+    "seq_length": 7,
+    "hidden_dim": 16,
+    "best_threshold": 0.3596382737159729,
+    "accuracy": 0.8754595898560747,
+    "f1_score": 0.48849997609142637,
+    "auc": 0.8514675286267629,
+    "baseline_persistence_f1": 0.8113,
+    "baseline_climatology_f1": 0.0,
+    "lstm_paris_f1": 0.497,
+    "lstm_paris_auc": 0.729
+}
