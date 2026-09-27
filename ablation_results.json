@@ -1,9 +1,9 @@
 {
     "model": "ConvLSTM (no soil moisture - ablation)",
-    "threshold": 0.3510150909423828,
-    "accuracy": 0.8626364798502302,
-    "f1_score": 0.4538687996445037,
-    "auc": 0.8318533028462742,
+    "threshold": 0.3269437253475189,
+    "accuracy": 0.8592810955178491,
+    "f1_score": 0.4570406907271143,
+    "auc": 0.8359192588786808,
     "full_model_auc": 0.851,
     "full_model_f1": 0.488
 }

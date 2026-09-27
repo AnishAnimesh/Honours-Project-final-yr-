@@ -3,10 +3,10 @@
     "seq_length": 14,
     "hidden_size": 32,
     "num_layers": 1,
-    "best_threshold": 0.006184329744428396,
-    "accuracy": 0.6273584905660378,
-    "f1_score": 0.4968152866242038,
-    "auc": 0.7290123456790123,
+    "best_threshold": 0.004483018536120653,
+    "accuracy": 0.6509433962264151,
+    "f1_score": 0.5194805194805194,
+    "auc": 0.7675308641975308,
     "baseline_persistence_f1": 0.8113,
     "baseline_climatology_f1": 0.0
 }
