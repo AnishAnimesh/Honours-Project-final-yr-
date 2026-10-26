@@ -1,0 +1,297 @@
+LSTM channels=[0, 1, 2] epoch=1 val=0.66279
+LSTM channels=[0, 1, 2] epoch=2 val=0.48987
+LSTM channels=[0, 1, 2] epoch=3 val=0.25299
+LSTM channels=[0, 1, 2] epoch=4 val=0.21838
+LSTM channels=[0, 1, 2] epoch=5 val=0.21918
+LSTM channels=[0, 1, 2] epoch=6 val=0.21170
+LSTM channels=[0, 1, 2] epoch=7 val=0.20884
+LSTM channels=[0, 1, 2] epoch=8 val=0.20606
+LSTM channels=[0, 1, 2] epoch=9 val=0.20383
+LSTM channels=[0, 1, 2] epoch=10 val=0.20357
+LSTM channels=[0, 1, 2] epoch=11 val=0.20253
+LSTM channels=[0, 1, 2] epoch=12 val=0.20179
+LSTM channels=[0, 1, 2] epoch=13 val=0.20208
+LSTM channels=[0, 1, 2] epoch=14 val=0.20323
+LSTM channels=[0, 1, 2] epoch=15 val=0.20567
+LSTM channels=[0, 1, 2] epoch=16 val=0.20056
+LSTM channels=[0, 1, 2] epoch=17 val=0.20135
+LSTM channels=[0, 1, 2] epoch=18 val=0.20340
+LSTM channels=[0, 1, 2] epoch=19 val=0.20232
+LSTM channels=[0, 1, 2] epoch=20 val=0.20087
+LSTM channels=[0, 1, 2] epoch=21 val=0.20364
+LSTM channels=[0, 1, 2] epoch=22 val=0.20556
+ConvLSTM channels=[0, 1, 2] epoch=1 val=0.56752
+ConvLSTM channels=[0, 1, 2] epoch=2 val=0.38507
+ConvLSTM channels=[0, 1, 2] epoch=3 val=0.33980
+ConvLSTM channels=[0, 1, 2] epoch=4 val=0.31226
+ConvLSTM channels=[0, 1, 2] epoch=5 val=0.29542
+ConvLSTM channels=[0, 1, 2] epoch=6 val=0.28030
+ConvLSTM channels=[0, 1, 2] epoch=7 val=0.27354
+ConvLSTM channels=[0, 1, 2] epoch=8 val=0.27010
+ConvLSTM channels=[0, 1, 2] epoch=9 val=0.26926
+ConvLSTM channels=[0, 1, 2] epoch=10 val=0.25530
+ConvLSTM channels=[0, 1, 2] epoch=11 val=0.26345
+ConvLSTM channels=[0, 1, 2] epoch=12 val=0.24935
+ConvLSTM channels=[0, 1, 2] epoch=13 val=0.25310
+ConvLSTM channels=[0, 1, 2] epoch=14 val=0.24497
+ConvLSTM channels=[0, 1, 2] epoch=15 val=0.23896
+ConvLSTM channels=[0, 1, 2] epoch=16 val=0.24819
+ConvLSTM channels=[0, 1, 2] epoch=17 val=0.23232
+ConvLSTM channels=[0, 1, 2] epoch=18 val=0.23891
+ConvLSTM channels=[0, 1, 2] epoch=19 val=0.22752
+ConvLSTM channels=[0, 1, 2] epoch=20 val=0.24111
+ConvLSTM channels=[0, 1, 2] epoch=21 val=0.24658
+ConvLSTM channels=[0, 1, 2] epoch=22 val=0.22283
+ConvLSTM channels=[0, 1, 2] epoch=23 val=0.22471
+ConvLSTM channels=[0, 1, 2] epoch=24 val=0.22015
+ConvLSTM channels=[0, 1, 2] epoch=25 val=0.22497
+ConvLSTM channels=[0, 1, 2] epoch=26 val=0.22377
+ConvLSTM channels=[0, 1, 2] epoch=27 val=0.22309
+ConvLSTM channels=[0, 1, 2] epoch=28 val=0.23934
+ConvLSTM channels=[0, 1, 2] epoch=29 val=0.22771
+ConvLSTM channels=[0, 1, 2] epoch=30 val=0.23382
+ConvLSTM channels=[0, 1] epoch=1 val=0.40158
+ConvLSTM channels=[0, 1] epoch=2 val=0.33665
+ConvLSTM channels=[0, 1] epoch=3 val=0.30339
+ConvLSTM channels=[0, 1] epoch=4 val=0.28968
+ConvLSTM channels=[0, 1] epoch=5 val=0.27684
+ConvLSTM channels=[0, 1] epoch=6 val=0.26381
+ConvLSTM channels=[0, 1] epoch=7 val=0.26034
+ConvLSTM channels=[0, 1] epoch=8 val=0.24767
+ConvLSTM channels=[0, 1] epoch=9 val=0.24737
+ConvLSTM channels=[0, 1] epoch=10 val=0.23845
+ConvLSTM channels=[0, 1] epoch=11 val=0.23996
+ConvLSTM channels=[0, 1] epoch=12 val=0.23837
+ConvLSTM channels=[0, 1] epoch=13 val=0.24862
+ConvLSTM channels=[0, 1] epoch=14 val=0.23384
+ConvLSTM channels=[0, 1] epoch=15 val=0.24113
+ConvLSTM channels=[0, 1] epoch=16 val=0.23532
+ConvLSTM channels=[0, 1] epoch=17 val=0.23184
+ConvLSTM channels=[0, 1] epoch=18 val=0.22807
+ConvLSTM channels=[0, 1] epoch=19 val=0.23751
+ConvLSTM channels=[0, 1] epoch=20 val=0.24357
+ConvLSTM channels=[0, 1] epoch=21 val=0.23719
+ConvLSTM channels=[0, 1] epoch=22 val=0.23497
+ConvLSTM channels=[0, 1] epoch=23 val=0.22064
+ConvLSTM channels=[0, 1] epoch=24 val=0.22027
+ConvLSTM channels=[0, 1] epoch=25 val=0.22267
+ConvLSTM channels=[0, 1] epoch=26 val=0.24558
+ConvLSTM channels=[0, 1] epoch=27 val=0.21654
+ConvLSTM channels=[0, 1] epoch=28 val=0.21918
+ConvLSTM channels=[0, 1] epoch=29 val=0.21690
+ConvLSTM channels=[0, 1] epoch=30 val=0.23693
+ConvLSTM channels=[0, 1] epoch=31 val=0.22076
+ConvLSTM channels=[0, 1] epoch=32 val=0.22612
+ConvLSTM channels=[0, 1] epoch=33 val=0.22018
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/joblib/externals/loky/backend/context.py:131: UserWarning: Could not find the number of physical cores for the following reason:
+invalid literal for int() with base 10: ''
+Returning the number of logical cores instead. You can silence this warning by setting LOKY_MAX_CPU_COUNT to the number of cores you want to use.
+  warnings.warn(
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/joblib/externals/loky/backend/context.py", line 249, in _count_physical_cores
+    cpu_count_physical = _count_physical_cores_darwin()
+  File "/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/joblib/externals/loky/backend/context.py", line 318, in _count_physical_cores_darwin
+    return int(cpu_info)
+Boosting leaves=7 validation F1=0.7389
+Boosting leaves=15 validation F1=0.7376
+Boosting leaves=31 validation F1=0.7317
+/Users/aryansanganti/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /var/folders/pq/k8fvxk5j64q88rhcx7dsqp040000gn/T/matplotlib-pvuibkd6 because there was an issue with the default path ({configdir}); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/aryansanganti/.cache/fontconfig
+	/Users/aryansanganti/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/aryansanganti/.cache/fontconfig
+	/Users/aryansanganti/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/aryansanganti/.cache/fontconfig
+	/Users/aryansanganti/.fontconfig
+
+Fontconfig error: No writable cache directories
+	/opt/homebrew/var/cache/fontconfig
+	/Users/aryansanganti/.cache/fontconfig
+	/Users/aryansanganti/.fontconfig
+Matplotlib is building the font cache; this may take a moment.
+{
+  "persistence_grid": {
+    "threshold": 0.5,
+    "n": 317977,
+    "prevalence": 0.14554511804312892,
+    "accuracy": 0.9367218383719578,
+    "f1": 0.7822331893892659,
+    "precision": 0.7836155864431771,
+    "recall": 0.7808556611927399,
+    "roc_auc": 0.8720636234096878,
+    "average_precision": 0.6437860555332098,
+    "brier": 0.06327816162804228,
+    "confusion_matrix": [
+      [
+        261718,
+        9979
+      ],
+      [
+        10142,
+        36138
+      ]
+    ]
+  },
+  "climatology_grid": {
+    "threshold": 0.0,
+    "n": 317977,
+    "prevalence": 0.14554511804312892,
+    "accuracy": 0.14554511804312892,
+    "f1": 0.25410630406553614,
+    "precision": 0.14554511804312892,
+    "recall": 1.0,
+    "roc_auc": 0.49823200449326105,
+    "average_precision": 0.14323194919757218,
+    "brier": 0.138458221456869,
+    "confusion_matrix": [
+      [
+        0,
+        271697
+      ],
+      [
+        0,
+        46280
+      ]
+    ]
+  },
+  "persistence_Paris": {
+    "threshold": 0.5,
+    "n": 211,
+    "prevalence": 0.15639810426540285,
+    "accuracy": 0.95260663507109,
+    "f1": 0.8484848484848485,
+    "precision": 0.8484848484848485,
+    "recall": 0.8484848484848485,
+    "roc_auc": 0.9101974804221997,
+    "average_precision": 0.7436232205728114,
+    "brier": 0.04739336492890995,
+    "confusion_matrix": [
+      [
+        173,
+        5
+      ],
+      [
+        5,
+        28
+      ]
+    ]
+  },
+  "climatology_Paris": {
+    "threshold": 0.0,
+    "n": 211,
+    "prevalence": 0.15639810426540285,
+    "accuracy": 0.15639810426540285,
+    "f1": 0.27049180327868855,
+    "precision": 0.15639810426540285,
+    "recall": 1.0,
+    "roc_auc": 0.4629724208375894,
+    "average_precision": 0.15647427975765377,
+    "brier": 0.15017594265657633,
+    "confusion_matrix": [
+      [
+        0,
+        178
+      ],
+      [
+        0,
+        33
+      ]
+    ]
+  },
+  "lstm_Paris": {
+    "threshold": 0.20423513650894165,
+    "n": 211,
+    "prevalence": 0.15639810426540285,
+    "accuracy": 0.7677725118483413,
+    "f1": 0.5504587155963303,
+    "precision": 0.39473684210526316,
+    "recall": 0.9090909090909091,
+    "roc_auc": 0.8874702076949268,
+    "average_precision": 0.5563641595657144,
+    "brier": 0.09942939132452011,
+    "confusion_matrix": [
+      [
+        132,
+        46
+      ],
+      [
+        3,
+        30
+      ]
+    ]
+  },
+  "convlstm": {
+    "threshold": 0.5303535461425781,
+    "n": 317977,
+    "prevalence": 0.14554511804312892,
+    "accuracy": 0.8806265861996307,
+    "f1": 0.5671046028922038,
+    "precision": 0.6004975364699063,
+    "recall": 0.5372299049265341,
+    "roc_auc": 0.8976865322343915,
+    "average_precision": 0.6045019256725551,
+    "brier": 0.08582525700330734,
+    "confusion_matrix": [
+      [
+        255156,
+        16541
+      ],
+      [
+        21417,
+        24863
+      ]
+    ]
+  },
+  "convlstm_no_soil": {
+    "threshold": 0.579331636428833,
+    "n": 317977,
+    "prevalence": 0.14554511804312892,
+    "accuracy": 0.8879856090220362,
+    "f1": 0.5704534491075736,
+    "precision": 0.6454967248908297,
+    "recall": 0.5110414866032843,
+    "roc_auc": 0.9155882934157528,
+    "average_precision": 0.6437931253235329,
+    "brier": 0.07981546223163605,
+    "confusion_matrix": [
+      [
+        258708,
+        12989
+      ],
+      [
+        22629,
+        23651
+      ]
+    ]
+  },
+  "gradient_boosting": {
+    "threshold": 0.19653387825748309,
+    "n": 317977,
+    "prevalence": 0.14554511804312892,
+    "accuracy": 0.9523235957317667,
+    "f1": 0.8504871987060634,
+    "precision": 0.7823136657232019,
+    "recall": 0.9316767502160761,
+    "roc_auc": 0.9841529901444147,
+    "average_precision": 0.881209910885614,
+    "brier": 0.039036881937104,
+    "confusion_matrix": [
+      [
+        259699,
+        11998
+      ],
+      [
+        3162,
+        43118
+      ]
+    ]
+  }
+}

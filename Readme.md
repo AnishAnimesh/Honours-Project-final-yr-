@@ -1,143 +1,138 @@
-# HeatCast: Deep Learning-Based Forecasting of European Heat Waves Using ERA5 Reanalysis Data
+# HeatCast: Regional Robustness and Heatwave Early Warning
 
-A 4-month research project applying deep learning (LSTM and ConvLSTM) to predict heat wave occurrence across Europe using historical climate reanalysis data.
+The expanded research project downloads **45 years of ERA5 daily data (1981–2025) for seven European locations** and evaluates both ongoing events and first-day onset at 1-, 3- and 7-day lead. It uses a fixed 30-year historical reference, validation-only selection, regional failure analysis, earlier temporal backtesting, nested location holdout and matched one-day linear/LSTM comparisons.
 
----
+Start with the [expanded research report](results/research/REPORT.md), [research manuscript](researchpaper.md), and [predeclared protocol](RESEARCH_PROTOCOL.md). The original France-grid experiment is preserved below and in [its report](results/REPORT.md); its scores describe a different task/domain and cannot be compared directly with the expanded benchmark.
 
-## Problem Statement
+## Expanded project objectives
 
-Europe has experienced increasingly frequent, intense, and prolonged heat waves in recent years — 2026 alone has seen five separate heat wave events, with temperatures exceeding 42°C and triggering wildfires across multiple countries. This project explores whether a deep learning model, trained on historical weather data, can predict when and where a heat wave is likely to occur — using temperature, pressure, and soil moisture as inputs.
+1. Acquire and verify a complete long-history, multi-location weather dataset with reproducible provenance.
+2. Define local hot-day thresholds from 1981–2010, and distinguish ongoing events from advance onset warning.
+3. Compare one-, three- and seven-day lead forecasts using only observations available by the issue day.
+4. Give locations equal weight in model selection and expose weak regions with support counts and local metrics.
+5. Compare temperature-only, no-soil and full-weather predictors; evaluate matched linear and LSTM baselines at one-day lead.
+6. Test earlier years, omit locations from all supervised model development, and quantify uncertainty and training-sample sensitivity.
+7. Deliver reproducible models, geographic diagnostics, forecast CSV exports and a research write-up that retains poor results.
 
-**Core question:** Can a deep learning model, trained on historical ERA5 reanalysis data, predict heat wave occurrence across Europe with meaningful skill, and how does it perform when tested against a real, unprecedented recent event (the August 2026 heat wave)?
+## Reproduce the expanded study
 
----
+```bash
+pip install -r requirements.txt
+python -m heatcast.download_sites
+python -m unittest discover -s tests -v
+python -m heatcast.research
+python tests/check_research_artifacts.py
+python -m heatcast.regional_audit
+python -m heatcast.research_forecast --date 2025-07-15 --task ongoing --lead 1 --output results/research/example_forecast.csv
+```
 
-## Objectives
+Downloads resume from cached JSON responses. API rate limits are respected; complete responses and the prepared dataset are saved under `data/europe_sites/`. The included [manifest](data/europe_sites/manifest.json) records exact requests, returned coordinates/units and hashes. The primary benchmark contains Paris, London, Madrid, Rome, Athens, Berlin and Warsaw. Stockholm was requested but could not be completed under the archive's hourly quota; it was excluded on data-availability grounds before final model fitting. Northern Europe remains unvalidated.
 
-1. Build a data pipeline to acquire and preprocess ERA5 reanalysis data for a defined European region
-2. Define a clear, reproducible heat wave metric (3+ consecutive days above the local 90th percentile for that calendar day)
-3. Build and evaluate a single-location LSTM baseline model
-4. Build and evaluate a full-grid ConvLSTM model for spatial heat wave prediction
-5. Compare both models against simple baselines (persistence, climatology)
-6. Conduct an ablation study to test the contribution of individual input features
-7. Test the trained model against the real August 2026 European heat wave as a case study
-8. Present findings with honest discussion of strengths and limitations
+The API model is explicitly ERA5, UTC days, with elevation downscaling disabled. Six daily variables are maximum/minimum temperature, mean sea-level pressure, mean top-layer soil moisture, mean humidity and precipitation. This is a representative grid-cell study, not station verification or complete European spatial coverage. Data attribution: Copernicus Climate Change Service/ECMWF ERA5, served by Open-Meteo under CC BY 4.0. See [archive documentation](https://open-meteo.com/en/docs/historical-weather-api).
 
----
+Final train/validation/test periods are 1981–2016 / 2017–2020 / 2021–2025. The three-day event rule is project-specific; it is not the six-day ETCCDI WSDI. The onset target's next two observed days enter verification only. All predictors end at the issue day. The fixed 1981–2010 reference precedes validation and testing; it is not the latest climate normal. This is a revised retrospective study, not untouched prospective validation or an operational warning service.
 
-## Dataset
+The primary six-candidate gradient-boosting comparison uses validation **macro-site F1**, so each location counts equally. Linear and LSTM comparisons are matched on the one-day tasks. The best method is identified by validation performance; test outcomes remain reported for all methods. Site-specific cutoff policies are evaluated as a separate predeclared experiment, with a minimum validation support requirement. A local cutoff is not guaranteed to improve future skill.
 
-- **Primary source:** [ERA5 hourly reanalysis data](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels) via the Copernicus Climate Data Store (CDS)
-- **Variables used:** 2m temperature (`t2m`), mean sea level pressure (`msl`), volumetric soil water layer 1 (`swvl1`)
-- **Region:** Europe/France bounding box
-- **Time period:** Summer months (June–August), 2020–2026
-- **Format:** GRIB, downloaded via the `cdsapi` Python package
+Use `--method champion` with `research_forecast` to export the validation-selected method at one-day lead. The default `primary` exports the primary boosting model. Both reconstruct forecasts after discarding observations after the issue date. The CSV includes issue date, target date, lead, task, model, location, probability and the fixed cutoff.
 
-**Note:** Raw data files are not included in this repository due to size. To reproduce this project, register for a free CDS account and download the data using the variable/region/date settings described above.
+The original grid's [regional audit](results/regional_audit/REPORT.md) reports cell F1, false alarms, recall, positive counts and four fixed geographic quadrants. Low-support cells remain identified; the audit does not retune the original model on its test errors.
 
----
+## Original France-grid experiment
 
-## Tech Stack
+Reproducible next-day forecasting of ongoing regional heatwaves from ERA5 temperature, mean sea-level pressure and surface soil moisture. This project compares a Paris LSTM, a spatial ConvLSTM, a no-soil ConvLSTM ablation, gradient boosting, persistence and seasonal climatology.
 
-| Category | Tool |
+The authoritative evaluation is [results/REPORT.md](results/REPORT.md), with machine-readable metrics in [results/metrics.json](results/metrics.json). Original notebook scores and root-level model files are retained as exploratory artifacts; they used test-tuned cutoffs and are superseded by the corrected pipeline.
+
+## Objective and scope
+
+Predict the probability that the next UTC day is the third or a later consecutive hot day at each evaluated grid cell. A hot day exceeds its local training-derived 90th-percentile daily maximum temperature. The available grid covers 42–51°N, 5°W–8°E at 0.25° spacing; this is a France-centred region, not all Europe.
+
+The local GRIB contains May–August observations, 2020–2026. The pipeline keeps complete 24-hour days, including the last complete day on August 10, 2026. Partial days and sequences crossing seasonal or missing-day gaps are excluded. Temperature is aggregated to daily maximum in Celsius; pressure and soil moisture to daily mean.
+
+## Run
+
+Python 3.13 was used for the completed experiment.
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+python -m unittest discover -s tests -v
+python -m heatcast.run --data data.grib --output results --epochs 35 --seed 42
+```
+
+Daily preprocessing is cached against the input file's path, size and modification time. Core package versions used locally are recorded in `requirements-lock.txt`.
+
+Outputs include model checkpoints, gradient-boosting estimator, validation/test metrics, precision–recall and case-study plots, daily spatial extent/IoU, preprocessing parameters, and saved held-out probabilities. A run log can be captured with `> results/run.log 2>&1` after creating `results/`.
+
+Export a saved held-out forecast:
+
+```bash
+python -m heatcast.predict --date 2026-08-04 --output results/forecast_20260804.csv
+```
+
+Forecast the next day from a prepared daily NPZ (replace the cache path with the generated filename):
+
+```bash
+python -m heatcast.forecast --daily results/daily_SOURCE_ID.npz --output results/next_day_forecast.csv
+```
+
+The daily file must contain `x` (day, three channels, latitude, longitude), `dates`, `lat` and `lon`, the original training reference, and seven complete consecutive recent days. The channel order is temperature maximum in Celsius, mean pressure in Pa, mean volumetric soil moisture. This command demonstrates inference; ERA5 latency means it is not an operational real-time warning service.
+
+## Data acquisition
+
+The supplied `data.grib` is sufficient to reproduce the experiment; another download is unnecessary. Raw data and large intermediate arrays are excluded from Git.
+
+Optional replacement download:
+
+```bash
+python -m heatcast.download --start 2020 --end 2026
+python -m heatcast.download --start 2020 --end 2026 --execute
+```
+
+The first command writes exact monthly requests. Execution requires your own CDS credentials and acceptance of the dataset terms. See the [official CDS setup instructions](https://cds.climate.copernicus.eu/how-to-api) and [ERA5 single-level dataset](https://cds.climate.copernicus.eu/datasets/reanalysis-era5-single-levels). Requests use all 24 hourly times, May–August, the regional box above, and the three variables. To combine downloaded GRIB messages into one input, without altering their contents:
+
+```python
+from pathlib import Path
+import shutil
+with open('downloaded.grib', 'wb') as destination:
+    for source in sorted(Path('data/era5').glob('*.grib')):
+        with source.open('rb') as stream:
+            shutil.copyfileobj(stream, destination)
+```
+
+Then run with `--data downloaded.grib`. Avoid combining overlapping downloads. A longer reference period requires changing and validating the chronological split design before reporting results.
+
+## Evaluation protocol
+
+- Train: 2020–2022. Validation: 2023–2024. Held-out test: 2025–2026.
+- Thresholds: per-cell 90th percentile within ±15 calendar days, using training years only; a fixed non-leap calendar aligns dates across years.
+- Labels: causal third-and-later hot days. The first two hot days are not retrospectively relabelled as ongoing events.
+- Inputs: seven contiguous observed days, ending the day before the target; no target-day weather enters any predictor.
+- Scaling and land proxy: fitted from training only. Grid evaluation retains finite cells with training mean soil moisture above 0.001 m³/m³, excluding ocean values encoded near zero. This is a documented proxy, not an official land-fraction mask.
+- Checkpoints: copied at the lowest validation loss, with early stopping. Model cutoffs maximize validation F1. Gradient boosting tests 7, 15 and 31 leaves on validation only, using at most 250,000 uniformly sampled training cell-days.
+- Selection: highest validation F1 within grid and Paris scopes separately. The selected model may be a simple baseline if it performs best.
+- Report: F1, precision, recall, ROC AUC, average precision, Brier score, accuracy and confusion matrices. Grid models share the same cells and dates; Paris results are a separate comparison.
+- Uncertainty: paired 7-day moving-block bootstrap of entire daily spatial fields, with 500 resamples. Reported intervals are conditional on the trained model and this test period.
+
+## Project files
+
+| Path | Purpose |
 |---|---|
-| Language | Python |
-| Data access | `cdsapi` |
-| Data handling | `xarray`, `cfgrib`, `pandas`, `numpy` |
-| Deep learning | `PyTorch` |
-| Baseline ML / metrics | `scikit-learn` |
-| Visualization | `matplotlib` |
-| Compute | MacBook Air M5 (local) |
+| `heatcast/data.py` | GRIB aggregation, thresholds, causal labels, contiguous windows |
+| `heatcast/models.py` | LSTM and ConvLSTM |
+| `heatcast/run.py` | Training, validation selection, baselines, ablation and evaluation |
+| `heatcast/evaluation.py` | Cutoffs, classification metrics and uncertainty |
+| `heatcast/forecast.py` | Next-day model inference |
+| `heatcast/predict.py` | Export saved test forecasts |
+| `heatcast/download.py` | Reproducible optional CDS requests |
+| `tests/test_protocol.py` | Leakage, date gaps, calendar alignment and model checks |
+| `results/` | Corrected run artifacts and report |
+| `01_data_exploration.ipynb` | Legacy exploratory work |
 
----
+## Interpretation and limitations
 
-## Methodology
+Three training years do not constitute a 30-year climate normal. Forecast skill here concerns a regional experimental event definition and a short reference period. Spatial cell-days are correlated and cannot be treated as independent evidence. One seed, one held-out interval and a small hyperparameter search limit robustness claims. Reanalysis assumes retrospectively available observations, with a publication delay in practice. Skill at one-day lead does not establish longer-range warning skill.
 
-1. **Data pipeline:** Downloaded ERA5 data, converted to daily aggregates, and labeled heat wave days using a 90th-percentile, 3-day-consecutive rule.
-2. **Baselines:** Persistence ("today = yesterday") and climatology (historical average per calendar day).
-3. **LSTM model:** Single-location (Paris) time-series model using a 14-day input window.
-4. **ConvLSTM model:** Full-grid spatiotemporal model using a 7-day input window, predicting a heat wave probability map across the entire region.
-5. **Ablation study:** Retrained the ConvLSTM without soil moisture to test its contribution.
-6. **Case study:** Evaluated the trained ConvLSTM against the real August 2026 European heat wave.
-
----
-
-## Results
-
-### Model Comparison
-
-| Model | Accuracy | F1 Score | AUC |
-|---|---|---|---|
-| Persistence baseline | 91.2% | 0.811 | — |
-| Climatology baseline | 62.4% | 0.000 | — |
-| LSTM (Paris only) | 62.7% | 0.497 | 0.729 |
-| **ConvLSTM (full grid)** | **87.5%** | **0.488** | **0.851** |
-| ConvLSTM ablation (no soil moisture) | 86.3% | 0.454 | 0.832 |
-
-**Key findings:**
-- The persistence baseline is a strong benchmark, as expected — heat waves last multiple consecutive days by definition, making "today = yesterday" a naturally strong heuristic.
-- The climatology baseline fails on rare-event prediction (F1 = 0), highlighting why accuracy alone is a misleading metric for this problem.
-- The ConvLSTM substantially outperforms the single-location LSTM in AUC (0.851 vs. 0.729), demonstrating the value of spatial context.
-- Removing soil moisture measurably reduced performance (AUC 0.851 → 0.832), confirming its predictive value — consistent with its role in evaporative cooling and its use in the feature-selection literature this project is based on.
-
-### Case Study: August 2026 Heat Wave
-
-The trained ConvLSTM was tested against the real August 1–11, 2026 heat wave event (one of the most extreme on record for the region):
-
-- The model **underpredicted the most extreme day** (August 4th, 468 affected grid cells) — its predicted probability map showed a diffuse, muted signal that was also spatially offset from the actual event, and never crossed the classification threshold.
-- The model performed **noticeably better on smaller, more localized event days** (August 7–8), correctly concentrating its predicted probability in the same region as the actual heat wave, and partially crossing the threshold in the correct location.
-
-**Interpretation:** The model has learned meaningful spatial patterns for typical-to-moderate heat wave conditions, but its confidence calibration breaks down for unprecedented, large-scale events that fall outside the range represented in its training data (2020–2024). This is a well-documented limitation in applying historical climate data to an accelerating climate, and is consistent with gaps identified in the literature reviewed for this project.
-
----
-
-## Repository Structure
-
-```
-heatwave-prediction/
-├── 01_data_exploration.ipynb    # Main notebook: data pipeline, models, evaluation
-├── lstm_baseline.pt              # Trained LSTM model weights
-├── lstm_baseline_results.json    # LSTM evaluation metrics
-├── convlstm_fullgrid.pt          # Trained ConvLSTM model weights
-├── convlstm_results.json         # ConvLSTM evaluation metrics
-├── ablation_results.json         # Ablation study results
-├── case_study_20260804.png       # Case study visualization (Aug 4)
-├── case_study_20260807.png       # Case study visualization (Aug 7)
-├── case_study_20260808.png       # Case study visualization (Aug 8)
-├── requirements.txt              # Python dependencies
-└── README.md
-```
-
----
-
-## How to Reproduce
-
-1. Clone this repository
-2. Create a virtual environment and install dependencies:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   pip install -r requirements.txt
-   ```
-3. Register for a free account at the [Copernicus Climate Data Store](https://cds.climate.copernicus.eu) and set up your API key
-4. Download ERA5 data for the variables, region, and date range described above
-5. Place the downloaded `.grib` file in the project root and update the filename in the notebook
-6. Run `01_data_exploration.ipynb` from top to bottom
-
----
-
-## Limitations
-
-- Training data is limited to 2020–2024 (summer months only), which constrains the model's exposure to extreme/unprecedented events
-- The validation and test sets have very different heat wave base rates due to the unusually extreme 2025–2026 season, making direct comparison across splits imperfect
-- Sea surface temperature was excluded due to lack of coverage for the inland/regional grid used
-- Compute constraints limited the scope of hyperparameter tuning and model size
-
-## Future Work
-
-- Expand training data to a longer historical period and additional years
-- Incorporate sea surface temperature using a coastal-inclusive region
-- Explore transformer-based architectures as an alternative to ConvLSTM
-- Extend the case study to additional 2026 heat wave events for a broader evaluation
-
----
+The August 2026 case study selects the available day with greatest labelled event extent for descriptive inspection. The dataset and model alone cannot establish that the event was unprecedented, attribute a model error to climate change, or prove causal value from soil moisture. The ablation reports an association under one controlled training setup.

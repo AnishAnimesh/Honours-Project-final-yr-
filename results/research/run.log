@@ -1,0 +1,22 @@
+ongoing_lead1: all_features/15 val macroF1=0.799; test F1=0.820, macro=0.799
+Matched ongoing_lead1: logistic test F1=0.725, LSTM=0.770
+Transfer ongoing_lead1 held=Paris F1=0.783
+Transfer ongoing_lead1 held=London F1=0.800
+Transfer ongoing_lead1 held=Madrid F1=0.823
+Transfer ongoing_lead1 held=Rome F1=0.885
+Transfer ongoing_lead1 held=Athens F1=0.710
+Transfer ongoing_lead1 held=Berlin F1=0.690
+Transfer ongoing_lead1 held=Warsaw F1=0.769
+onset_lead1: no_soil/7 val macroF1=0.293; test F1=0.296, macro=0.292
+Matched onset_lead1: logistic test F1=0.114, LSTM=0.218
+Transfer onset_lead1 held=Paris F1=0.407
+Transfer onset_lead1 held=London F1=0.323
+Transfer onset_lead1 held=Madrid F1=0.222
+Transfer onset_lead1 held=Rome F1=0.349
+Transfer onset_lead1 held=Athens F1=0.167
+Transfer onset_lead1 held=Berlin F1=0.267
+Transfer onset_lead1 held=Warsaw F1=0.400
+ongoing_lead3: no_soil/7 val macroF1=0.385; test F1=0.462, macro=0.417
+onset_lead3: no_soil/15 val macroF1=0.099; test F1=0.060, macro=0.055
+ongoing_lead7: no_soil/7 val macroF1=0.157; test F1=0.220, macro=0.168
+onset_lead7: no_soil/15 val macroF1=0.069; test F1=0.066, macro=0.061

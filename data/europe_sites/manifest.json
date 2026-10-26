@@ -1,0 +1,717 @@
+{
+  "source": "https://archive-api.open-meteo.com/v1/archive",
+  "documentation": "https://open-meteo.com/en/docs/historical-weather-api",
+  "attribution": "ERA5: Copernicus Climate Change Service / ECMWF; API: Open-Meteo, CC BY 4.0",
+  "model": "era5",
+  "timezone": "GMT",
+  "elevation": "nan (disable elevation downscaling)",
+  "retrieved_utc": "2026-10-26T17:18:53.415106+00:00",
+  "sites": [
+    {
+      "name": "Paris",
+      "requested_latitude": 48.85,
+      "requested_longitude": 2.35,
+      "region": "western",
+      "returned_metadata": [
+        {
+          "latitude": 48.75,
+          "longitude": 2.25,
+          "elevation": 104.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        },
+        {
+          "latitude": 48.75,
+          "longitude": 2.25,
+          "elevation": 104.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        },
+        {
+          "latitude": 48.75,
+          "longitude": 2.25,
+          "elevation": 104.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        }
+      ],
+      "files": [
+        {
+          "file": "Paris_1981_1995.json",
+          "sha256": "498974a65a34d5d0367e61498f142b80c89a1d023374d87defca89d900ba1905",
+          "request": {
+            "latitude": 48.85,
+            "longitude": 2.35,
+            "start_date": "1981-01-01",
+            "end_date": "1995-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:04:19.847522+00:00"
+        },
+        {
+          "file": "Paris_1996_2010.json",
+          "sha256": "a17d5327a4ebd6308512c801c20d63fe556cc3343630700dd6cc52de7c4bf3fd",
+          "request": {
+            "latitude": 48.85,
+            "longitude": 2.35,
+            "start_date": "1996-01-01",
+            "end_date": "2010-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:04:25.081434+00:00"
+        },
+        {
+          "file": "Paris_2011_2025.json",
+          "sha256": "9861c9a576d78c2fce30219a716eee526b357f9a52870b8c767c1fc9a1ed3965",
+          "request": {
+            "latitude": 48.85,
+            "longitude": 2.35,
+            "start_date": "2011-01-01",
+            "end_date": "2025-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:04:33.695498+00:00"
+        }
+      ]
+    },
+    {
+      "name": "London",
+      "requested_latitude": 51.51,
+      "requested_longitude": -0.13,
+      "region": "western",
+      "returned_metadata": [
+        {
+          "latitude": 51.5,
+          "longitude": -0.25,
+          "elevation": 71.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        },
+        {
+          "latitude": 51.5,
+          "longitude": -0.25,
+          "elevation": 71.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        },
+        {
+          "latitude": 51.5,
+          "longitude": -0.25,
+          "elevation": 71.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        }
+      ],
+      "files": [
+        {
+          "file": "London_1981_1995.json",
+          "sha256": "e4abddf2eb7cacf7fee240685a60240ca6f0b88a9fac61ba0df4dd54627542fc",
+          "request": {
+            "latitude": 51.51,
+            "longitude": -0.13,
+            "start_date": "1981-01-01",
+            "end_date": "1995-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:05:53.378551+00:00"
+        },
+        {
+          "file": "London_1996_2010.json",
+          "sha256": "066f2d6612c16d8b27fe305c2a5d184399e282a4c2409aeb97083dca629cd6f7",
+          "request": {
+            "latitude": 51.51,
+            "longitude": -0.13,
+            "start_date": "1996-01-01",
+            "end_date": "2010-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:05:55.328723+00:00"
+        },
+        {
+          "file": "London_2011_2025.json",
+          "sha256": "0bd26855d73f65d00a73ef26feb8d19c6e0333e6cb811c2520a6557abd5eaddd",
+          "request": {
+            "latitude": 51.51,
+            "longitude": -0.13,
+            "start_date": "2011-01-01",
+            "end_date": "2025-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:05:57.325601+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Madrid",
+      "requested_latitude": 40.42,
+      "requested_longitude": -3.7,
+      "region": "southern",
+      "returned_metadata": [
+        {
+          "latitude": 40.5,
+          "longitude": -3.75,
+          "elevation": 660.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        },
+        {
+          "latitude": 40.5,
+          "longitude": -3.75,
+          "elevation": 660.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        },
+        {
+          "latitude": 40.5,
+          "longitude": -3.75,
+          "elevation": 660.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        }
+      ],
+      "files": [
+        {
+          "file": "Madrid_1981_1995.json",
+          "sha256": "df8fdc27620699a2593347131285f05aeb87cec7d4ccd9b4d3a6c8bbe70471cb",
+          "request": {
+            "latitude": 40.42,
+            "longitude": -3.7,
+            "start_date": "1981-01-01",
+            "end_date": "1995-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:07:04.304042+00:00"
+        },
+        {
+          "file": "Madrid_1996_2010.json",
+          "sha256": "5eeef934925a79a699149c0523968d4352666d86525921257fbdb5b47373a4c5",
+          "request": {
+            "latitude": 40.42,
+            "longitude": -3.7,
+            "start_date": "1996-01-01",
+            "end_date": "2010-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:07:06.506034+00:00"
+        },
+        {
+          "file": "Madrid_2011_2025.json",
+          "sha256": "18b71d4cb60286b6807e34d7e1fb7f4958d60cee56e7e828fe284e74b1604507",
+          "request": {
+            "latitude": 40.42,
+            "longitude": -3.7,
+            "start_date": "2011-01-01",
+            "end_date": "2025-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:07:09.785732+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Rome",
+      "requested_latitude": 41.9,
+      "requested_longitude": 12.5,
+      "region": "southern",
+      "returned_metadata": [
+        {
+          "latitude": 42.0,
+          "longitude": 12.5,
+          "elevation": 137.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        },
+        {
+          "latitude": 42.0,
+          "longitude": 12.5,
+          "elevation": 137.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        },
+        {
+          "latitude": 42.0,
+          "longitude": 12.5,
+          "elevation": 137.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        }
+      ],
+      "files": [
+        {
+          "file": "Rome_1981_1995.json",
+          "sha256": "50ba8cf294e6e1ccfee631d14907e257a0e626572170f609304d23ae9d008985",
+          "request": {
+            "latitude": 41.9,
+            "longitude": 12.5,
+            "start_date": "1981-01-01",
+            "end_date": "1995-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:08:26.142248+00:00"
+        },
+        {
+          "file": "Rome_1996_2010.json",
+          "sha256": "af4a10d89ad1de78f3ed236cf0d4df5dd621e0826de9a1743d03c2e835dbbbab",
+          "request": {
+            "latitude": 41.9,
+            "longitude": 12.5,
+            "start_date": "1996-01-01",
+            "end_date": "2010-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:08:29.354442+00:00"
+        },
+        {
+          "file": "Rome_2011_2025.json",
+          "sha256": "69156986d3ad0b5d153a2408552ddb10399750334155a8c4269bdf9fe2f76dab",
+          "request": {
+            "latitude": 41.9,
+            "longitude": 12.5,
+            "start_date": "2011-01-01",
+            "end_date": "2025-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:08:33.780026+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Athens",
+      "requested_latitude": 37.98,
+      "requested_longitude": 23.73,
+      "region": "southern",
+      "returned_metadata": [
+        {
+          "latitude": 38.0,
+          "longitude": 23.75,
+          "elevation": 175.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        },
+        {
+          "latitude": 38.0,
+          "longitude": 23.75,
+          "elevation": 175.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        },
+        {
+          "latitude": 38.0,
+          "longitude": 23.75,
+          "elevation": 175.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        }
+      ],
+      "files": [
+        {
+          "file": "Athens_1981_1995.json",
+          "sha256": "fb475f8dc6556f3fbd82fb1f71f3f686b5dd04bcbaf78b98df022de4d5eb1dfc",
+          "request": {
+            "latitude": 37.98,
+            "longitude": 23.73,
+            "start_date": "1981-01-01",
+            "end_date": "1995-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:09:44.335618+00:00"
+        },
+        {
+          "file": "Athens_1996_2010.json",
+          "sha256": "c5c79fd7d7ce64b343642ba00d6585cdb3521021b53545ada94d088f714d808b",
+          "request": {
+            "latitude": 37.98,
+            "longitude": 23.73,
+            "start_date": "1996-01-01",
+            "end_date": "2010-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:09:47.047351+00:00"
+        },
+        {
+          "file": "Athens_2011_2025.json",
+          "sha256": "66b90b1b4dcf1534579df7fce96f422cac30654f081241dd2eb8cf59376e9a72",
+          "request": {
+            "latitude": 37.98,
+            "longitude": 23.73,
+            "start_date": "2011-01-01",
+            "end_date": "2025-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:09:57.035752+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Berlin",
+      "requested_latitude": 52.52,
+      "requested_longitude": 13.41,
+      "region": "central_eastern",
+      "returned_metadata": [
+        {
+          "latitude": 52.5,
+          "longitude": 13.5,
+          "elevation": 50.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        },
+        {
+          "latitude": 52.5,
+          "longitude": 13.5,
+          "elevation": 50.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        },
+        {
+          "latitude": 52.5,
+          "longitude": 13.5,
+          "elevation": 50.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        }
+      ],
+      "files": [
+        {
+          "file": "Berlin_1981_1995.json",
+          "sha256": "90f45f9f8ce365a579cbb966d646893f15b34448297c95314760499c51177582",
+          "request": {
+            "latitude": 52.52,
+            "longitude": 13.41,
+            "start_date": "1981-01-01",
+            "end_date": "1995-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:11:04.479717+00:00"
+        },
+        {
+          "file": "Berlin_1996_2010.json",
+          "sha256": "c375a339b9906782a8e88783f95f7c43b6c2a94f7d6cdb8e496c0e5730f6ec0b",
+          "request": {
+            "latitude": 52.52,
+            "longitude": 13.41,
+            "start_date": "1996-01-01",
+            "end_date": "2010-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:11:08.062496+00:00"
+        },
+        {
+          "file": "Berlin_2011_2025.json",
+          "sha256": "9d39ecc67b3902a8395fda135e8ddfb3d43ef4756d96becf97eb4d1db44e5094",
+          "request": {
+            "latitude": 52.52,
+            "longitude": 13.41,
+            "start_date": "2011-01-01",
+            "end_date": "2025-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:11:11.951421+00:00"
+        }
+      ]
+    },
+    {
+      "name": "Warsaw",
+      "requested_latitude": 52.23,
+      "requested_longitude": 21.01,
+      "region": "central_eastern",
+      "returned_metadata": [
+        {
+          "latitude": 52.25,
+          "longitude": 21.0,
+          "elevation": 99.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        },
+        {
+          "latitude": 52.25,
+          "longitude": 21.0,
+          "elevation": 99.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        },
+        {
+          "latitude": 52.25,
+          "longitude": 21.0,
+          "elevation": 99.0,
+          "daily_units": {
+            "time": "iso8601",
+            "temperature_2m_max": "\u00b0C",
+            "temperature_2m_min": "\u00b0C",
+            "pressure_msl_mean": "hPa",
+            "soil_moisture_0_to_7cm_mean": "m\u00b3/m\u00b3",
+            "relative_humidity_2m_mean": "%",
+            "precipitation_sum": "mm"
+          }
+        }
+      ],
+      "files": [
+        {
+          "file": "Warsaw_1981_1995.json",
+          "sha256": "f6aa2c7901b4359056323a1d3640b299e60093cea0bca25e3d8e14ef5d081b66",
+          "request": {
+            "latitude": 52.23,
+            "longitude": 21.01,
+            "start_date": "1981-01-01",
+            "end_date": "1995-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:12:20.882959+00:00"
+        },
+        {
+          "file": "Warsaw_1996_2010.json",
+          "sha256": "f95fa3095a65bffe91ce96093a500296fe18c0dca5c855d5c26cd91881db5db7",
+          "request": {
+            "latitude": 52.23,
+            "longitude": 21.01,
+            "start_date": "1996-01-01",
+            "end_date": "2010-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:12:26.295422+00:00"
+        },
+        {
+          "file": "Warsaw_2011_2025.json",
+          "sha256": "d33ca643e633c4fe092591cd89e45ab55ddb8f1c37c9de03e3ac102c2d5a1f98",
+          "request": {
+            "latitude": 52.23,
+            "longitude": 21.01,
+            "start_date": "2011-01-01",
+            "end_date": "2025-12-31",
+            "daily": "temperature_2m_max,temperature_2m_min,pressure_msl_mean,soil_moisture_0_to_7cm_mean,relative_humidity_2m_mean,precipitation_sum",
+            "models": "era5",
+            "timezone": "GMT",
+            "elevation": "nan",
+            "cell_selection": "land"
+          },
+          "retrieved_utc": "2026-10-26T17:12:29.552137+00:00"
+        }
+      ]
+    }
+  ],
+  "shape": [
+    16436,
+    7,
+    6
+  ],
+  "daily_sha256": "5bbbfb49065af7c38006c611cc7496e9f78a637f2391a61945d2d38930750869"
+}

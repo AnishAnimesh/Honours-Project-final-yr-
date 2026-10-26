@@ -1,0 +1,2963 @@
+{
+  "objective": "Region-aware early warning of ongoing heatwaves and first-day onset, at 1/3/7-day lead",
+  "source": "ERA5 through Open-Meteo, fixed era5 model, UTC, elevation downscaling disabled",
+  "data_sha256": "5bbbfb49065af7c38006c611cc7496e9f78a637f2391a61945d2d38930750869",
+  "protocol_sha256": "98fa2c6a1750d67141f97014b38714065adaa681efca9d2426e5fa3791b695e3",
+  "reference": "1981\u20132010, 90th percentile, 5-day calendar window",
+  "quality_control": {
+    "n_days": 16436,
+    "n_sites": 7,
+    "complete_daily_series": true,
+    "variable_minima": [
+      -20.100000381469727,
+      -31.799999237060547,
+      959.5999755859375,
+      -0.0,
+      16.0,
+      0.0
+    ],
+    "variable_maxima": [
+      44.5,
+      30.299999237060547,
+      1050.199951171875,
+      0.4399999976158142,
+      100.0,
+      96.4000015258789
+    ]
+  },
+  "sites": [
+    "Paris",
+    "London",
+    "Madrid",
+    "Rome",
+    "Athens",
+    "Berlin",
+    "Warsaw"
+  ],
+  "training_end": 2016,
+  "validation": "2017\u20132020",
+  "test": "2021\u20132025",
+  "selection": "Highest validation macro-site F1 among six predeclared feature/complexity candidates; cutoffs use validation only",
+  "experiments": {
+    "ongoing_lead1": {
+      "selected": {
+        "variant": "all_features",
+        "leaves": 15,
+        "threshold": 0.3244699978079571,
+        "validation": {
+          "threshold": 0.3244699978079571,
+          "n": 4284,
+          "prevalence": 0.07026143790849673,
+          "accuracy": 0.9696545284780579,
+          "f1": 0.8115942028985508,
+          "precision": 0.7197943444730077,
+          "recall": 0.9302325581395349,
+          "roc_auc": 0.9893701053397204,
+          "average_precision": 0.8279751273227625,
+          "brier": 0.021242783130453444,
+          "confusion_matrix": [
+            [
+              3874,
+              109
+            ],
+            [
+              21,
+              280
+            ]
+          ],
+          "macro_site_f1": 0.7992250620373833
+        }
+      },
+      "candidates": [
+        {
+          "variant": "temperature_only",
+          "leaves": 7,
+          "threshold": 0.24677604912679682,
+          "validation": {
+            "threshold": 0.24677604912679682,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.957983193277311,
+            "f1": 0.7680412371134021,
+            "precision": 0.6273684210526316,
+            "recall": 0.9900332225913622,
+            "roc_auc": 0.9827823065303287,
+            "average_precision": 0.7283773635018179,
+            "brier": 0.025845345412544303,
+            "confusion_matrix": [
+              [
+                3806,
+                177
+              ],
+              [
+                3,
+                298
+              ]
+            ],
+            "macro_site_f1": 0.7548349376767483
+          }
+        },
+        {
+          "variant": "temperature_only",
+          "leaves": 15,
+          "threshold": 0.218739270925969,
+          "validation": {
+            "threshold": 0.218739270925969,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.9582166199813259,
+            "f1": 0.7684346701164295,
+            "precision": 0.6292372881355932,
+            "recall": 0.9867109634551495,
+            "roc_auc": 0.9822718313630271,
+            "average_precision": 0.7140294601625509,
+            "brier": 0.02664473610372011,
+            "confusion_matrix": [
+              [
+                3808,
+                175
+              ],
+              [
+                4,
+                297
+              ]
+            ],
+            "macro_site_f1": 0.7548049035158936
+          }
+        },
+        {
+          "variant": "no_soil",
+          "leaves": 7,
+          "threshold": 0.29165856640309634,
+          "validation": {
+            "threshold": 0.29165856640309634,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.9663865546218487,
+            "f1": 0.8027397260273973,
+            "precision": 0.682983682983683,
+            "recall": 0.973421926910299,
+            "roc_auc": 0.9885868762840077,
+            "average_precision": 0.8213191298814121,
+            "brier": 0.02178902839521742,
+            "confusion_matrix": [
+              [
+                3847,
+                136
+              ],
+              [
+                8,
+                293
+              ]
+            ],
+            "macro_site_f1": 0.7869071970940398
+          }
+        },
+        {
+          "variant": "no_soil",
+          "leaves": 15,
+          "threshold": 0.35352363479153065,
+          "validation": {
+            "threshold": 0.35352363479153065,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.9687208216619981,
+            "f1": 0.8063583815028902,
+            "precision": 0.7135549872122762,
+            "recall": 0.9269102990033222,
+            "roc_auc": 0.9892433206576455,
+            "average_precision": 0.8301268114736087,
+            "brier": 0.021221121001437786,
+            "confusion_matrix": [
+              [
+                3871,
+                112
+              ],
+              [
+                22,
+                279
+              ]
+            ],
+            "macro_site_f1": 0.7987242705392489
+          }
+        },
+        {
+          "variant": "all_features",
+          "leaves": 7,
+          "threshold": 0.41705940117301127,
+          "validation": {
+            "threshold": 0.41705940117301127,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.9689542483660131,
+            "f1": 0.799396681749623,
+            "precision": 0.7320441988950276,
+            "recall": 0.8803986710963455,
+            "roc_auc": 0.988555180113489,
+            "average_precision": 0.8189889049178427,
+            "brier": 0.02190653180257281,
+            "confusion_matrix": [
+              [
+                3886,
+                97
+              ],
+              [
+                36,
+                265
+              ]
+            ],
+            "macro_site_f1": 0.7881311354053919
+          }
+        },
+        {
+          "variant": "all_features",
+          "leaves": 15,
+          "threshold": 0.3244699978079571,
+          "validation": {
+            "threshold": 0.3244699978079571,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.9696545284780579,
+            "f1": 0.8115942028985508,
+            "precision": 0.7197943444730077,
+            "recall": 0.9302325581395349,
+            "roc_auc": 0.9893701053397204,
+            "average_precision": 0.8279751273227625,
+            "brier": 0.021242783130453444,
+            "confusion_matrix": [
+              [
+                3874,
+                109
+              ],
+              [
+                21,
+                280
+              ]
+            ],
+            "macro_site_f1": 0.7992250620373833
+          }
+        }
+      ],
+      "test": {
+        "threshold": 0.3244699978079571,
+        "n": 5355,
+        "prevalence": 0.09281045751633987,
+        "accuracy": 0.9635854341736695,
+        "f1": 0.8199445983379502,
+        "precision": 0.757679180887372,
+        "recall": 0.8933601609657947,
+        "roc_auc": 0.9894960541346058,
+        "average_precision": 0.875388151755176,
+        "brier": 0.024755941714721407,
+        "confusion_matrix": [
+          [
+            4716,
+            142
+          ],
+          [
+            53,
+            444
+          ]
+        ],
+        "macro_site_f1": 0.7987847531028641
+      },
+      "n_train_days": 5508,
+      "n_validation_days": 612,
+      "n_test_days": 765,
+      "baselines": {
+        "persistence": {
+          "threshold": 0.5,
+          "test": {
+            "threshold": 0.5,
+            "n": 5355,
+            "prevalence": 0.09281045751633987,
+            "accuracy": 0.9557422969187676,
+            "f1": 0.8042939719240297,
+            "precision": 0.6820728291316527,
+            "recall": 0.9798792756539235,
+            "roc_auc": 0.9665761137429767,
+            "average_precision": 0.6702164433848656,
+            "brier": 0.044257703081232495,
+            "confusion_matrix": [
+              [
+                4631,
+                227
+              ],
+              [
+                10,
+                487
+              ]
+            ],
+            "macro_site_f1": 0.7808992192540203
+          }
+        },
+        "climatology": {
+          "threshold": 0.03888889029622078,
+          "test": {
+            "threshold": 0.03888889029622078,
+            "n": 5355,
+            "prevalence": 0.09281045751633987,
+            "accuracy": 0.7755368814192344,
+            "f1": 0.2154046997389034,
+            "precision": 0.15942028985507245,
+            "recall": 0.3319919517102616,
+            "roc_auc": 0.5656719236787544,
+            "average_precision": 0.1376519258313172,
+            "brier": 0.0876600369811058,
+            "confusion_matrix": [
+              [
+                3988,
+                870
+              ],
+              [
+                332,
+                165
+              ]
+            ],
+            "macro_site_f1": 0.09170512353613537
+          }
+        }
+      },
+      "uncertainty": {
+        "method": "500 paired 7-day moving-block resamples, whole spatial fields",
+        "f1_95_interval": [
+          0.7890380133408342,
+          0.846597541854231
+        ],
+        "f1_difference_from_persistence_95_interval": [
+          -0.007877160443810928,
+          0.036682125850031985
+        ]
+      },
+      "local_thresholds": [
+        0.5245592391521674,
+        0.567662242013212,
+        0.24196873556024823,
+        0.43046600451365774,
+        0.3244699978079571,
+        0.39543767513362404,
+        0.4625840729562746
+      ],
+      "local_threshold_test": {
+        "threshold": [
+          0.5245592391521674,
+          0.567662242013212,
+          0.24196873556024823,
+          0.43046600451365774,
+          0.3244699978079571,
+          0.39543767513362404,
+          0.4625840729562746
+        ],
+        "n": 5355,
+        "prevalence": 0.09281045751633987,
+        "accuracy": 0.965266106442577,
+        "f1": 0.8147410358565738,
+        "precision": 0.8067061143984221,
+        "recall": 0.8229376257545271,
+        "roc_auc": 0.9894960541346058,
+        "average_precision": 0.875388151755176,
+        "brier": 0.024755941714721407,
+        "confusion_matrix": [
+          [
+            4760,
+            98
+          ],
+          [
+            88,
+            409
+          ]
+        ],
+        "macro_site_f1": 0.7903286076218407
+      },
+      "matched_comparisons": {
+        "logistic": {
+          "validation": {
+            "threshold": 0.2491188496351242,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.9530812324929971,
+            "f1": 0.7039764359351989,
+            "precision": 0.6322751322751323,
+            "recall": 0.7940199335548173,
+            "roc_auc": 0.9753462181046858,
+            "average_precision": 0.6668663510061632,
+            "brier": 0.03384149447083473,
+            "confusion_matrix": [
+              [
+                3844,
+                139
+              ],
+              [
+                62,
+                239
+              ]
+            ],
+            "macro_site_f1": 0.69192372742328
+          },
+          "test": {
+            "threshold": 0.2491188496351242,
+            "n": 5355,
+            "prevalence": 0.09281045751633987,
+            "accuracy": 0.9454715219421101,
+            "f1": 0.7250470809792844,
+            "precision": 0.6814159292035398,
+            "recall": 0.7746478873239436,
+            "roc_auc": 0.9743139777321814,
+            "average_precision": 0.7275345506384978,
+            "brier": 0.03981843590736389,
+            "confusion_matrix": [
+              [
+                4678,
+                180
+              ],
+              [
+                112,
+                385
+              ]
+            ],
+            "macro_site_f1": 0.6876808288899063
+          }
+        },
+        "lstm": {
+          "validation": {
+            "threshold": 0.5274664759635925,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.9544817927170869,
+            "f1": 0.7477360931435963,
+            "precision": 0.6122881355932204,
+            "recall": 0.9601328903654485,
+            "roc_auc": 0.9836406054635857,
+            "average_precision": 0.7599546734635132,
+            "brier": 0.03598649427294731,
+            "confusion_matrix": [
+              [
+                3800,
+                183
+              ],
+              [
+                12,
+                289
+              ]
+            ],
+            "macro_site_f1": 0.7343690761755294
+          },
+          "test": {
+            "threshold": 0.5274664759635925,
+            "n": 5355,
+            "prevalence": 0.09281045751633987,
+            "accuracy": 0.9488328664799253,
+            "f1": 0.7701342281879194,
+            "precision": 0.660431654676259,
+            "recall": 0.9235412474849095,
+            "roc_auc": 0.9822376001583812,
+            "average_precision": 0.7875769481739819,
+            "brier": 0.03746706247329712,
+            "confusion_matrix": [
+              [
+                4622,
+                236
+              ],
+              [
+                38,
+                459
+              ]
+            ],
+            "macro_site_f1": 0.7430666304820983
+          },
+          "history": [
+            {
+              "epoch": 1,
+              "training_loss": 0.42428908373741125,
+              "validation_loss": 0.4289642735467015
+            },
+            {
+              "epoch": 2,
+              "training_loss": 0.18791689610244422,
+              "validation_loss": 0.32701196907615127
+            },
+            {
+              "epoch": 3,
+              "training_loss": 0.14246043104012282,
+              "validation_loss": 0.24538715713832224
+            },
+            {
+              "epoch": 4,
+              "training_loss": 0.12685250352747393,
+              "validation_loss": 0.22648569212462943
+            },
+            {
+              "epoch": 5,
+              "training_loss": 0.11916146600088537,
+              "validation_loss": 0.23276243996776008
+            },
+            {
+              "epoch": 6,
+              "training_loss": 0.11417582527493798,
+              "validation_loss": 0.2079460707142685
+            },
+            {
+              "epoch": 7,
+              "training_loss": 0.11105769635825757,
+              "validation_loss": 0.21589378248743651
+            },
+            {
+              "epoch": 8,
+              "training_loss": 0.10864628076750711,
+              "validation_loss": 0.2135581518032081
+            },
+            {
+              "epoch": 9,
+              "training_loss": 0.10599070456841134,
+              "validation_loss": 0.21076868222652476
+            },
+            {
+              "epoch": 10,
+              "training_loss": 0.10377597806370811,
+              "validation_loss": 0.1948581415565074
+            },
+            {
+              "epoch": 11,
+              "training_loss": 0.10398185050842777,
+              "validation_loss": 0.19446518463469575
+            },
+            {
+              "epoch": 12,
+              "training_loss": 0.10175377695469667,
+              "validation_loss": 0.18699876230860513
+            },
+            {
+              "epoch": 13,
+              "training_loss": 0.10056516547866215,
+              "validation_loss": 0.18524034745664267
+            },
+            {
+              "epoch": 14,
+              "training_loss": 0.09891000728042709,
+              "validation_loss": 0.1839569619779382
+            },
+            {
+              "epoch": 15,
+              "training_loss": 0.09735453434732576,
+              "validation_loss": 0.17779776083877663
+            },
+            {
+              "epoch": 16,
+              "training_loss": 0.0973911587124234,
+              "validation_loss": 0.17574933165706952
+            },
+            {
+              "epoch": 17,
+              "training_loss": 0.09677717025508943,
+              "validation_loss": 0.18002460510178664
+            },
+            {
+              "epoch": 18,
+              "training_loss": 0.09403518651494917,
+              "validation_loss": 0.17268839742845737
+            },
+            {
+              "epoch": 19,
+              "training_loss": 0.09390889623800651,
+              "validation_loss": 0.17006024460888264
+            },
+            {
+              "epoch": 20,
+              "training_loss": 0.09297491114167188,
+              "validation_loss": 0.16941244510653752
+            }
+          ]
+        }
+      },
+      "validation_champion": "gradient_boosting"
+    },
+    "onset_lead1": {
+      "selected": {
+        "variant": "no_soil",
+        "leaves": 7,
+        "threshold": 0.08723942715902226,
+        "validation": {
+          "threshold": 0.08723942715902226,
+          "n": 4284,
+          "prevalence": 0.028478057889822595,
+          "accuracy": 0.9467787114845938,
+          "f1": 0.2919254658385093,
+          "precision": 0.235,
+          "recall": 0.38524590163934425,
+          "roc_auc": 0.8918513325088033,
+          "average_precision": 0.20987584911048876,
+          "brier": 0.025272256675389973,
+          "confusion_matrix": [
+            [
+              4009,
+              153
+            ],
+            [
+              75,
+              47
+            ]
+          ],
+          "macro_site_f1": 0.2926281212975888
+        }
+      },
+      "candidates": [
+        {
+          "variant": "temperature_only",
+          "leaves": 7,
+          "threshold": 0.08398025317836094,
+          "validation": {
+            "threshold": 0.08398025317836094,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.9477124183006536,
+            "f1": 0.2582781456953642,
+            "precision": 0.21666666666666667,
+            "recall": 0.319672131147541,
+            "roc_auc": 0.8723974129713803,
+            "average_precision": 0.16449909071880375,
+            "brier": 0.026054918494148916,
+            "confusion_matrix": [
+              [
+                4021,
+                141
+              ],
+              [
+                83,
+                39
+              ]
+            ],
+            "macro_site_f1": 0.2580544429073841
+          }
+        },
+        {
+          "variant": "temperature_only",
+          "leaves": 15,
+          "threshold": 0.0441455887796885,
+          "validation": {
+            "threshold": 0.0441455887796885,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.8867880485527544,
+            "f1": 0.22647527910685805,
+            "precision": 0.1405940594059406,
+            "recall": 0.5819672131147541,
+            "roc_auc": 0.8701384895345081,
+            "average_precision": 0.1424798045626623,
+            "brier": 0.026215034411626384,
+            "confusion_matrix": [
+              [
+                3728,
+                434
+              ],
+              [
+                51,
+                71
+              ]
+            ],
+            "macro_site_f1": 0.22909314472619954
+          }
+        },
+        {
+          "variant": "no_soil",
+          "leaves": 7,
+          "threshold": 0.08723942715902226,
+          "validation": {
+            "threshold": 0.08723942715902226,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.9467787114845938,
+            "f1": 0.2919254658385093,
+            "precision": 0.235,
+            "recall": 0.38524590163934425,
+            "roc_auc": 0.8918513325088033,
+            "average_precision": 0.20987584911048876,
+            "brier": 0.025272256675389973,
+            "confusion_matrix": [
+              [
+                4009,
+                153
+              ],
+              [
+                75,
+                47
+              ]
+            ],
+            "macro_site_f1": 0.2926281212975888
+          }
+        },
+        {
+          "variant": "no_soil",
+          "leaves": 15,
+          "threshold": 0.06718895104474358,
+          "validation": {
+            "threshold": 0.06718895104474358,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.934640522875817,
+            "f1": 0.27835051546391754,
+            "precision": 0.20300751879699247,
+            "recall": 0.4426229508196721,
+            "roc_auc": 0.890691344797977,
+            "average_precision": 0.19398357144824124,
+            "brier": 0.0254803694504723,
+            "confusion_matrix": [
+              [
+                3950,
+                212
+              ],
+              [
+                68,
+                54
+              ]
+            ],
+            "macro_site_f1": 0.2844865640784008
+          }
+        },
+        {
+          "variant": "all_features",
+          "leaves": 7,
+          "threshold": 0.052911070288928615,
+          "validation": {
+            "threshold": 0.052911070288928615,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.9187675070028011,
+            "f1": 0.2809917355371901,
+            "precision": 0.1878453038674033,
+            "recall": 0.5573770491803278,
+            "roc_auc": 0.8935982070410663,
+            "average_precision": 0.20861228804614224,
+            "brier": 0.02530345039837534,
+            "confusion_matrix": [
+              [
+                3868,
+                294
+              ],
+              [
+                54,
+                68
+              ]
+            ],
+            "macro_site_f1": 0.28662412255275876
+          }
+        },
+        {
+          "variant": "all_features",
+          "leaves": 15,
+          "threshold": 0.04405978605574843,
+          "validation": {
+            "threshold": 0.04405978605574843,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.9096638655462185,
+            "f1": 0.2711864406779661,
+            "precision": 0.17603911980440098,
+            "recall": 0.5901639344262295,
+            "roc_auc": 0.891656360041279,
+            "average_precision": 0.18411180334118216,
+            "brier": 0.02561794336677289,
+            "confusion_matrix": [
+              [
+                3825,
+                337
+              ],
+              [
+                50,
+                72
+              ]
+            ],
+            "macro_site_f1": 0.2786861977495401
+          }
+        }
+      ],
+      "test": {
+        "threshold": 0.08723942715902226,
+        "n": 5355,
+        "prevalence": 0.028944911297852476,
+        "accuracy": 0.945845004668534,
+        "f1": 0.2961165048543689,
+        "precision": 0.23735408560311283,
+        "recall": 0.3935483870967742,
+        "roc_auc": 0.9123250620347395,
+        "average_precision": 0.21231351782806318,
+        "brier": 0.025603246472901707,
+        "confusion_matrix": [
+          [
+            5004,
+            196
+          ],
+          [
+            94,
+            61
+          ]
+        ],
+        "macro_site_f1": 0.2920761325152395
+      },
+      "n_train_days": 5508,
+      "n_validation_days": 612,
+      "n_test_days": 765,
+      "baselines": {
+        "persistence": {
+          "threshold": 0.5,
+          "test": {
+            "threshold": 0.5,
+            "n": 5355,
+            "prevalence": 0.028944911297852476,
+            "accuracy": 0.9669467787114846,
+            "f1": 0.06349206349206349,
+            "precision": 0.17647058823529413,
+            "recall": 0.03870967741935484,
+            "roc_auc": 0.5166625310173698,
+            "average_precision": 0.0346555826631728,
+            "brier": 0.03305322128851541,
+            "confusion_matrix": [
+              [
+                5172,
+                28
+              ],
+              [
+                149,
+                6
+              ]
+            ],
+            "macro_site_f1": 0.07497790526706985
+          }
+        },
+        "climatology": {
+          "threshold": 0.013227513059973717,
+          "test": {
+            "threshold": 0.013227513059973717,
+            "n": 5355,
+            "prevalence": 0.028944911297852476,
+            "accuracy": 0.5204481792717087,
+            "f1": 0.04888888888888889,
+            "precision": 0.02593320235756385,
+            "recall": 0.4258064516129032,
+            "roc_auc": 0.5032413151364764,
+            "average_precision": 0.030394274258885016,
+            "brier": 0.028365297242999077,
+            "confusion_matrix": [
+              [
+                2721,
+                2479
+              ],
+              [
+                89,
+                66
+              ]
+            ],
+            "macro_site_f1": 0.042661531411506255
+          }
+        }
+      },
+      "uncertainty": {
+        "method": "500 paired 7-day moving-block resamples, whole spatial fields",
+        "f1_95_interval": [
+          0.2259165513150089,
+          0.36123498143158816
+        ],
+        "f1_difference_from_persistence_95_interval": [
+          0.154293581446979,
+          0.3081466317844744
+        ]
+      },
+      "local_thresholds": [
+        0.08723942715902226,
+        0.0575281735142366,
+        0.04951146027734268,
+        0.08723942715902226,
+        0.08723942715902226,
+        0.08723942715902226,
+        0.08723942715902226
+      ],
+      "local_threshold_test": {
+        "threshold": [
+          0.08723942715902226,
+          0.0575281735142366,
+          0.04951146027734268,
+          0.08723942715902226,
+          0.08723942715902226,
+          0.08723942715902226,
+          0.08723942715902226
+        ],
+        "n": 5355,
+        "prevalence": 0.028944911297852476,
+        "accuracy": 0.934453781512605,
+        "f1": 0.2937625754527163,
+        "precision": 0.2134502923976608,
+        "recall": 0.47096774193548385,
+        "roc_auc": 0.9123250620347395,
+        "average_precision": 0.21231351782806318,
+        "brier": 0.025603246472901707,
+        "confusion_matrix": [
+          [
+            4931,
+            269
+          ],
+          [
+            82,
+            73
+          ]
+        ],
+        "macro_site_f1": 0.2875588200851618
+      },
+      "matched_comparisons": {
+        "logistic": {
+          "validation": {
+            "threshold": 0.023267837241292,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.7777777777777778,
+            "f1": 0.13138686131386862,
+            "precision": 0.07392197125256673,
+            "recall": 0.5901639344262295,
+            "roc_auc": 0.7649656139466366,
+            "average_precision": 0.0616364560434634,
+            "brier": 0.02783585712313652,
+            "confusion_matrix": [
+              [
+                3260,
+                902
+              ],
+              [
+                50,
+                72
+              ]
+            ],
+            "macro_site_f1": 0.12328503921569546
+          },
+          "test": {
+            "threshold": 0.023267837241292,
+            "n": 5355,
+            "prevalence": 0.028944911297852476,
+            "accuracy": 0.7611577964519141,
+            "f1": 0.11365211365211365,
+            "precision": 0.06366459627329192,
+            "recall": 0.5290322580645161,
+            "roc_auc": 0.7431563275434244,
+            "average_precision": 0.055987277524376315,
+            "brier": 0.028286373242735863,
+            "confusion_matrix": [
+              [
+                3994,
+                1206
+              ],
+              [
+                73,
+                82
+              ]
+            ],
+            "macro_site_f1": 0.11438678216484413
+          }
+        },
+        "lstm": {
+          "validation": {
+            "threshold": 0.37856781482696533,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.9400093370681606,
+            "f1": 0.25507246376811593,
+            "precision": 0.19730941704035873,
+            "recall": 0.36065573770491804,
+            "roc_auc": 0.8471573408118731,
+            "average_precision": 0.14475203181825444,
+            "brier": 0.039962705224752426,
+            "confusion_matrix": [
+              [
+                3983,
+                179
+              ],
+              [
+                78,
+                44
+              ]
+            ],
+            "macro_site_f1": 0.22429727935130098
+          },
+          "test": {
+            "threshold": 0.37856781482696533,
+            "n": 5355,
+            "prevalence": 0.028944911297852476,
+            "accuracy": 0.9450980392156862,
+            "f1": 0.21808510638297873,
+            "precision": 0.18552036199095023,
+            "recall": 0.2645161290322581,
+            "roc_auc": 0.8639007444168734,
+            "average_precision": 0.13849473995400965,
+            "brier": 0.03751219063997269,
+            "confusion_matrix": [
+              [
+                5020,
+                180
+              ],
+              [
+                114,
+                41
+              ]
+            ],
+            "macro_site_f1": 0.19548357758106266
+          },
+          "history": [
+            {
+              "epoch": 1,
+              "training_loss": 0.43699694918283566,
+              "validation_loss": 0.6205785978519394
+            },
+            {
+              "epoch": 2,
+              "training_loss": 0.3252265604817315,
+              "validation_loss": 0.582696666626258
+            },
+            {
+              "epoch": 3,
+              "training_loss": 0.30849809081151786,
+              "validation_loss": 0.5939309311514142
+            },
+            {
+              "epoch": 4,
+              "training_loss": 0.2999303241241847,
+              "validation_loss": 0.5675806877882429
+            },
+            {
+              "epoch": 5,
+              "training_loss": 0.2910684718694908,
+              "validation_loss": 0.5395028792064286
+            },
+            {
+              "epoch": 6,
+              "training_loss": 0.2832228003550839,
+              "validation_loss": 0.5406374004152086
+            },
+            {
+              "epoch": 7,
+              "training_loss": 0.27800985228344305,
+              "validation_loss": 0.5295067397820181
+            },
+            {
+              "epoch": 8,
+              "training_loss": 0.2725796289495285,
+              "validation_loss": 0.5289137198143646
+            },
+            {
+              "epoch": 9,
+              "training_loss": 0.26843726970502085,
+              "validation_loss": 0.5224497333850736
+            },
+            {
+              "epoch": 10,
+              "training_loss": 0.2651847503240535,
+              "validation_loss": 0.5287787686654277
+            },
+            {
+              "epoch": 11,
+              "training_loss": 0.26140703818458594,
+              "validation_loss": 0.5163835771277505
+            },
+            {
+              "epoch": 12,
+              "training_loss": 0.2579189306063368,
+              "validation_loss": 0.4954659587083633
+            },
+            {
+              "epoch": 13,
+              "training_loss": 0.2545273952334132,
+              "validation_loss": 0.49970879802962087
+            },
+            {
+              "epoch": 14,
+              "training_loss": 0.25263036151003365,
+              "validation_loss": 0.4996208963162648
+            },
+            {
+              "epoch": 15,
+              "training_loss": 0.25010336012832374,
+              "validation_loss": 0.49815301350852687
+            },
+            {
+              "epoch": 16,
+              "training_loss": 0.2477061650314868,
+              "validation_loss": 0.48323974350030796
+            },
+            {
+              "epoch": 17,
+              "training_loss": 0.24596847875031413,
+              "validation_loss": 0.48469480502060036
+            },
+            {
+              "epoch": 18,
+              "training_loss": 0.24419953304016037,
+              "validation_loss": 0.47386955836462596
+            },
+            {
+              "epoch": 19,
+              "training_loss": 0.24250063157042132,
+              "validation_loss": 0.4890903427042102
+            },
+            {
+              "epoch": 20,
+              "training_loss": 0.24060975281608027,
+              "validation_loss": 0.5032771943775323
+            }
+          ]
+        }
+      },
+      "validation_champion": "gradient_boosting"
+    },
+    "ongoing_lead3": {
+      "selected": {
+        "variant": "no_soil",
+        "leaves": 7,
+        "threshold": 0.12058886828215419,
+        "validation": {
+          "threshold": 0.12058886828215419,
+          "n": 4284,
+          "prevalence": 0.07026143790849673,
+          "accuracy": 0.8706816059757236,
+          "f1": 0.39651416122004357,
+          "precision": 0.29497568881685576,
+          "recall": 0.6046511627906976,
+          "roc_auc": 0.8700465349829799,
+          "average_precision": 0.2963965069086498,
+          "brier": 0.05624884910532558,
+          "confusion_matrix": [
+            [
+              3548,
+              435
+            ],
+            [
+              119,
+              182
+            ]
+          ],
+          "macro_site_f1": 0.3852462051179887
+        }
+      },
+      "candidates": [
+        {
+          "variant": "temperature_only",
+          "leaves": 7,
+          "threshold": 0.10113443899623838,
+          "validation": {
+            "threshold": 0.10113443899623838,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.8316993464052288,
+            "f1": 0.3403476669716377,
+            "precision": 0.23484848484848486,
+            "recall": 0.6179401993355482,
+            "roc_auc": 0.8416684530517156,
+            "average_precision": 0.23622026084770645,
+            "brier": 0.05905645426502858,
+            "confusion_matrix": [
+              [
+                3377,
+                606
+              ],
+              [
+                115,
+                186
+              ]
+            ],
+            "macro_site_f1": 0.32596920134460233
+          }
+        },
+        {
+          "variant": "temperature_only",
+          "leaves": 15,
+          "threshold": 0.08004129863103517,
+          "validation": {
+            "threshold": 0.08004129863103517,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.8148926237161531,
+            "f1": 0.3408146300914381,
+            "precision": 0.22727272727272727,
+            "recall": 0.6810631229235881,
+            "roc_auc": 0.8409519527760423,
+            "average_precision": 0.23936596724274692,
+            "brier": 0.05922491184669421,
+            "confusion_matrix": [
+              [
+                3286,
+                697
+              ],
+              [
+                96,
+                205
+              ]
+            ],
+            "macro_site_f1": 0.3285135812571282
+          }
+        },
+        {
+          "variant": "no_soil",
+          "leaves": 7,
+          "threshold": 0.12058886828215419,
+          "validation": {
+            "threshold": 0.12058886828215419,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.8706816059757236,
+            "f1": 0.39651416122004357,
+            "precision": 0.29497568881685576,
+            "recall": 0.6046511627906976,
+            "roc_auc": 0.8700465349829799,
+            "average_precision": 0.2963965069086498,
+            "brier": 0.05624884910532558,
+            "confusion_matrix": [
+              [
+                3548,
+                435
+              ],
+              [
+                119,
+                182
+              ]
+            ],
+            "macro_site_f1": 0.3852462051179887
+          }
+        },
+        {
+          "variant": "no_soil",
+          "leaves": 15,
+          "threshold": 0.07794292049219902,
+          "validation": {
+            "threshold": 0.07794292049219902,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.8433706816059757,
+            "f1": 0.384967919340055,
+            "precision": 0.26582278481012656,
+            "recall": 0.6976744186046512,
+            "roc_auc": 0.870214191042829,
+            "average_precision": 0.31615173154028603,
+            "brier": 0.055925485817234284,
+            "confusion_matrix": [
+              [
+                3403,
+                580
+              ],
+              [
+                91,
+                210
+              ]
+            ],
+            "macro_site_f1": 0.37169658807893013
+          }
+        },
+        {
+          "variant": "all_features",
+          "leaves": 7,
+          "threshold": 0.11227697337713594,
+          "validation": {
+            "threshold": 0.11227697337713594,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.8685807656395892,
+            "f1": 0.39135135135135135,
+            "precision": 0.2900641025641026,
+            "recall": 0.6013289036544851,
+            "roc_auc": 0.8725763898562245,
+            "average_precision": 0.3102498928941719,
+            "brier": 0.056029730916083174,
+            "confusion_matrix": [
+              [
+                3540,
+                443
+              ],
+              [
+                120,
+                181
+              ]
+            ],
+            "macro_site_f1": 0.3781314372542633
+          }
+        },
+        {
+          "variant": "all_features",
+          "leaves": 15,
+          "threshold": 0.08035824007838761,
+          "validation": {
+            "threshold": 0.08035824007838761,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.8457049486461251,
+            "f1": 0.3873957367933272,
+            "precision": 0.2686375321336761,
+            "recall": 0.6943521594684385,
+            "roc_auc": 0.8711258730001176,
+            "average_precision": 0.31359247907718024,
+            "brier": 0.05627860449388984,
+            "confusion_matrix": [
+              [
+                3414,
+                569
+              ],
+              [
+                92,
+                209
+              ]
+            ],
+            "macro_site_f1": 0.374834810596829
+          }
+        }
+      ],
+      "test": {
+        "threshold": 0.12058886828215419,
+        "n": 5355,
+        "prevalence": 0.09281045751633987,
+        "accuracy": 0.8627450980392157,
+        "f1": 0.46232626188734455,
+        "precision": 0.3632183908045977,
+        "recall": 0.635814889336016,
+        "roc_auc": 0.8887988283757713,
+        "average_precision": 0.4235882535739675,
+        "brier": 0.06844807303131521,
+        "confusion_matrix": [
+          [
+            4304,
+            554
+          ],
+          [
+            181,
+            316
+          ]
+        ],
+        "macro_site_f1": 0.4167897499328557
+      },
+      "n_train_days": 5508,
+      "n_validation_days": 612,
+      "n_test_days": 765,
+      "baselines": {
+        "persistence": {
+          "threshold": 0.5,
+          "test": {
+            "threshold": 0.5,
+            "n": 5355,
+            "prevalence": 0.09281045751633987,
+            "accuracy": 0.8332399626517274,
+            "f1": 0.41133816743572843,
+            "precision": 0.3058823529411765,
+            "recall": 0.6277665995975855,
+            "roc_auc": 0.7410138061800197,
+            "average_precision": 0.2265698767770019,
+            "brier": 0.16676003734827263,
+            "confusion_matrix": [
+              [
+                4150,
+                708
+              ],
+              [
+                185,
+                312
+              ]
+            ],
+            "macro_site_f1": 0.375427281562878
+          }
+        },
+        "climatology": {
+          "threshold": 0.03888889029622078,
+          "test": {
+            "threshold": 0.03888889029622078,
+            "n": 5355,
+            "prevalence": 0.09281045751633987,
+            "accuracy": 0.7755368814192344,
+            "f1": 0.2154046997389034,
+            "precision": 0.15942028985507245,
+            "recall": 0.3319919517102616,
+            "roc_auc": 0.5656719236787544,
+            "average_precision": 0.1376519258313172,
+            "brier": 0.0876600369811058,
+            "confusion_matrix": [
+              [
+                3988,
+                870
+              ],
+              [
+                332,
+                165
+              ]
+            ],
+            "macro_site_f1": 0.09170512353613537
+          }
+        }
+      },
+      "uncertainty": {
+        "method": "500 paired 7-day moving-block resamples, whole spatial fields",
+        "f1_95_interval": [
+          0.4057698039407821,
+          0.5092918660287081
+        ],
+        "f1_difference_from_persistence_95_interval": [
+          0.01485845420736941,
+          0.08289214617429595
+        ]
+      },
+      "local_thresholds": [
+        0.0781261144768714,
+        0.10277357881727976,
+        0.06415176162360318,
+        0.18320368875248738,
+        0.12058886828215419,
+        0.12162265261788978,
+        0.11057421798300685
+      ],
+      "local_threshold_test": {
+        "threshold": [
+          0.0781261144768714,
+          0.10277357881727976,
+          0.06415176162360318,
+          0.18320368875248738,
+          0.12058886828215419,
+          0.12162265261788978,
+          0.11057421798300685
+        ],
+        "n": 5355,
+        "prevalence": 0.09281045751633987,
+        "accuracy": 0.8504201680672269,
+        "f1": 0.45024021962937544,
+        "precision": 0.3416666666666667,
+        "recall": 0.6599597585513078,
+        "roc_auc": 0.8887988283757713,
+        "average_precision": 0.4235882535739675,
+        "brier": 0.06844807303131521,
+        "confusion_matrix": [
+          [
+            4226,
+            632
+          ],
+          [
+            169,
+            328
+          ]
+        ],
+        "macro_site_f1": 0.4166787773905169
+      }
+    },
+    "onset_lead3": {
+      "selected": {
+        "variant": "no_soil",
+        "leaves": 15,
+        "threshold": 0.033547525891353465,
+        "validation": {
+          "threshold": 0.033547525891353465,
+          "n": 4284,
+          "prevalence": 0.028478057889822595,
+          "accuracy": 0.9096638655462185,
+          "f1": 0.10623556581986143,
+          "precision": 0.07395498392282958,
+          "recall": 0.1885245901639344,
+          "roc_auc": 0.6519780843068828,
+          "average_precision": 0.05090939293837737,
+          "brier": 0.027658711413336076,
+          "confusion_matrix": [
+            [
+              3874,
+              288
+            ],
+            [
+              99,
+              23
+            ]
+          ],
+          "macro_site_f1": 0.09892855432238994
+        }
+      },
+      "candidates": [
+        {
+          "variant": "temperature_only",
+          "leaves": 7,
+          "threshold": 0.01911972060800032,
+          "validation": {
+            "threshold": 0.01911972060800032,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.7530345471521942,
+            "f1": 0.07678883071553229,
+            "precision": 0.04296875,
+            "recall": 0.36065573770491804,
+            "roc_auc": 0.5976004600562466,
+            "average_precision": 0.03869821439084118,
+            "brier": 0.027772547097210665,
+            "confusion_matrix": [
+              [
+                3182,
+                980
+              ],
+              [
+                78,
+                44
+              ]
+            ],
+            "macro_site_f1": 0.07820660944256938
+          }
+        },
+        {
+          "variant": "temperature_only",
+          "leaves": 15,
+          "threshold": 0.012453271317166384,
+          "validation": {
+            "threshold": 0.012453271317166384,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.5095704948646125,
+            "f1": 0.07240618101545254,
+            "precision": 0.03826411572561829,
+            "recall": 0.6721311475409836,
+            "roc_auc": 0.5935592125475615,
+            "average_precision": 0.037844312078522284,
+            "brier": 0.027817999094764498,
+            "confusion_matrix": [
+              [
+                2101,
+                2061
+              ],
+              [
+                40,
+                82
+              ]
+            ],
+            "macro_site_f1": 0.07372156133967046
+          }
+        },
+        {
+          "variant": "no_soil",
+          "leaves": 7,
+          "threshold": 0.02771823947688047,
+          "validation": {
+            "threshold": 0.02771823947688047,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.8760504201680672,
+            "f1": 0.10756302521008404,
+            "precision": 0.06765327695560254,
+            "recall": 0.26229508196721313,
+            "roc_auc": 0.6530947448027036,
+            "average_precision": 0.05065351184945692,
+            "brier": 0.027644630156262295,
+            "confusion_matrix": [
+              [
+                3721,
+                441
+              ],
+              [
+                90,
+                32
+              ]
+            ],
+            "macro_site_f1": 0.09656735631053448
+          }
+        },
+        {
+          "variant": "no_soil",
+          "leaves": 15,
+          "threshold": 0.033547525891353465,
+          "validation": {
+            "threshold": 0.033547525891353465,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.9096638655462185,
+            "f1": 0.10623556581986143,
+            "precision": 0.07395498392282958,
+            "recall": 0.1885245901639344,
+            "roc_auc": 0.6519780843068828,
+            "average_precision": 0.05090939293837737,
+            "brier": 0.027658711413336076,
+            "confusion_matrix": [
+              [
+                3874,
+                288
+              ],
+              [
+                99,
+                23
+              ]
+            ],
+            "macro_site_f1": 0.09892855432238994
+          }
+        },
+        {
+          "variant": "all_features",
+          "leaves": 7,
+          "threshold": 0.033000349834473766,
+          "validation": {
+            "threshold": 0.033000349834473766,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.9108309990662932,
+            "f1": 0.10328638497652583,
+            "precision": 0.07236842105263158,
+            "recall": 0.18032786885245902,
+            "roc_auc": 0.6596942674155711,
+            "average_precision": 0.04894142871888452,
+            "brier": 0.0276605841131702,
+            "confusion_matrix": [
+              [
+                3880,
+                282
+              ],
+              [
+                100,
+                22
+              ]
+            ],
+            "macro_site_f1": 0.08917233570438136
+          }
+        },
+        {
+          "variant": "all_features",
+          "leaves": 15,
+          "threshold": 0.04905834627395976,
+          "validation": {
+            "threshold": 0.04905834627395976,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.9500466853408029,
+            "f1": 0.10084033613445378,
+            "precision": 0.10344827586206896,
+            "recall": 0.09836065573770492,
+            "roc_auc": 0.6466015708084858,
+            "average_precision": 0.05485814078230229,
+            "brier": 0.02764843099054037,
+            "confusion_matrix": [
+              [
+                4058,
+                104
+              ],
+              [
+                110,
+                12
+              ]
+            ],
+            "macro_site_f1": 0.08783194497480211
+          }
+        }
+      ],
+      "test": {
+        "threshold": 0.033547525891353465,
+        "n": 5355,
+        "prevalence": 0.028944911297852476,
+        "accuracy": 0.888328664799253,
+        "f1": 0.059748427672955975,
+        "precision": 0.0395010395010395,
+        "recall": 0.12258064516129032,
+        "roc_auc": 0.6083002481389578,
+        "average_precision": 0.04210165114131041,
+        "brier": 0.028213336687257017,
+        "confusion_matrix": [
+          [
+            4738,
+            462
+          ],
+          [
+            136,
+            19
+          ]
+        ],
+        "macro_site_f1": 0.0546419915415949
+      },
+      "n_train_days": 5508,
+      "n_validation_days": 612,
+      "n_test_days": 765,
+      "baselines": {
+        "persistence": {
+          "threshold": 0.5,
+          "test": {
+            "threshold": 0.5,
+            "n": 5355,
+            "prevalence": 0.028944911297852476,
+            "accuracy": 0.9624649859943978,
+            "f1": 0.009852216748768473,
+            "precision": 0.020833333333333332,
+            "recall": 0.0064516129032258064,
+            "roc_auc": 0.4987065756823821,
+            "average_precision": 0.02889257853679106,
+            "brier": 0.03753501400560224,
+            "confusion_matrix": [
+              [
+                5153,
+                47
+              ],
+              [
+                154,
+                1
+              ]
+            ],
+            "macro_site_f1": 0.008928571428571428
+          }
+        },
+        "climatology": {
+          "threshold": 0.013227513059973717,
+          "test": {
+            "threshold": 0.013227513059973717,
+            "n": 5355,
+            "prevalence": 0.028944911297852476,
+            "accuracy": 0.5204481792717087,
+            "f1": 0.04888888888888889,
+            "precision": 0.02593320235756385,
+            "recall": 0.4258064516129032,
+            "roc_auc": 0.5032413151364764,
+            "average_precision": 0.030394274258885016,
+            "brier": 0.028365297242999077,
+            "confusion_matrix": [
+              [
+                2721,
+                2479
+              ],
+              [
+                89,
+                66
+              ]
+            ],
+            "macro_site_f1": 0.042661531411506255
+          }
+        }
+      },
+      "uncertainty": {
+        "method": "500 paired 7-day moving-block resamples, whole spatial fields",
+        "f1_95_interval": [
+          0.03889786683904331,
+          0.08539813547724939
+        ],
+        "f1_difference_from_persistence_95_interval": [
+          0.019885056920891552,
+          0.08216937789745438
+        ]
+      },
+      "local_thresholds": [
+        0.033547525891353465,
+        0.035998580589625656,
+        0.056636371414804106,
+        0.033547525891353465,
+        0.033547525891353465,
+        0.033547525891353465,
+        0.033547525891353465
+      ],
+      "local_threshold_test": {
+        "threshold": [
+          0.033547525891353465,
+          0.035998580589625656,
+          0.056636371414804106,
+          0.033547525891353465,
+          0.033547525891353465,
+          0.033547525891353465,
+          0.033547525891353465
+        ],
+        "n": 5355,
+        "prevalence": 0.028944911297852476,
+        "accuracy": 0.8978524743230626,
+        "f1": 0.06174957118353345,
+        "precision": 0.04205607476635514,
+        "recall": 0.11612903225806452,
+        "roc_auc": 0.6083002481389578,
+        "average_precision": 0.04210165114131041,
+        "brier": 0.028213336687257017,
+        "confusion_matrix": [
+          [
+            4790,
+            410
+          ],
+          [
+            137,
+            18
+          ]
+        ],
+        "macro_site_f1": 0.05093141640244834
+      }
+    },
+    "ongoing_lead7": {
+      "selected": {
+        "variant": "no_soil",
+        "leaves": 7,
+        "threshold": 0.05228595719319642,
+        "validation": {
+          "threshold": 0.05228595719319642,
+          "n": 4284,
+          "prevalence": 0.07026143790849673,
+          "accuracy": 0.7686741363211952,
+          "f1": 0.16792611251049538,
+          "precision": 0.11235955056179775,
+          "recall": 0.33222591362126247,
+          "roc_auc": 0.593620061340431,
+          "average_precision": 0.09461452702168746,
+          "brier": 0.06614955673193156,
+          "confusion_matrix": [
+            [
+              3193,
+              790
+            ],
+            [
+              201,
+              100
+            ]
+          ],
+          "macro_site_f1": 0.1568387957106546
+        }
+      },
+      "candidates": [
+        {
+          "variant": "temperature_only",
+          "leaves": 7,
+          "threshold": 0.026650175790548594,
+          "validation": {
+            "threshold": 0.026650175790548594,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.4150326797385621,
+            "f1": 0.14761904761904762,
+            "precision": 0.08222811671087533,
+            "recall": 0.7209302325581395,
+            "roc_auc": 0.5605284252091322,
+            "average_precision": 0.08213985892801651,
+            "brier": 0.06655145256689873,
+            "confusion_matrix": [
+              [
+                1561,
+                2422
+              ],
+              [
+                84,
+                217
+              ]
+            ],
+            "macro_site_f1": 0.14524105007508284
+          }
+        },
+        {
+          "variant": "temperature_only",
+          "leaves": 15,
+          "threshold": 0.03671220091430869,
+          "validation": {
+            "threshold": 0.03671220091430869,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.6363211951447245,
+            "f1": 0.14395604395604394,
+            "precision": 0.08624094799210007,
+            "recall": 0.43521594684385384,
+            "roc_auc": 0.5530506312959647,
+            "average_precision": 0.08156420569908521,
+            "brier": 0.06672021715132252,
+            "confusion_matrix": [
+              [
+                2595,
+                1388
+              ],
+              [
+                170,
+                131
+              ]
+            ],
+            "macro_site_f1": 0.1401019135068379
+          }
+        },
+        {
+          "variant": "no_soil",
+          "leaves": 7,
+          "threshold": 0.05228595719319642,
+          "validation": {
+            "threshold": 0.05228595719319642,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.7686741363211952,
+            "f1": 0.16792611251049538,
+            "precision": 0.11235955056179775,
+            "recall": 0.33222591362126247,
+            "roc_auc": 0.593620061340431,
+            "average_precision": 0.09461452702168746,
+            "brier": 0.06614955673193156,
+            "confusion_matrix": [
+              [
+                3193,
+                790
+              ],
+              [
+                201,
+                100
+              ]
+            ],
+            "macro_site_f1": 0.1568387957106546
+          }
+        },
+        {
+          "variant": "no_soil",
+          "leaves": 15,
+          "threshold": 0.04789126738268335,
+          "validation": {
+            "threshold": 0.04789126738268335,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.7401960784313726,
+            "f1": 0.16,
+            "precision": 0.103515625,
+            "recall": 0.3521594684385382,
+            "roc_auc": 0.5832403996052993,
+            "average_precision": 0.09382754005844231,
+            "brier": 0.06637395419819903,
+            "confusion_matrix": [
+              [
+                3065,
+                918
+              ],
+              [
+                195,
+                106
+              ]
+            ],
+            "macro_site_f1": 0.15526220392327872
+          }
+        },
+        {
+          "variant": "all_features",
+          "leaves": 7,
+          "threshold": 0.04129546410450304,
+          "validation": {
+            "threshold": 0.04129546410450304,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.6804388422035481,
+            "f1": 0.16063764561618638,
+            "precision": 0.09849624060150376,
+            "recall": 0.43521594684385384,
+            "roc_auc": 0.5916015157442386,
+            "average_precision": 0.09330291542862226,
+            "brier": 0.066227161143819,
+            "confusion_matrix": [
+              [
+                2784,
+                1199
+              ],
+              [
+                170,
+                131
+              ]
+            ],
+            "macro_site_f1": 0.15416774096150673
+          }
+        },
+        {
+          "variant": "all_features",
+          "leaves": 15,
+          "threshold": 0.04732452793245705,
+          "validation": {
+            "threshold": 0.04732452793245705,
+            "n": 4284,
+            "prevalence": 0.07026143790849673,
+            "accuracy": 0.7434640522875817,
+            "f1": 0.15396458814472672,
+            "precision": 0.10020040080160321,
+            "recall": 0.33222591362126247,
+            "roc_auc": 0.5758176569356643,
+            "average_precision": 0.09019741094283906,
+            "brier": 0.06654498257249453,
+            "confusion_matrix": [
+              [
+                3085,
+                898
+              ],
+              [
+                201,
+                100
+              ]
+            ],
+            "macro_site_f1": 0.14609449912369962
+          }
+        }
+      ],
+      "test": {
+        "threshold": 0.05228595719319642,
+        "n": 5355,
+        "prevalence": 0.09281045751633987,
+        "accuracy": 0.7544351073762838,
+        "f1": 0.2195845697329377,
+        "precision": 0.15572390572390574,
+        "recall": 0.3722334004024145,
+        "roc_auc": 0.648903300411775,
+        "average_precision": 0.1768239955092547,
+        "brier": 0.08457401873938503,
+        "confusion_matrix": [
+          [
+            3855,
+            1003
+          ],
+          [
+            312,
+            185
+          ]
+        ],
+        "macro_site_f1": 0.16780803018950646
+      },
+      "n_train_days": 5508,
+      "n_validation_days": 612,
+      "n_test_days": 765,
+      "baselines": {
+        "persistence": {
+          "threshold": 0.5,
+          "test": {
+            "threshold": 0.5,
+            "n": 5355,
+            "prevalence": 0.09281045751633987,
+            "accuracy": 0.7764705882352941,
+            "f1": 0.21815806662312215,
+            "precision": 0.16150870406189555,
+            "recall": 0.33601609657947684,
+            "roc_auc": 0.578773795510817,
+            "average_precision": 0.11589417416243203,
+            "brier": 0.2235294117647059,
+            "confusion_matrix": [
+              [
+                3991,
+                867
+              ],
+              [
+                330,
+                167
+              ]
+            ],
+            "macro_site_f1": 0.19066956621084302
+          }
+        },
+        "climatology": {
+          "threshold": 0.03888889029622078,
+          "test": {
+            "threshold": 0.03888889029622078,
+            "n": 5355,
+            "prevalence": 0.09281045751633987,
+            "accuracy": 0.7755368814192344,
+            "f1": 0.2154046997389034,
+            "precision": 0.15942028985507245,
+            "recall": 0.3319919517102616,
+            "roc_auc": 0.5656719236787544,
+            "average_precision": 0.1376519258313172,
+            "brier": 0.0876600369811058,
+            "confusion_matrix": [
+              [
+                3988,
+                870
+              ],
+              [
+                332,
+                165
+              ]
+            ],
+            "macro_site_f1": 0.09170512353613537
+          }
+        }
+      },
+      "uncertainty": {
+        "method": "500 paired 7-day moving-block resamples, whole spatial fields",
+        "f1_95_interval": [
+          0.17516266931723845,
+          0.2644229261408185
+        ],
+        "f1_difference_from_persistence_95_interval": [
+          -0.027554910848823798,
+          0.03372702340675634
+        ]
+      },
+      "local_thresholds": [
+        0.02046314502219541,
+        0.02930538042924253,
+        0.054275654816708235,
+        0.03723447217465797,
+        0.05228595719319642,
+        0.07596357654438327,
+        0.059318435906344565
+      ],
+      "local_threshold_test": {
+        "threshold": [
+          0.02046314502219541,
+          0.02930538042924253,
+          0.054275654816708235,
+          0.03723447217465797,
+          0.05228595719319642,
+          0.07596357654438327,
+          0.059318435906344565
+        ],
+        "n": 5355,
+        "prevalence": 0.09281045751633987,
+        "accuracy": 0.680672268907563,
+        "f1": 0.22972972972972974,
+        "precision": 0.14799767846778875,
+        "recall": 0.5130784708249497,
+        "roc_auc": 0.648903300411775,
+        "average_precision": 0.1768239955092547,
+        "brier": 0.08457401873938503,
+        "confusion_matrix": [
+          [
+            3390,
+            1468
+          ],
+          [
+            242,
+            255
+          ]
+        ],
+        "macro_site_f1": 0.17185575682787446
+      }
+    },
+    "onset_lead7": {
+      "selected": {
+        "variant": "no_soil",
+        "leaves": 15,
+        "threshold": 0.0189212504354022,
+        "validation": {
+          "threshold": 0.0189212504354022,
+          "n": 4284,
+          "prevalence": 0.028478057889822595,
+          "accuracy": 0.7546685340802988,
+          "f1": 0.06908768821966342,
+          "precision": 0.038728897715988087,
+          "recall": 0.319672131147541,
+          "roc_auc": 0.5319282186212493,
+          "average_precision": 0.03145585771497972,
+          "brier": 0.0279309176772864,
+          "confusion_matrix": [
+            [
+              3194,
+              968
+            ],
+            [
+              83,
+              39
+            ]
+          ],
+          "macro_site_f1": 0.069008619198777
+        }
+      },
+      "candidates": [
+        {
+          "variant": "temperature_only",
+          "leaves": 7,
+          "threshold": 0.010948989722809107,
+          "validation": {
+            "threshold": 0.010948989722809107,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.3099906629318394,
+            "f1": 0.060991105463786534,
+            "precision": 0.031725049570389956,
+            "recall": 0.7868852459016393,
+            "roc_auc": 0.5077299690407355,
+            "average_precision": 0.030721932588697584,
+            "brier": 0.027897957723340732,
+            "confusion_matrix": [
+              [
+                1232,
+                2930
+              ],
+              [
+                26,
+                96
+              ]
+            ],
+            "macro_site_f1": 0.0619091306751906
+          }
+        },
+        {
+          "variant": "temperature_only",
+          "leaves": 15,
+          "threshold": 0.015301801777287485,
+          "validation": {
+            "threshold": 0.015301801777287485,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.6498599439775911,
+            "f1": 0.06015037593984962,
+            "precision": 0.032564450474898234,
+            "recall": 0.39344262295081966,
+            "roc_auc": 0.5046163178169385,
+            "average_precision": 0.029362478533615156,
+            "brier": 0.027955064238509873,
+            "confusion_matrix": [
+              [
+                2736,
+                1426
+              ],
+              [
+                74,
+                48
+              ]
+            ],
+            "macro_site_f1": 0.060685202471612694
+          }
+        },
+        {
+          "variant": "no_soil",
+          "leaves": 7,
+          "threshold": 0.01646030746433313,
+          "validation": {
+            "threshold": 0.01646030746433313,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.6736694677871149,
+            "f1": 0.06174496644295302,
+            "precision": 0.033625730994152045,
+            "recall": 0.3770491803278688,
+            "roc_auc": 0.5195464822240253,
+            "average_precision": 0.029921353856097198,
+            "brier": 0.027910298138859903,
+            "confusion_matrix": [
+              [
+                2840,
+                1322
+              ],
+              [
+                76,
+                46
+              ]
+            ],
+            "macro_site_f1": 0.06045847395431136
+          }
+        },
+        {
+          "variant": "no_soil",
+          "leaves": 15,
+          "threshold": 0.0189212504354022,
+          "validation": {
+            "threshold": 0.0189212504354022,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.7546685340802988,
+            "f1": 0.06908768821966342,
+            "precision": 0.038728897715988087,
+            "recall": 0.319672131147541,
+            "roc_auc": 0.5319282186212493,
+            "average_precision": 0.03145585771497972,
+            "brier": 0.0279309176772864,
+            "confusion_matrix": [
+              [
+                3194,
+                968
+              ],
+              [
+                83,
+                39
+              ]
+            ],
+            "macro_site_f1": 0.069008619198777
+          }
+        },
+        {
+          "variant": "all_features",
+          "leaves": 7,
+          "threshold": 0.019618389279943638,
+          "validation": {
+            "threshold": 0.019618389279943638,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.7780112044817927,
+            "f1": 0.06856023506366307,
+            "precision": 0.0389321468298109,
+            "recall": 0.28688524590163933,
+            "roc_auc": 0.5166159869545695,
+            "average_precision": 0.030673516382792802,
+            "brier": 0.02789906655306161,
+            "confusion_matrix": [
+              [
+                3298,
+                864
+              ],
+              [
+                87,
+                35
+              ]
+            ],
+            "macro_site_f1": 0.06837399584371835
+          }
+        },
+        {
+          "variant": "all_features",
+          "leaves": 15,
+          "threshold": 0.01907920595521576,
+          "validation": {
+            "threshold": 0.01907920595521576,
+            "n": 4284,
+            "prevalence": 0.028478057889822595,
+            "accuracy": 0.7532679738562091,
+            "f1": 0.06707855251544571,
+            "precision": 0.03758654797230465,
+            "recall": 0.3114754098360656,
+            "roc_auc": 0.5201707880038758,
+            "average_precision": 0.03106846198586518,
+            "brier": 0.027937221058899675,
+            "confusion_matrix": [
+              [
+                3189,
+                973
+              ],
+              [
+                84,
+                38
+              ]
+            ],
+            "macro_site_f1": 0.06666491126970844
+          }
+        }
+      ],
+      "test": {
+        "threshold": 0.0189212504354022,
+        "n": 5355,
+        "prevalence": 0.028944911297852476,
+        "accuracy": 0.7454715219421102,
+        "f1": 0.06579849211788896,
+        "precision": 0.03680981595092025,
+        "recall": 0.3096774193548387,
+        "roc_auc": 0.569150124069479,
+        "average_precision": 0.036227199497723676,
+        "brier": 0.028302826966305508,
+        "confusion_matrix": [
+          [
+            3944,
+            1256
+          ],
+          [
+            107,
+            48
+          ]
+        ],
+        "macro_site_f1": 0.061305039671695497
+      },
+      "n_train_days": 5508,
+      "n_validation_days": 612,
+      "n_test_days": 765,
+      "baselines": {
+        "persistence": {
+          "threshold": 0.5,
+          "test": {
+            "threshold": 0.5,
+            "n": 5355,
+            "prevalence": 0.028944911297852476,
+            "accuracy": 0.9632119514472456,
+            "f1": 0.010050251256281407,
+            "precision": 0.022727272727272728,
+            "recall": 0.0064516129032258064,
+            "roc_auc": 0.49909119106699745,
+            "average_precision": 0.028904797500622928,
+            "brier": 0.036788048552754436,
+            "confusion_matrix": [
+              [
+                5157,
+                43
+              ],
+              [
+                154,
+                1
+              ]
+            ],
+            "macro_site_f1": 0.015037593984962405
+          }
+        },
+        "climatology": {
+          "threshold": 0.013227513059973717,
+          "test": {
+            "threshold": 0.013227513059973717,
+            "n": 5355,
+            "prevalence": 0.028944911297852476,
+            "accuracy": 0.5204481792717087,
+            "f1": 0.04888888888888889,
+            "precision": 0.02593320235756385,
+            "recall": 0.4258064516129032,
+            "roc_auc": 0.5032413151364764,
+            "average_precision": 0.030394274258885016,
+            "brier": 0.028365297242999077,
+            "confusion_matrix": [
+              [
+                2721,
+                2479
+              ],
+              [
+                89,
+                66
+              ]
+            ],
+            "macro_site_f1": 0.042661531411506255
+          }
+        }
+      },
+      "uncertainty": {
+        "method": "500 paired 7-day moving-block resamples, whole spatial fields",
+        "f1_95_interval": [
+          0.04831896418528476,
+          0.08648125574305121
+        ],
+        "f1_difference_from_persistence_95_interval": [
+          0.03377978794141577,
+          0.0790237325370128
+        ]
+      },
+      "local_thresholds": [
+        0.0189212504354022,
+        0.0189212504354022,
+        0.019648763902690467,
+        0.0189212504354022,
+        0.0189212504354022,
+        0.0189212504354022,
+        0.0189212504354022
+      ],
+      "local_threshold_test": {
+        "threshold": [
+          0.0189212504354022,
+          0.0189212504354022,
+          0.019648763902690467,
+          0.0189212504354022,
+          0.0189212504354022,
+          0.0189212504354022,
+          0.0189212504354022
+        ],
+        "n": 5355,
+        "prevalence": 0.028944911297852476,
+        "accuracy": 0.7495798319327731,
+        "f1": 0.06680584551148225,
+        "precision": 0.0374414976599064,
+        "recall": 0.3096774193548387,
+        "roc_auc": 0.569150124069479,
+        "average_precision": 0.036227199497723676,
+        "brier": 0.028302826966305508,
+        "confusion_matrix": [
+          [
+            3966,
+            1234
+          ],
+          [
+            107,
+            48
+          ]
+        ],
+        "macro_site_f1": 0.0620585417438262
+      }
+    }
+  },
+  "backtests": [
+    {
+      "experiment": "ongoing_lead1",
+      "train_end": 2012,
+      "validation": "2013\u20132016",
+      "test": "2017\u20132020",
+      "selected": {
+        "variant": "no_soil",
+        "leaves": 15,
+        "threshold": 0.2555256039640866,
+        "validation": {
+          "threshold": 0.2555256039640866,
+          "n": 4284,
+          "prevalence": 0.04738562091503268,
+          "accuracy": 0.9757236227824463,
+          "f1": 0.7842323651452282,
+          "precision": 0.6774193548387096,
+          "recall": 0.9310344827586207,
+          "roc_auc": 0.9920247983264993,
+          "average_precision": 0.8385405626039801,
+          "brier": 0.016019364350555624,
+          "confusion_matrix": [
+            [
+              3991,
+              90
+            ],
+            [
+              14,
+              189
+            ]
+          ],
+          "macro_site_f1": 0.7644041053986774
+        }
+      },
+      "test_metrics": {
+        "threshold": 0.2555256039640866,
+        "n": 4284,
+        "prevalence": 0.07026143790849673,
+        "accuracy": 0.96171802054155,
+        "f1": 0.7734806629834254,
+        "precision": 0.6619385342789598,
+        "recall": 0.9302325581395349,
+        "roc_auc": 0.9883516573343689,
+        "average_precision": 0.8232806956145875,
+        "brier": 0.022567072294465956,
+        "confusion_matrix": [
+          [
+            3840,
+            143
+          ],
+          [
+            21,
+            280
+          ]
+        ],
+        "macro_site_f1": 0.7626056648524392
+      }
+    },
+    {
+      "experiment": "onset_lead1",
+      "train_end": 2012,
+      "validation": "2013\u20132016",
+      "test": "2017\u20132020",
+      "selected": {
+        "variant": "no_soil",
+        "leaves": 7,
+        "threshold": 0.10002895618947605,
+        "validation": {
+          "threshold": 0.10002895618947605,
+          "n": 4284,
+          "prevalence": 0.0196078431372549,
+          "accuracy": 0.9635854341736695,
+          "f1": 0.21212121212121213,
+          "precision": 0.18421052631578946,
+          "recall": 0.25,
+          "roc_auc": 0.8644160997732426,
+          "average_precision": 0.11489358555114569,
+          "brier": 0.018270301905170018,
+          "confusion_matrix": [
+            [
+              4107,
+              93
+            ],
+            [
+              63,
+              21
+            ]
+          ],
+          "macro_site_f1": 0.22464447549600824
+        }
+      },
+      "test_metrics": {
+        "threshold": 0.10002895618947605,
+        "n": 4284,
+        "prevalence": 0.028478057889822595,
+        "accuracy": 0.9565826330532213,
+        "f1": 0.2619047619047619,
+        "precision": 0.25384615384615383,
+        "recall": 0.27049180327868855,
+        "roc_auc": 0.8788590762637761,
+        "average_precision": 0.18272711175510303,
+        "brier": 0.025725516448327514,
+        "confusion_matrix": [
+          [
+            4065,
+            97
+          ],
+          [
+            89,
+            33
+          ]
+        ],
+        "macro_site_f1": 0.25639281353567067
+      }
+    }
+  ],
+  "spatial_transfer": [
+    {
+      "experiment": "ongoing_lead1",
+      "held_out_site": "Paris",
+      "selected_variant": "no_soil",
+      "selected_leaves": 15,
+      "protocol": "Nested location holdout: omitted site excluded from supervised training, complexity/feature selection, and cutoff tuning; its historical 1981\u20132010 climate reference is available.",
+      "test": {
+        "threshold": 0.4042397327937753,
+        "n": 765,
+        "prevalence": 0.0718954248366013,
+        "accuracy": 0.9660130718954248,
+        "f1": 0.7833333333333333,
+        "precision": 0.7230769230769231,
+        "recall": 0.8545454545454545,
+        "roc_auc": 0.9900640204865556,
+        "average_precision": 0.8721827407494498,
+        "brier": 0.021393332596768358,
+        "confusion_matrix": [
+          [
+            692,
+            18
+          ],
+          [
+            8,
+            47
+          ]
+        ]
+      }
+    },
+    {
+      "experiment": "ongoing_lead1",
+      "held_out_site": "London",
+      "selected_variant": "no_soil",
+      "selected_leaves": 15,
+      "protocol": "Nested location holdout: omitted site excluded from supervised training, complexity/feature selection, and cutoff tuning; its historical 1981\u20132010 climate reference is available.",
+      "test": {
+        "threshold": 0.3643448437438598,
+        "n": 765,
+        "prevalence": 0.08366013071895424,
+        "accuracy": 0.9647058823529412,
+        "f1": 0.8,
+        "precision": 0.7605633802816901,
+        "recall": 0.84375,
+        "roc_auc": 0.9890558131241084,
+        "average_precision": 0.8609019120260641,
+        "brier": 0.02480214729919298,
+        "confusion_matrix": [
+          [
+            684,
+            17
+          ],
+          [
+            10,
+            54
+          ]
+        ]
+      }
+    },
+    {
+      "experiment": "ongoing_lead1",
+      "held_out_site": "Madrid",
+      "selected_variant": "all_features",
+      "selected_leaves": 15,
+      "protocol": "Nested location holdout: omitted site excluded from supervised training, complexity/feature selection, and cutoff tuning; its historical 1981\u20132010 climate reference is available.",
+      "test": {
+        "threshold": 0.34603460696865224,
+        "n": 765,
+        "prevalence": 0.08888888888888889,
+        "accuracy": 0.9633986928104575,
+        "f1": 0.8227848101265823,
+        "precision": 0.7222222222222222,
+        "recall": 0.9558823529411765,
+        "roc_auc": 0.9888598193940417,
+        "average_precision": 0.8408542949983046,
+        "brier": 0.023741800587381377,
+        "confusion_matrix": [
+          [
+            672,
+            25
+          ],
+          [
+            3,
+            65
+          ]
+        ]
+      }
+    },
+    {
+      "experiment": "ongoing_lead1",
+      "held_out_site": "Rome",
+      "selected_variant": "all_features",
+      "selected_leaves": 15,
+      "protocol": "Nested location holdout: omitted site excluded from supervised training, complexity/feature selection, and cutoff tuning; its historical 1981\u20132010 climate reference is available.",
+      "test": {
+        "threshold": 0.33611602446649874,
+        "n": 765,
+        "prevalence": 0.2261437908496732,
+        "accuracy": 0.9450980392156862,
+        "f1": 0.8852459016393442,
+        "precision": 0.8393782383419689,
+        "recall": 0.9364161849710982,
+        "roc_auc": 0.9831764568036244,
+        "average_precision": 0.9234591880553501,
+        "brier": 0.0476055149380404,
+        "confusion_matrix": [
+          [
+            561,
+            31
+          ],
+          [
+            11,
+            162
+          ]
+        ]
+      }
+    },
+    {
+      "experiment": "ongoing_lead1",
+      "held_out_site": "Athens",
+      "selected_variant": "no_soil",
+      "selected_leaves": 15,
+      "protocol": "Nested location holdout: omitted site excluded from supervised training, complexity/feature selection, and cutoff tuning; its historical 1981\u20132010 climate reference is available.",
+      "test": {
+        "threshold": 0.3175047624003981,
+        "n": 765,
+        "prevalence": 0.044444444444444446,
+        "accuracy": 0.9764705882352941,
+        "f1": 0.7096774193548387,
+        "precision": 0.7857142857142857,
+        "recall": 0.6470588235294118,
+        "roc_auc": 0.9925162951637564,
+        "average_precision": 0.8035418366670342,
+        "brier": 0.019363557498166938,
+        "confusion_matrix": [
+          [
+            725,
+            6
+          ],
+          [
+            12,
+            22
+          ]
+        ]
+      }
+    },
+    {
+      "experiment": "ongoing_lead1",
+      "held_out_site": "Berlin",
+      "selected_variant": "no_soil",
+      "selected_leaves": 15,
+      "protocol": "Nested location holdout: omitted site excluded from supervised training, complexity/feature selection, and cutoff tuning; its historical 1981\u20132010 climate reference is available.",
+      "test": {
+        "threshold": 0.30992620536849813,
+        "n": 765,
+        "prevalence": 0.047058823529411764,
+        "accuracy": 0.9647058823529412,
+        "f1": 0.6896551724137931,
+        "precision": 0.5882352941176471,
+        "recall": 0.8333333333333334,
+        "roc_auc": 0.9871208657216888,
+        "average_precision": 0.7363200470262249,
+        "brier": 0.020426987850774847,
+        "confusion_matrix": [
+          [
+            708,
+            21
+          ],
+          [
+            6,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "experiment": "ongoing_lead1",
+      "held_out_site": "Warsaw",
+      "selected_variant": "no_soil",
+      "selected_leaves": 15,
+      "protocol": "Nested location holdout: omitted site excluded from supervised training, complexity/feature selection, and cutoff tuning; its historical 1981\u20132010 climate reference is available.",
+      "test": {
+        "threshold": 0.37956591536769063,
+        "n": 765,
+        "prevalence": 0.08758169934640522,
+        "accuracy": 0.9607843137254902,
+        "f1": 0.7692307692307693,
+        "precision": 0.7936507936507936,
+        "recall": 0.746268656716418,
+        "roc_auc": 0.9865714407903177,
+        "average_precision": 0.8254709942822565,
+        "brier": 0.029913631456816928,
+        "confusion_matrix": [
+          [
+            685,
+            13
+          ],
+          [
+            17,
+            50
+          ]
+        ]
+      }
+    },
+    {
+      "experiment": "onset_lead1",
+      "held_out_site": "Paris",
+      "selected_variant": "all_features",
+      "selected_leaves": 7,
+      "protocol": "Nested location holdout: omitted site excluded from supervised training, complexity/feature selection, and cutoff tuning; its historical 1981\u20132010 climate reference is available.",
+      "test": {
+        "threshold": 0.07834876605540188,
+        "n": 765,
+        "prevalence": 0.02875816993464052,
+        "accuracy": 0.954248366013072,
+        "f1": 0.4067796610169492,
+        "precision": 0.32432432432432434,
+        "recall": 0.5454545454545454,
+        "roc_auc": 0.9393123699987764,
+        "average_precision": 0.39577316315554173,
+        "brier": 0.024293412094492674,
+        "confusion_matrix": [
+          [
+            718,
+            25
+          ],
+          [
+            10,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "experiment": "onset_lead1",
+      "held_out_site": "London",
+      "selected_variant": "no_soil",
+      "selected_leaves": 7,
+      "protocol": "Nested location holdout: omitted site excluded from supervised training, complexity/feature selection, and cutoff tuning; its historical 1981\u20132010 climate reference is available.",
+      "test": {
+        "threshold": 0.06460016459049678,
+        "n": 765,
+        "prevalence": 0.030065359477124184,
+        "accuracy": 0.9124183006535947,
+        "f1": 0.32323232323232326,
+        "precision": 0.21052631578947367,
+        "recall": 0.6956521739130435,
+        "roc_auc": 0.9190788702683699,
+        "average_precision": 0.24169219347694118,
+        "brier": 0.025807349843540706,
+        "confusion_matrix": [
+          [
+            682,
+            60
+          ],
+          [
+            7,
+            16
+          ]
+        ]
+      }
+    },
+    {
+      "experiment": "onset_lead1",
+      "held_out_site": "Madrid",
+      "selected_variant": "no_soil",
+      "selected_leaves": 7,
+      "protocol": "Nested location holdout: omitted site excluded from supervised training, complexity/feature selection, and cutoff tuning; its historical 1981\u20132010 climate reference is available.",
+      "test": {
+        "threshold": 0.1066637944169391,
+        "n": 765,
+        "prevalence": 0.03398692810457516,
+        "accuracy": 0.9450980392156862,
+        "f1": 0.2222222222222222,
+        "precision": 0.21428571428571427,
+        "recall": 0.23076923076923078,
+        "roc_auc": 0.9032476319350473,
+        "average_precision": 0.20822630365428546,
+        "brier": 0.030176850634486985,
+        "confusion_matrix": [
+          [
+            717,
+            22
+          ],
+          [
+            20,
+            6
+          ]
+        ]
+      }
+    },
+    {
+      "experiment": "onset_lead1",
+      "held_out_site": "Rome",
+      "selected_variant": "no_soil",
+      "selected_leaves": 15,
+      "protocol": "Nested location holdout: omitted site excluded from supervised training, complexity/feature selection, and cutoff tuning; its historical 1981\u20132010 climate reference is available.",
+      "test": {
+        "threshold": 0.06402119016749443,
+        "n": 765,
+        "prevalence": 0.047058823529411764,
+        "accuracy": 0.9071895424836601,
+        "f1": 0.3486238532110092,
+        "precision": 0.2602739726027397,
+        "recall": 0.5277777777777778,
+        "roc_auc": 0.894642584971803,
+        "average_precision": 0.23843217232011774,
+        "brier": 0.041827304498702825,
+        "confusion_matrix": [
+          [
+            675,
+            54
+          ],
+          [
+            17,
+            19
+          ]
+        ]
+      }
+    },
+    {
+      "experiment": "onset_lead1",
+      "held_out_site": "Athens",
+      "selected_variant": "no_soil",
+      "selected_leaves": 7,
+      "protocol": "Nested location holdout: omitted site excluded from supervised training, complexity/feature selection, and cutoff tuning; its historical 1981\u20132010 climate reference is available.",
+      "test": {
+        "threshold": 0.06443984749225809,
+        "n": 765,
+        "prevalence": 0.01568627450980392,
+        "accuracy": 0.9607843137254902,
+        "f1": 0.16666666666666666,
+        "precision": 0.125,
+        "recall": 0.25,
+        "roc_auc": 0.8639884904825144,
+        "average_precision": 0.09003935674649319,
+        "brier": 0.015025180540409645,
+        "confusion_matrix": [
+          [
+            732,
+            21
+          ],
+          [
+            9,
+            3
+          ]
+        ]
+      }
+    },
+    {
+      "experiment": "onset_lead1",
+      "held_out_site": "Berlin",
+      "selected_variant": "no_soil",
+      "selected_leaves": 15,
+      "protocol": "Nested location holdout: omitted site excluded from supervised training, complexity/feature selection, and cutoff tuning; its historical 1981\u20132010 climate reference is available.",
+      "test": {
+        "threshold": 0.05826657544070847,
+        "n": 765,
+        "prevalence": 0.018300653594771243,
+        "accuracy": 0.9281045751633987,
+        "f1": 0.26666666666666666,
+        "precision": 0.16393442622950818,
+        "recall": 0.7142857142857143,
+        "roc_auc": 0.9140194027011603,
+        "average_precision": 0.2404733570113977,
+        "brier": 0.01585556750216246,
+        "confusion_matrix": [
+          [
+            700,
+            51
+          ],
+          [
+            4,
+            10
+          ]
+        ]
+      }
+    },
+    {
+      "experiment": "onset_lead1",
+      "held_out_site": "Warsaw",
+      "selected_variant": "all_features",
+      "selected_leaves": 15,
+      "protocol": "Nested location holdout: omitted site excluded from supervised training, complexity/feature selection, and cutoff tuning; its historical 1981\u20132010 climate reference is available.",
+      "test": {
+        "threshold": 0.05817644019705788,
+        "n": 765,
+        "prevalence": 0.02875816993464052,
+        "accuracy": 0.9450980392156862,
+        "f1": 0.4,
+        "precision": 0.2916666666666667,
+        "recall": 0.6363636363636364,
+        "roc_auc": 0.8986908112076348,
+        "average_precision": 0.2840215232184975,
+        "brier": 0.024852647591619693,
+        "confusion_matrix": [
+          [
+            709,
+            34
+          ],
+          [
+            8,
+            14
+          ]
+        ]
+      }
+    }
+  ],
+  "limitations": [
+    "Seven representative ERA5 land grid cells; Stockholm download was incomplete under archive quota. Northern Europe is not validated; neither complete European coverage nor station observations are provided.",
+    "Retrospective reanalysis hindcast; no operational forecast or real-time availability claim.",
+    "The onset label uses future observations only for verification and is considerably rarer than ongoing events.",
+    "No globally optimal model claim; candidate set is limited and final runs use one deterministic seed.",
+    "The 1981\u20132010 reference is fixed for leakage-free historical tests, not the latest 1991\u20132020 normal.",
+    "This is a revised retrospective benchmark after exploratory work on the original regional data; not a pristine prospective test."
+  ]
+}

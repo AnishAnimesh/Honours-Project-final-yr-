@@ -1,132 +1,109 @@
-# How to Write Your Research Paper
-## A Step-by-Step Guide for Complete Beginners
+# HeatCast: Regional Robustness and Early Warning of European Heatwaves
 
-Good news: you're in a much better position than most people starting a research paper — you already have almost everything you need (problem statement, literature review, results, a case study). Writing the paper now is mostly about **organizing what you already have into the right structure**, not creating new content from scratch.
+## Abstract
 
----
+We investigate how forecast lead, event definition and geography affect heatwave prediction in a reproducible multi-location ERA5 experiment. A downloaded 1981–2025 dataset covers seven representative European land grid cells and six meteorological variables. Local hot-day thresholds use the fixed 1981–2010 reference and a five-calendar-day 90th-percentile window. Ongoing-event and first-day-onset targets are evaluated at one-, three- and seven-day lead. Training ends in 2016; model selection uses 2017–2020; final evaluation covers 2021–2025. A six-candidate gradient-boosting comparison, matched one-day logistic/LSTM baselines, earlier temporal backtesting, nested location holdout, and dependence-aware uncertainty are reported. Primary one-day gradient boosting obtains ongoing F1 0.820 and onset F1 0.296. The study emphasizes regional failure detection and honest separation of sustained-event prediction from advance onset warning. Results describe a retrospective seven-location benchmark and do not establish full-European or operational real-time warning performance.
 
-## 1. The Standard Structure (IMRAD)
+## 1. Research question and contribution
 
-Nearly all research papers follow the same skeleton, called **IMRAD**:
+The original project asked whether recent temperature, pressure and soil moisture could predict ongoing heatwave conditions in a France-centred grid. Its corrected experiment is preserved in `results/REPORT.md`. The expanded question is: **how well do observation-only models forecast sustained hot conditions and the beginning of a new event, across locations and lead times, and where do they fail?**
 
-| Section | What it means | What goes here |
-|---|---|---|
-| **I** — Introduction | Why does this matter? | Problem, motivation, objectives |
-| **M** — Methods | What did you do? | Data, model, methodology |
-| **R** — Results | What did you find? | Tables, numbers, case study |
-| **A** — And | (silent, just connects) | — |
-| **D** — Discussion | What does it mean? | Interpretation, limitations, conclusion |
+The contribution is a reproducible evaluation design and implemented benchmark. Longer history addresses the unstable three-summer climate reference. Broader locations expose geographic weaknesses. Macro-site model selection gives locations equal weight. Multiple leads and an onset target test a harder warning objective than predicting an event already underway. Temporal and location holdouts test different forms of generalization. This is not a claim of a novel neural architecture or globally best prediction system.
 
-Plus a few extra pieces around this core: **Title, Abstract, Literature Review, References.**
+## 2. Research basis
 
-Here's the full paper structure in order:
+ERA5 provides retrospective climate fields [1]. The Open-Meteo archive offers programmatic access; its guidance recommends an explicit ERA5/ERA5-Land choice for consistent long-term studies [2]. WMO documents 30-year climate reference periods [3]. We use 1981–2010 because it precedes every development/test boundary, rather than applying a newer baseline containing future years to earlier backtests.
 
-1. Title
-2. Abstract
-3. Introduction
-4. Literature Review / Related Work
-5. Methodology
-6. Results
-7. Discussion
-8. Conclusion & Future Work
-9. References
+Percentile thresholds with calendar windows are established in climate indices [4]. Our three-day event rule is project-specific; it must not be called the six-day ETCCDI warm-spell duration index. Blocked validation addresses the temporal and spatial structure of environmental data, consistent with the issues discussed by Roberts et al. [5]. Probability verification uses discrimination, Brier score and reliability plots, drawing on the separate roles of calibration and discrimination discussed by Dimitriadis et al. [6]. We do not implement their CORP procedure and do not claim equivalent guarantees.
 
----
+## 3. Data
 
-## 2. Section-by-Section: What to Write and Where You Already Have It
+We downloaded daily ERA5 values for 1981–2025 at Paris, London, Madrid, Rome, Athens, Berlin and Warsaw. The variables are daily maximum/minimum 2m temperature, mean sea-level pressure, mean top-layer soil moisture, mean relative humidity and precipitation sum. API requests specify `models=era5`, UTC days, land-cell selection and disabled elevation downscaling. JSON responses, actual returned grid coordinates and units, request parameters, timestamps and hashes are retained. Dates and finite values are checked before model fitting. These are reanalysis grid-cell series, not city weather-station measurements.
 
-### **Title**
-Use what we already crafted: *"Deep Learning-Based Forecasting of European Heat Waves Using ERA5 Reanalysis Data"*
+The spatial design is deliberately a set of contrasting European locations rather than full-grid Europe. Geographic group names are descriptive and do not establish formal climate-zone membership. The original 37 × 53 France-centred grid remains available for a separate spatial error audit.
 
-### **Abstract** (150-250 words)
-A mini-summary of the entire paper, written **last** (after everything else is done). One sentence for each of: problem, method, key result, conclusion. Example skeleton:
+## 4. Methods
 
-> "Heat waves in Europe have become more frequent and severe due to climate change, yet accurate early prediction remains challenging. This study applies deep learning — specifically LSTM and ConvLSTM architectures — to forecast heat wave occurrence using ERA5 reanalysis data (temperature, pressure, soil moisture) across a European region from 2020-2026. The ConvLSTM model achieved an AUC of 0.851, substantially outperforming a single-location LSTM (AUC 0.729) and simple baselines. A case study on the August 2026 heat wave revealed that while the model localizes moderate events well, it underpredicts unprecedented, large-scale events — highlighting a key limitation of historical data-driven approaches in an accelerating climate. These findings [contribute to / support] the growing body of work applying deep learning to climate early-warning systems."
+For each site, the hot-day threshold is the 90th percentile from 1981–2010 in a centred five-calendar-day window. February 29 shares February 28's threshold while retaining its actual date in sequences. Thresholds are fixed before forecasting periods. Ongoing labels mark the third and subsequent consecutive hot days. Onset labels mark the first hot day of a run lasting at least three days after a non-hot day. Future temperatures enter onset verification only. Evaluation targets fall in May–September; context observations and verification can extend into neighbouring months.
 
-### **Introduction** (~1-1.5 pages)
-You already have this — it's your **problem statement**, expanded slightly:
-- Open with why heat waves matter (climate change context, 2026 events)
-- State the problem (hard to predict, especially at longer lead times)
-- State your objective/research question clearly
-- Briefly preview your approach and key finding (1-2 sentences)
-- End with a one-sentence "roadmap": *"The remainder of this paper is organized as follows: Section 2 reviews related work, Section 3 describes the methodology..."*
+For a target on day d and lead L, the latest observation is day d−L. Features include temperature anomalies, minimum temperature, pressure, humidity and soil moisture at predefined lags; rolling temperature and precipitation summaries; a temperature-anomaly change; fixed local thresholds; calendar harmonics; and coordinates. Temperature-only and no-soil variants form controlled predictive comparisons. No target-day or later weather enters inputs. Labels requiring future verification are embargoed at split boundaries.
 
-### **Literature Review** (~1-2 pages)
-You already have this too — it's your **literature review document**, expanded into paragraph form (not bullet points, for a formal paper). Organize by theme, not by paper:
-- Paragraph 1: Statistical/feature-selection approaches (the Nature paper)
-- Paragraph 2: ConvLSTM/spatiotemporal approaches (your closest architecture reference)
-- Paragraph 3: Subseasonal prediction approaches
-- Paragraph 4: The gap your paper addresses (real-event case study testing, which is less common)
+Primary model development trains through 2016 and validates on 2017–2020. The final test covers 2021–2025. Each task/lead compares histogram gradient boosting with 7 or 15 leaves and three feature sets, at 160 iterations, learning rate 0.07 and L2 penalty 10. Classification cutoffs maximize pooled validation F1; candidate selection uses equal-weight macro-site validation F1. One-day logistic regression and a 14-day LSTM use matched dates/sites. The LSTM has seven inputs, 32 hidden units, training-only scaling, at most 20 epochs and validation-loss early stopping. These models are comparisons, not guarantees of neural superiority.
 
-### **Methodology** (~1.5-2 pages)
-You already have all of this from your notebook work — just describe it in prose instead of code:
-- **Data:** ERA5 source, variables used, region, time period, how it was cleaned
-- **Heat wave definition:** the 90th percentile + 3-day rule, with justification
-- **Models:** describe LSTM architecture (input window, hidden units, layers), then ConvLSTM architecture (same, plus how it handles spatial data)
-- **Training details:** loss function (BCEWithLogitsLoss with class weighting), optimizer, train/val/test split strategy (and why you split by time, not randomly)
-- **Evaluation metrics:** accuracy, F1, AUC — and *why* accuracy alone is insufficient (your climatology baseline finding is great justification here)
+Temperature persistence holds the last observed maximum temperature constant for unknown days and applies the known local thresholds/event rule, retaining actual observations where available. It never lags retrospective onset labels. Climatology uses training-only seasonal event frequencies. Site-specific cutoffs are a secondary experiment, fitted from validation only with a 20-positive minimum.
 
-### **Results** (~1.5-2 pages)
-You already have this — it's your comparison table and case study, described in prose + tables/figures:
-- Present the baseline comparison table
-- Present the ablation study table
-- Present the case study (August 2026) with your saved figures
-- **Important: in this section, only report findings — don't interpret them yet.** ("The ConvLSTM achieved an AUC of 0.851, compared to 0.729 for the LSTM" — not "this proves ConvLSTM is better because...")
+An earlier one-day backtest trains through 2012, validates in 2013–2016 and tests 2017–2020. Nested leave-one-location-out experiments exclude the omitted site from supervised fitting, model selection and cutoff tuning while retaining its historical climate reference. Whole-day training resamples assess sample sensitivity. Paired seven-day blocks retain all seven locations together for 500 conditional uncertainty replicates. Because model development and test years are finite, these checks do not remove all uncertainty.
 
-### **Discussion** (~1-1.5 pages)
-This is where you **interpret** the results — the "so what?" section:
-- Why does ConvLSTM outperform LSTM? (spatial context, more training examples)
-- Why does persistence beat both deep learning models? (heat waves are multi-day by nature)
-- Why did the model fail on August 4th specifically? (unprecedented event, outside training distribution — tie this back to your literature review's identified gap)
-- Limitations (small dataset, limited years, compute constraints, region size)
+## 5. Results
 
-### **Conclusion & Future Work** (~0.5 page)
-- Restate your research question and answer it directly in 1-2 sentences
-- Summarize the key finding (ConvLSTM works reasonably well for typical events, struggles with extremes)
-- List 2-3 concrete future directions (more years of data, transformer architectures, coastal region with SST)
+| experiment | model | validation_macro_f1 | f1 | macro_site_f1 | average_precision | roc_auc | brier |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| ongoing_lead1 | gradient_boosting | 0.7992 | 0.8199 | 0.7988 | 0.8754 | 0.9895 | 0.0248 |
+| ongoing_lead1 | logistic | 0.6919 | 0.7250 | 0.6877 | 0.7275 | 0.9743 | 0.0398 |
+| ongoing_lead1 | lstm | 0.7344 | 0.7701 | 0.7431 | 0.7876 | 0.9822 | 0.0375 |
+| onset_lead1 | gradient_boosting | 0.2926 | 0.2961 | 0.2921 | 0.2123 | 0.9123 | 0.0256 |
+| onset_lead1 | logistic | 0.1233 | 0.1137 | 0.1144 | 0.0560 | 0.7432 | 0.0283 |
+| onset_lead1 | lstm | 0.2243 | 0.2181 | 0.1955 | 0.1385 | 0.8639 | 0.0375 |
+| ongoing_lead3 | gradient_boosting | 0.3852 | 0.4623 | 0.4168 | 0.4236 | 0.8888 | 0.0684 |
+| onset_lead3 | gradient_boosting | 0.0989 | 0.0597 | 0.0546 | 0.0421 | 0.6083 | 0.0282 |
+| ongoing_lead7 | gradient_boosting | 0.1568 | 0.2196 | 0.1678 | 0.1768 | 0.6489 | 0.0846 |
+| onset_lead7 | gradient_boosting | 0.0690 | 0.0658 | 0.0613 | 0.0362 | 0.5692 | 0.0283 |
 
-### **References**
-List every paper from your literature review in proper citation format (ask your guide which style — IEEE, APA, or your university's required format). Include the ERA5 paper (Hersbach et al., 2020) since you cited that dataset throughout.
+Primary gradient boosting ongoing one-day F1 is 0.820; its matched temperature-persistence F1 is 0.804. The first-day-onset model obtains F1 0.296; that task's rarity and future-duration requirement make it a different forecasting problem. Metrics must not be compared directly with the original-grid F1 0.851 because reference, sites, period and labels differ.
 
----
+![Figure 1. Forecast skill by lead time.](results/research/lead_time_skill.png)
 
-## 3. Practical Writing Tips (Since You're New to This)
+The three lowest ongoing one-day site F1 scores are shown below; all sites remain in pooled and macro outcomes.
 
-1. **Write sections in this order, not top-to-bottom:** Methods → Results → Discussion → Introduction → Literature Review → Conclusion → Abstract. It's much easier to write the Introduction once you already know exactly what you found.
+| site | test_positive_days | f1 | recall | persistence_f1 | local_threshold_f1 |
+| --- | --- | --- | --- | --- | --- |
+| Berlin | 36 | 0.6905 | 0.8056 | 0.6538 | 0.7436 |
+| London | 64 | 0.7591 | 0.8125 | 0.7799 | 0.6909 |
+| Warsaw | 67 | 0.8027 | 0.8806 | 0.7719 | 0.8148 |
 
-2. **Every claim needs support.** Don't just say "the model performed well" — say "the model achieved an AUC of 0.851, indicating strong discriminative ability." Numbers, not adjectives.
+![Figure 2. Geographic performance differences.](results/research/regional_skill.png)
 
-3. **Use past tense for what you did** ("We trained a ConvLSTM model...") and **present tense for established facts** ("Heat waves are associated with increased mortality...").
+The original grid audit separately finds geographic differences while preserving its original test forecasts. Its fixed southwest quadrant has F1 approximately 0.805 compared with 0.871 in the southeast; all four quadrants exceed their matched persistence baseline in that experiment. These are geographic bins, not formal climate regions.
 
-4. **Figures and tables need captions and in-text references.** Every table/figure should be numbered (Table 1, Figure 1) and mentioned in the text ("As shown in Table 1, the ConvLSTM outperformed...").
+Earlier temporal backtest results:
 
-5. **Avoid "I" — use "we" or passive voice** in most academic writing (check your guide's preference, some fields now accept "I" more).
+| experiment | test | f1 | macro_f1 |
+| --- | --- | --- | --- |
+| ongoing_lead1 | 2017–2020 | 0.7735 | 0.7626 |
+| onset_lead1 | 2017–2020 | 0.2619 | 0.2564 |
 
-6. **Don't hide weak results — explain them.** Your August 4th failure case is actually one of the *strongest* parts of your paper if written well, because it shows real scientific understanding, not just "my model works."
+![Figure 3. Supervised transfer to a site excluded from model development.](results/research/spatial_transfer.png)
 
-7. **Length:** ask your guide for an expected page count — this varies hugely by program (could be 6 pages, could be 20+). Everything above scales up or down based on that.
+The full machine-readable regional, annual, feature-selection, transfer and training-sensitivity tables are saved in `results/research/`. Uncertainty intervals are reported in `results/research/REPORT.md` together with probability diagnostics. Negative findings at longer leads or individual sites are retained.
 
----
+## 6. Discussion
 
-## 4. Suggested Order of Work
+The primary one-day ongoing model's paired F1-difference interval includes zero, so this expanded study does not establish a robust improvement over temperature persistence. Ongoing-event prediction benefits from observed hot-day continuity; onset warning requires correctly anticipating both the first hot day and subsequent duration. These tasks should not share a single unqualified accuracy claim. Likewise, a strong pooled score can conceal weak regions, motivating equal-site model selection and explicit local support counts.
 
-1. Write **Methodology** first (easiest — just describe what you already built)
-2. Write **Results** next (also easy — just present your tables/figures)
-3. Write **Discussion** (interpret what you found — use the explanations we've already worked through together)
-4. Write **Introduction** (now that you know your full story)
-5. Expand your **Literature Review** into paragraph form
-6. Write **Conclusion**
-7. Write **Abstract** last
-8. Format **References** properly
-9. Proofread the whole thing top to bottom
+Feature-set comparisons measure predictive usefulness under this design. They do not establish soil-moisture causality or validate an explanation of errors through climate change. Site-specific cutoffs can respond to regional base-rate differences but may overfit small validation event counts. Their test results are reported without choosing a policy after inspecting them. A longer climate reference improves threshold stability but cannot guarantee forecast skill in every location.
 
----
+The transfer experiment has access to local past climatology. It tests the absence of local supervised training examples, not the absence of all local historical information. Seven sites are insufficient to claim complete regional coverage, and related locations do not form independent climate experiments. Earlier and later temporal folds overlap in development data; training resamples quantify sample sensitivity rather than new independent climates.
 
-## What I Can Help With Next
+## 7. Limitations and next steps
 
-- Draft any individual section in full prose, using everything we've built together
-- Convert your literature review bullet points into proper academic paragraphs
-- Help format references in a specific citation style
-- Review a draft you write yourself and suggest improvements
+- Seven representative ERA5 land grid cells; Stockholm download was incomplete under archive quota. Northern Europe is not validated; neither complete European coverage nor station observations are provided.
+- Retrospective reanalysis hindcast; no operational forecast or real-time availability claim.
+- The onset label uses future observations only for verification and is considerably rarer than ongoing events.
+- No globally optimal model claim; candidate set is limited and final runs use one deterministic seed.
+- The 1981–2010 reference is fixed for leakage-free historical tests, not the latest 1991–2020 normal.
+- This is a revised retrospective benchmark after exploratory work on the original regional data; not a pristine prospective test.
 
-Want to start by drafting the Methodology section together, since that's usually the easiest one to begin with?
+A stronger subsequent study would use a denser spatial design with official geographic/land metadata, independently observed verification, nested buffered geographic blocks, longer prospective verification, and numerical-weather-forecast inputs available at issue time. An operational product would need to account for ERA5 publication delay and verify real forecast issuance rather than retrospectively available fields.
+
+## 8. Conclusion
+
+The completed extension moves the project from a short regional experiment to a documented long-history, multi-location benchmark with explicit early-warning targets. Its value is the reproducible data acquisition, transparent selection, matched comparisons and characterization of where and when skill fails. Claims of universally higher performance or operational warning capability are not supported by this experiment.
+
+## References
+
+1. Hersbach et al. (2020). The ERA5 global reanalysis. https://doi.org/10.1002/qj.3803
+2. Open-Meteo. Historical Weather API, fixed-model data and aggregation guidance. https://open-meteo.com/en/docs/historical-weather-api
+3. WMO. Climatological Normals. https://wmo.int/wmo-climatological-normals
+4. Environment and Climate Change Canada. Definitions of core climate extreme indices. https://climate-scenarios.canada.ca/?page=climdex-indices
+5. Roberts et al. (2017). Cross-validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure. https://doi.org/10.1111/ecog.02881
+6. Dimitriadis, Gneiting, Jordan and Vogel (2024). Evaluating probabilistic classifiers: The triptych. https://doi.org/10.1016/j.ijforecast.2023.09.007
