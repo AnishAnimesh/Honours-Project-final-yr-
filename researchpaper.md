@@ -95,6 +95,25 @@ The transfer experiment has access to local past climatology. It tests the absen
 
 A stronger subsequent study would use a denser spatial design with official geographic/land metadata, independently observed verification, nested buffered geographic blocks, longer prospective verification, and numerical-weather-forecast inputs available at issue time. An operational product would need to account for ERA5 publication delay and verify real forecast issuance rather than retrospectively available fields.
 
+<!-- issued-forecast-extension:start -->
+## Archived issued-forecast extension
+
+An additional experiment now replays explicit archived NOAA GFS Global runs during summer 2026. Warnings are issued at 00 UTC using the previous day's 00 UTC initialization, with a 12-hour assumed publication allowance and a further 12-hour buffer. Actual warning leads are 24, 72 and 168 hours to the start of the target UTC day; initialization leads are 48, 96 and 192 hours. This conservative availability policy uses one frozen run for the complete event trajectory, without later-run or future-ERA5 input.
+
+Early-summer development targets (May 1–June 22) define joint forecast-error scenarios and classification cutoffs. Verification required by development is allowed to become available before the June 30 freeze. All test warnings for the common July 8–September 30 target period are issued after the freeze. Incomplete archived runs cause matched-case exclusions documented in the report.
+
+| task | raw_gfs_f1 | adjusted_f1 |
+| --- | --- | --- |
+| ongoing_lead1 | 0.7715 | 0.7744 |
+| onset_lead1 | 0.3774 | 0.3896 |
+| ongoing_lead3 | 0.7068 | 0.7132 |
+| onset_lead3 | 0.3077 | 0.3409 |
+| ongoing_lead7 | 0.6259 | 0.5581 |
+| onset_lead7 | 0.1154 | 0.0833 |
+
+The experiment verifies against ERA5 and records every initialization, assumed availability, issue time, target and outcome. Historical delivery timestamps are unavailable, so the replay is conditional on the publication-buffer assumption. It is not a prospective deployment. The earlier 2024–2025 ECMWF single-run archive is described by the provider as hindcasts and was excluded from this evidence. See the [full issued-forecast report](results/issued_forecasts/REPORT.md), [timing protocol](ISSUED_FORECAST_PROTOCOL.md), and [archive documentation](https://open-meteo.com/en/docs/single-runs-api).
+<!-- issued-forecast-extension:end -->
+
 ## 8. Conclusion
 
 The completed extension moves the project from a short regional experiment to a documented long-history, multi-location benchmark with explicit early-warning targets. Its value is the reproducible data acquisition, transparent selection, matched comparisons and characterization of where and when skill fails. Claims of universally higher performance or operational warning capability are not supported by this experiment.

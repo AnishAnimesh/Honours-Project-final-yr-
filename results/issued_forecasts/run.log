@@ -1,0 +1,6 @@
+ongoing_lead1: raw F1=0.772; adjusted F1=0.774; positive location-days=105
+onset_lead1: raw F1=0.377; adjusted F1=0.390; positive location-days=23
+ongoing_lead3: raw F1=0.707; adjusted F1=0.713; positive location-days=105
+onset_lead3: raw F1=0.308; adjusted F1=0.341; positive location-days=23
+ongoing_lead7: raw F1=0.626; adjusted F1=0.558; positive location-days=105
+onset_lead7: raw F1=0.115; adjusted F1=0.083; positive location-days=23
