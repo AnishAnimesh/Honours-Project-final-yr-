@@ -212,10 +212,6 @@ The completed extension moves the project from a short regional experiment to a 
 6. Dimitriadis, Gneiting, Jordan and Vogel (2024). Evaluating probabilistic classifiers: The triptych. https://doi.org/10.1016/j.ijforecast.2023.09.007
 '''
     Path('researchpaper.md').write_text(manuscript)
-    issued=Path('results/issued_forecasts/metrics.json')
-    if issued.exists():
-        from .issued_report import append_manuscript_section
-        append_manuscript_section(json.loads(issued.read_text()),issued.parent)
 
 
 def main():

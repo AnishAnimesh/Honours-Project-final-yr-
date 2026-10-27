@@ -4,44 +4,6 @@ The expanded research project downloads **45 years of ERA5 daily data (1981–20
 
 Start with the [expanded research report](results/research/REPORT.md), [research manuscript](researchpaper.md), and [predeclared protocol](RESEARCH_PROTOCOL.md). The original France-grid experiment is preserved below and in [its report](results/REPORT.md); its scores describe a different task/domain and cannot be compared directly with the expanded benchmark.
 
-## Interactive HeatCast Observatory
-
-Private hosted UI: https://heatcast-observatory.abloomknoll1026.chatgpt.site
-
-The project now includes a responsive presentation UI in [web/heatcast-observatory](web/heatcast-observatory/README.md). It connects to the actual saved probabilities, ERA5 outcomes, GFS temperature trajectories and regional metrics, with selectors for location, date, lead and event type. It includes an interactive European map, keyboard-accessible temperature chart, warning timeline, regional atlas, research guide and CSV exports.
-
-```bash
-python3 -m http.server 8787 --bind 127.0.0.1 --directory web/heatcast-observatory/dist
-```
-
-Open http://127.0.0.1:8787. The archived GFS and climate-model studies are clearly labelled as historical. A separate live tab fetches the latest GFS weather feed, records retrieval time and never displays a future observed outcome. Outside the validated May–September season, live mode shows temperatures without an event probability. The latest-feed adjustment remains experimental and differs from the frozen-run benchmark.
-
-The UI’s data exporter and verification commands are documented in its README. All 35,700 exported model outputs match the source artifacts; the browser implementation reproduces all 3,570 archived empirical-model calculations exactly.
-
-## Archived forecasts issued before the event
-
-The [issued-forecast evaluation](results/issued_forecasts/REPORT.md) now replays **150 explicitly initialized GFS runs from 2026** at the seven locations. Warnings use a previous-day 00 UTC run at a 00 UTC decision, giving a conservative 24-hour buffer after initialization. Actual warning leads are 24, 72 and 168 hours. Every event trajectory comes from the same run. Historical receipt times are unavailable, so the replay states its publication assumption explicitly.
-
-Development targets are May 1–June 22, with error corrections and cutoffs frozen June 30 after the assumed ERA5 verification delay. Common test targets are July 8–September 30. A June 11 archive gap excludes three development target dates across all leads; all 85 test target dates are retained. Scores cover this separate 2026 experiment and are not directly comparable with the 2021–2025 reanalysis-history scores.
-
-| Warning lead | Raw GFS ongoing-event F1 | Raw GFS onset F1 | Adjusted ongoing F1 | Adjusted onset F1 |
-| --- | --- | --- | --- | --- |
-| 1 day | 0.772 | 0.377 | 0.774 | 0.390 |
-| 3 days | 0.707 | 0.308 | 0.713 | 0.341 |
-| 7 days | 0.626 | 0.115 | 0.558 | 0.083 |
-
-The adjustment uses development-only joint forecast errors. It increases false alerts in several cases and worsens seven-day ongoing F1 in this experiment. Full hits, misses, regional scores, uncertainty and warning timestamps are saved. This demonstrates an archived warning replay against ERA5 under stated timing assumptions; it does not establish prospective service delivery or station-level verification.
-
-```bash
-python -m heatcast.download_issued
-python -m heatcast.issued_evaluation
-python -m unittest discover -s tests -p test_issued_protocol.py -v
-python tests/check_issued_artifacts.py
-python -m heatcast.issued_forecast --issue 2026-07-25 --lead 7 --task onset --output results/issued_forecasts/example_warning.csv
-```
-
-See the [issued-forecast timing protocol](ISSUED_FORECAST_PROTOCOL.md), [data provenance](data/issued_forecasts/README.md), and [all warning decisions](results/issued_forecasts/warning_audit.csv). Warning inference uses only frozen forecast arrays, historical thresholds and the earlier development error bank. Recent ERA5 fields are not inserted into the original ML inputs as if they were already published.
-
 ## Expanded project objectives
 
 1. Acquire and verify a complete long-history, multi-location weather dataset with reproducible provenance.
