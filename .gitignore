@@ -16,3 +16,9 @@ results/preprocessing.npz
 data/europe_sites/*.json
 !data/europe_sites/manifest.json
 data/europe_sites/*.npz
+
+# Archived forecast responses and prepared arrays; manifest is versioned.
+data/issued_forecasts/*.json
+!data/issued_forecasts/manifest.json
+data/issued_forecasts/runs/
+data/issued_forecasts/*.npz
