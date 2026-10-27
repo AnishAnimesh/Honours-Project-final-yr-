@@ -4,6 +4,20 @@ The expanded research project downloads **45 years of ERA5 daily data (1981–20
 
 Start with the [expanded research report](results/research/REPORT.md), [research manuscript](researchpaper.md), and [predeclared protocol](RESEARCH_PROTOCOL.md). The original France-grid experiment is preserved below and in [its report](results/REPORT.md); its scores describe a different task/domain and cannot be compared directly with the expanded benchmark.
 
+## Interactive HeatCast Observatory
+
+Private hosted UI: https://heatcast-observatory.abloomknoll1026.chatgpt.site
+
+The project now includes a responsive presentation UI in [web/heatcast-observatory](web/heatcast-observatory/README.md). It connects to the actual saved probabilities, ERA5 outcomes, GFS temperature trajectories and regional metrics, with selectors for location, date, lead and event type. It includes an interactive European map, keyboard-accessible temperature chart, warning timeline, regional atlas, research guide and CSV exports.
+
+```bash
+python3 -m http.server 8787 --bind 127.0.0.1 --directory web/heatcast-observatory/dist
+```
+
+Open http://127.0.0.1:8787. The archived GFS and climate-model studies are clearly labelled as historical. A separate live tab fetches the latest GFS weather feed, records retrieval time and never displays a future observed outcome. Outside the validated May–September season, live mode shows temperatures without an event probability. The latest-feed adjustment remains experimental and differs from the frozen-run benchmark.
+
+The UI’s data exporter and verification commands are documented in its README. All 35,700 exported model outputs match the source artifacts; the browser implementation reproduces all 3,570 archived empirical-model calculations exactly.
+
 ## Archived forecasts issued before the event
 
 The [issued-forecast evaluation](results/issued_forecasts/REPORT.md) now replays **150 explicitly initialized GFS runs from 2026** at the seven locations. Warnings use a previous-day 00 UTC run at a 00 UTC decision, giving a conservative 24-hour buffer after initialization. Actual warning leads are 24, 72 and 168 hours. Every event trajectory comes from the same run. Historical receipt times are unavailable, so the replay states its publication assumption explicitly.
