@@ -1,0 +1,10 @@
+{
+  "project_id": "appgprj_6ae0bd5dd01481919e264e3061bbcad4",
+  "version_id": "appgprj_6ae0bd5dd01481919e264e3061bbcad4~appgver_aa52ae9ed2f0819187565985c7dbf0e6",
+  "deployment_id": "appgdep_6ae0c6711870819199d1b20149eae6cb",
+  "status": "succeeded",
+  "url": "https://heatcast-observatory.abloomknoll1026.chatgpt.site",
+  "commit_sha": "2938c19b085a49aacb4a898bcaec511afb1fc49e",
+  "source_directory": "web/heatcast-observatory",
+  "browser_review": "User requested to review browser manually"
+}
