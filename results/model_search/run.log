@@ -1,0 +1,254 @@
+ongoing_lead1 original_temperature_only_7: OOF macro F1=0.720
+ongoing_lead1 original_temperature_only_15: OOF macro F1=0.728
+ongoing_lead1 original_no_soil_7: OOF macro F1=0.744
+ongoing_lead1 original_no_soil_15: OOF macro F1=0.749
+ongoing_lead1 original_all_features_7: OOF macro F1=0.743
+ongoing_lead1 original_all_features_15: OOF macro F1=0.756
+ongoing_lead1 engineered_matched_15: OOF macro F1=0.739
+ongoing_lead1 hist_0: OOF macro F1=0.744
+ongoing_lead1 hist_1: OOF macro F1=0.735
+ongoing_lead1 hist_2: OOF macro F1=0.746
+ongoing_lead1 xgboost_0: OOF macro F1=0.760
+ongoing_lead1 xgboost_1: OOF macro F1=0.734
+ongoing_lead1 xgboost_2: OOF macro F1=0.741
+ongoing_lead1 catboost_0: OOF macro F1=0.727
+ongoing_lead1 catboost_1: OOF macro F1=0.736
+ongoing_lead1 catboost_2: OOF macro F1=0.731
+ongoing_lead1 lightgbm_0: OOF macro F1=0.734
+ongoing_lead1 lightgbm_1: OOF macro F1=0.745
+ongoing_lead1 lightgbm_2: OOF macro F1=0.733
+ongoing_lead1 extra_trees_0: OOF macro F1=0.729
+ongoing_lead1 extra_trees_1: OOF macro F1=0.723
+ongoing_lead1 extra_trees_2: OOF macro F1=0.735
+ongoing_lead1 random_forest_0: OOF macro F1=0.739
+ongoing_lead1 random_forest_1: OOF macro F1=0.720
+ongoing_lead1 random_forest_2: OOF macro F1=0.718
+/Users/aryansanganti/.matplotlib is not a writable directory
+Matplotlib created a temporary cache directory at /var/folders/pq/k8fvxk5j64q88rhcx7dsqp040000gn/T/matplotlib-_5iotut4 because there was an issue with the default path ({configdir}); it is highly recommended to set the MPLCONFIGDIR environment variable to a writable directory, in particular to speed up the import of Matplotlib and to better support multiprocessing.
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+FINISHED ongoing_lead1: F1 champion xgboost_0; accuracy champion xgboost_0
+onset_lead1 original_temperature_only_7: OOF macro F1=0.170
+onset_lead1 original_temperature_only_15: OOF macro F1=0.152
+onset_lead1 original_no_soil_7: OOF macro F1=0.212
+onset_lead1 original_no_soil_15: OOF macro F1=0.204
+onset_lead1 original_all_features_7: OOF macro F1=0.198
+onset_lead1 original_all_features_15: OOF macro F1=0.199
+onset_lead1 engineered_matched_15: OOF macro F1=0.197
+onset_lead1 hist_0: OOF macro F1=0.194
+onset_lead1 hist_1: OOF macro F1=0.183
+onset_lead1 hist_2: OOF macro F1=0.187
+onset_lead1 xgboost_0: OOF macro F1=0.190
+onset_lead1 xgboost_1: OOF macro F1=0.203
+onset_lead1 xgboost_2: OOF macro F1=0.215
+onset_lead1 catboost_0: OOF macro F1=0.222
+onset_lead1 catboost_1: OOF macro F1=0.205
+onset_lead1 catboost_2: OOF macro F1=0.203
+onset_lead1 lightgbm_0: OOF macro F1=0.194
+onset_lead1 lightgbm_1: OOF macro F1=0.215
+onset_lead1 lightgbm_2: OOF macro F1=0.182
+onset_lead1 extra_trees_0: OOF macro F1=0.194
+onset_lead1 extra_trees_1: OOF macro F1=0.198
+onset_lead1 extra_trees_2: OOF macro F1=0.190
+onset_lead1 random_forest_0: OOF macro F1=0.217
+onset_lead1 random_forest_1: OOF macro F1=0.197
+onset_lead1 random_forest_2: OOF macro F1=0.188
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+FINISHED onset_lead1: F1 champion ensemble_top3; accuracy champion hist_0
+ongoing_lead3 original_temperature_only_7: OOF macro F1=0.292
+ongoing_lead3 original_temperature_only_15: OOF macro F1=0.284
+ongoing_lead3 original_no_soil_7: OOF macro F1=0.356
+ongoing_lead3 original_no_soil_15: OOF macro F1=0.357
+ongoing_lead3 original_all_features_7: OOF macro F1=0.361
+ongoing_lead3 original_all_features_15: OOF macro F1=0.350
+ongoing_lead3 engineered_matched_15: OOF macro F1=0.348
+ongoing_lead3 hist_0: OOF macro F1=0.317
+ongoing_lead3 hist_1: OOF macro F1=0.310
+ongoing_lead3 hist_2: OOF macro F1=0.322
+ongoing_lead3 xgboost_0: OOF macro F1=0.355
+ongoing_lead3 xgboost_1: OOF macro F1=0.346
+ongoing_lead3 xgboost_2: OOF macro F1=0.350
+ongoing_lead3 catboost_0: OOF macro F1=0.335
+ongoing_lead3 catboost_1: OOF macro F1=0.320
+ongoing_lead3 catboost_2: OOF macro F1=0.347
+ongoing_lead3 lightgbm_0: OOF macro F1=0.318
+ongoing_lead3 lightgbm_1: OOF macro F1=0.353
+ongoing_lead3 lightgbm_2: OOF macro F1=0.319
+ongoing_lead3 extra_trees_0: OOF macro F1=0.345
+ongoing_lead3 extra_trees_1: OOF macro F1=0.348
+ongoing_lead3 extra_trees_2: OOF macro F1=0.339
+ongoing_lead3 random_forest_0: OOF macro F1=0.358
+ongoing_lead3 random_forest_1: OOF macro F1=0.345
+ongoing_lead3 random_forest_2: OOF macro F1=0.336
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+FINISHED ongoing_lead3: F1 champion original_all_features_7; accuracy champion ensemble_top6
+onset_lead3 original_temperature_only_7: OOF macro F1=0.051
+onset_lead3 original_temperature_only_15: OOF macro F1=0.058
+onset_lead3 original_no_soil_7: OOF macro F1=0.049
+onset_lead3 original_no_soil_15: OOF macro F1=0.052
+onset_lead3 original_all_features_7: OOF macro F1=0.054
+onset_lead3 original_all_features_15: OOF macro F1=0.055
+onset_lead3 engineered_matched_15: OOF macro F1=0.057
+onset_lead3 hist_0: OOF macro F1=0.051
+onset_lead3 hist_1: OOF macro F1=0.052
+onset_lead3 hist_2: OOF macro F1=0.056
+onset_lead3 xgboost_0: OOF macro F1=0.051
+onset_lead3 xgboost_1: OOF macro F1=0.055
+onset_lead3 xgboost_2: OOF macro F1=0.051
+onset_lead3 catboost_0: OOF macro F1=0.052
+onset_lead3 catboost_1: OOF macro F1=0.046
+onset_lead3 catboost_2: OOF macro F1=0.049
+onset_lead3 lightgbm_0: OOF macro F1=0.050
+onset_lead3 lightgbm_1: OOF macro F1=0.062
+onset_lead3 lightgbm_2: OOF macro F1=0.054
+onset_lead3 extra_trees_0: OOF macro F1=0.059
+onset_lead3 extra_trees_1: OOF macro F1=0.054
+onset_lead3 extra_trees_2: OOF macro F1=0.050
+onset_lead3 random_forest_0: OOF macro F1=0.047
+onset_lead3 random_forest_1: OOF macro F1=0.055
+onset_lead3 random_forest_2: OOF macro F1=0.051
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+FINISHED onset_lead3: F1 champion lightgbm_1; accuracy champion xgboost_1
+ongoing_lead7 original_temperature_only_7: OOF macro F1=0.125
+ongoing_lead7 original_temperature_only_15: OOF macro F1=0.117
+ongoing_lead7 original_no_soil_7: OOF macro F1=0.126
+ongoing_lead7 original_no_soil_15: OOF macro F1=0.122
+ongoing_lead7 original_all_features_7: OOF macro F1=0.139
+ongoing_lead7 original_all_features_15: OOF macro F1=0.130
+ongoing_lead7 engineered_matched_15: OOF macro F1=0.122
+ongoing_lead7 hist_0: OOF macro F1=0.115
+ongoing_lead7 hist_1: OOF macro F1=0.108
+ongoing_lead7 hist_2: OOF macro F1=0.105
+ongoing_lead7 xgboost_0: OOF macro F1=0.127
+ongoing_lead7 xgboost_1: OOF macro F1=0.120
+ongoing_lead7 xgboost_2: OOF macro F1=0.124
+ongoing_lead7 catboost_0: OOF macro F1=0.137
+ongoing_lead7 catboost_1: OOF macro F1=0.131
+ongoing_lead7 catboost_2: OOF macro F1=0.134
+ongoing_lead7 lightgbm_0: OOF macro F1=0.109
+ongoing_lead7 lightgbm_1: OOF macro F1=0.124
+ongoing_lead7 lightgbm_2: OOF macro F1=0.110
+ongoing_lead7 extra_trees_0: OOF macro F1=0.129
+ongoing_lead7 extra_trees_1: OOF macro F1=0.132
+ongoing_lead7 extra_trees_2: OOF macro F1=0.125
+ongoing_lead7 random_forest_0: OOF macro F1=0.134
+ongoing_lead7 random_forest_1: OOF macro F1=0.139
+ongoing_lead7 random_forest_2: OOF macro F1=0.142
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+FINISHED ongoing_lead7: F1 champion ensemble_top3; accuracy champion catboost_2
+onset_lead7 original_temperature_only_7: OOF macro F1=0.046
+onset_lead7 original_temperature_only_15: OOF macro F1=0.042
+onset_lead7 original_no_soil_7: OOF macro F1=0.056
+onset_lead7 original_no_soil_15: OOF macro F1=0.054
+onset_lead7 original_all_features_7: OOF macro F1=0.057
+onset_lead7 original_all_features_15: OOF macro F1=0.064
+onset_lead7 engineered_matched_15: OOF macro F1=0.048
+onset_lead7 hist_0: OOF macro F1=0.049
+onset_lead7 hist_1: OOF macro F1=0.043
+onset_lead7 hist_2: OOF macro F1=0.052
+onset_lead7 xgboost_0: OOF macro F1=0.043
+onset_lead7 xgboost_1: OOF macro F1=0.045
+onset_lead7 xgboost_2: OOF macro F1=0.051
+onset_lead7 catboost_0: OOF macro F1=0.044
+onset_lead7 catboost_1: OOF macro F1=0.053
+onset_lead7 catboost_2: OOF macro F1=0.054
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+onset_lead7 lightgbm_0: OOF macro F1=0.055
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+onset_lead7 lightgbm_1: OOF macro F1=0.045
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+onset_lead7 lightgbm_2: OOF macro F1=0.047
+onset_lead7 extra_trees_0: OOF macro F1=0.068
+onset_lead7 extra_trees_1: OOF macro F1=0.070
+onset_lead7 extra_trees_2: OOF macro F1=0.067
+onset_lead7 random_forest_0: OOF macro F1=0.057
+onset_lead7 random_forest_1: OOF macro F1=0.059
+onset_lead7 random_forest_2: OOF macro F1=0.059
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+/Library/Frameworks/Python.framework/Versions/3.13/lib/python3.13/site-packages/sklearn/utils/validation.py:2827: UserWarning: X does not have valid feature names, but LGBMClassifier was fitted with feature names
+  warnings.warn(
+FINISHED onset_lead7: F1 champion extra_trees_1; accuracy champion lightgbm_0

@@ -1,0 +1,8 @@
+site,latitude,longitude,issue_date,target_date,lead_days,task,model,policy,probability,cutoff,predicted_event,status
+Paris,48.85,2.35,2025-07-14,2025-07-15,1,ongoing,xgboost_0,f1,0.00016585192,0.3253293469548235,False,Exploratory retrospective ERA5-history forecast
+London,51.51,-0.13,2025-07-14,2025-07-15,1,ongoing,xgboost_0,f1,0.0003249553,0.3253293469548235,False,Exploratory retrospective ERA5-history forecast
+Madrid,40.42,-3.7,2025-07-14,2025-07-15,1,ongoing,xgboost_0,f1,0.00018223451,0.3253293469548235,False,Exploratory retrospective ERA5-history forecast
+Rome,41.9,12.5,2025-07-14,2025-07-15,1,ongoing,xgboost_0,f1,0.00029383137,0.3253293469548235,False,Exploratory retrospective ERA5-history forecast
+Athens,37.98,23.73,2025-07-14,2025-07-15,1,ongoing,xgboost_0,f1,0.00041316936,0.3253293469548235,False,Exploratory retrospective ERA5-history forecast
+Berlin,52.52,13.41,2025-07-14,2025-07-15,1,ongoing,xgboost_0,f1,0.00013958283,0.3253293469548235,False,Exploratory retrospective ERA5-history forecast
+Warsaw,52.23,21.01,2025-07-14,2025-07-15,1,ongoing,xgboost_0,f1,8.915648e-05,0.3253293469548235,False,Exploratory retrospective ERA5-history forecast
