@@ -1,0 +1,328 @@
+{
+  "hashes": {
+    "/Users/aryansanganti/KJSCE/4th Year/Honours Project/Honours-Project-final-yr-/heatcast/model_search.py": "53900d04e06154c16b596309ad0f4c4088e44aac6ff5e97c6c4132706ec70f99",
+    "heatcast/research_data.py": "4a98e01f66c0078de8b5a7821352c25fd421f098330514bfc297810973023699",
+    "heatcast/evaluation.py": "e242bc54b918b6d27e34c9e8f150b652ce3a8eff9f78573c7edfc5e2295a93ec",
+    "MODEL_SEARCH_PROTOCOL.md": "30538e68429692f853f7f2278c0e221a1c54c70abe1e6f31cbea4f1670c462db",
+    "data": "5bbbfb49065af7c38006c611cc7496e9f78a637f2391a61945d2d38930750869"
+  },
+  "candidates": [
+    {
+      "name": "original_temperature_only_7",
+      "family": "hist",
+      "variant": "temperature_only",
+      "params": {
+        "max_iter": 160,
+        "max_leaf_nodes": 7,
+        "learning_rate": 0.07,
+        "l2_regularization": 10
+      }
+    },
+    {
+      "name": "original_temperature_only_15",
+      "family": "hist",
+      "variant": "temperature_only",
+      "params": {
+        "max_iter": 160,
+        "max_leaf_nodes": 15,
+        "learning_rate": 0.07,
+        "l2_regularization": 10
+      }
+    },
+    {
+      "name": "original_no_soil_7",
+      "family": "hist",
+      "variant": "no_soil",
+      "params": {
+        "max_iter": 160,
+        "max_leaf_nodes": 7,
+        "learning_rate": 0.07,
+        "l2_regularization": 10
+      }
+    },
+    {
+      "name": "original_no_soil_15",
+      "family": "hist",
+      "variant": "no_soil",
+      "params": {
+        "max_iter": 160,
+        "max_leaf_nodes": 15,
+        "learning_rate": 0.07,
+        "l2_regularization": 10
+      }
+    },
+    {
+      "name": "original_all_features_7",
+      "family": "hist",
+      "variant": "all_features",
+      "params": {
+        "max_iter": 160,
+        "max_leaf_nodes": 7,
+        "learning_rate": 0.07,
+        "l2_regularization": 10
+      }
+    },
+    {
+      "name": "original_all_features_15",
+      "family": "hist",
+      "variant": "all_features",
+      "params": {
+        "max_iter": 160,
+        "max_leaf_nodes": 15,
+        "learning_rate": 0.07,
+        "l2_regularization": 10
+      }
+    },
+    {
+      "name": "engineered_matched_15",
+      "family": "hist",
+      "variant": "engineered",
+      "params": {
+        "max_iter": 160,
+        "max_leaf_nodes": 15,
+        "learning_rate": 0.07,
+        "l2_regularization": 10
+      }
+    },
+    {
+      "name": "hist_0",
+      "family": "hist",
+      "variant": "engineered",
+      "params": {
+        "max_iter": 160,
+        "max_leaf_nodes": 31,
+        "learning_rate": 0.07,
+        "min_samples_leaf": 50,
+        "l2_regularization": 10.0
+      }
+    },
+    {
+      "name": "hist_1",
+      "family": "hist",
+      "variant": "engineered",
+      "params": {
+        "max_iter": 600,
+        "max_leaf_nodes": 7,
+        "learning_rate": 0.1,
+        "min_samples_leaf": 20,
+        "l2_regularization": 1.0
+      }
+    },
+    {
+      "name": "hist_2",
+      "family": "hist",
+      "variant": "engineered",
+      "params": {
+        "max_iter": 300,
+        "max_leaf_nodes": 31,
+        "learning_rate": 0.1,
+        "min_samples_leaf": 100,
+        "l2_regularization": 30.0
+      }
+    },
+    {
+      "name": "xgboost_0",
+      "family": "xgboost",
+      "variant": "engineered",
+      "params": {
+        "n_estimators": 600,
+        "max_depth": 5,
+        "learning_rate": 0.03,
+        "min_child_weight": 50,
+        "subsample": 0.7,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 10.0
+      }
+    },
+    {
+      "name": "xgboost_1",
+      "family": "xgboost",
+      "variant": "engineered",
+      "params": {
+        "n_estimators": 160,
+        "max_depth": 7,
+        "learning_rate": 0.1,
+        "min_child_weight": 20,
+        "subsample": 0.7,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 10.0
+      }
+    },
+    {
+      "name": "xgboost_2",
+      "family": "xgboost",
+      "variant": "engineered",
+      "params": {
+        "n_estimators": 300,
+        "max_depth": 5,
+        "learning_rate": 0.03,
+        "min_child_weight": 5,
+        "subsample": 1.0,
+        "colsample_bytree": 1.0,
+        "reg_lambda": 1.0
+      }
+    },
+    {
+      "name": "catboost_0",
+      "family": "catboost",
+      "variant": "engineered",
+      "params": {
+        "iterations": 600,
+        "depth": 8,
+        "learning_rate": 0.03,
+        "l2_leaf_reg": 10.0
+      }
+    },
+    {
+      "name": "catboost_1",
+      "family": "catboost",
+      "variant": "engineered",
+      "params": {
+        "iterations": 160,
+        "depth": 8,
+        "learning_rate": 0.1,
+        "l2_leaf_reg": 10.0
+      }
+    },
+    {
+      "name": "catboost_2",
+      "family": "catboost",
+      "variant": "engineered",
+      "params": {
+        "iterations": 160,
+        "depth": 8,
+        "learning_rate": 0.07,
+        "l2_leaf_reg": 30.0
+      }
+    },
+    {
+      "name": "lightgbm_0",
+      "family": "lightgbm",
+      "variant": "engineered",
+      "params": {
+        "n_estimators": 600,
+        "num_leaves": 31,
+        "learning_rate": 0.1,
+        "min_child_samples": 20,
+        "reg_lambda": 10.0,
+        "colsample_bytree": 0.7
+      }
+    },
+    {
+      "name": "lightgbm_1",
+      "family": "lightgbm",
+      "variant": "engineered",
+      "params": {
+        "n_estimators": 300,
+        "num_leaves": 7,
+        "learning_rate": 0.07,
+        "min_child_samples": 20,
+        "reg_lambda": 30.0,
+        "colsample_bytree": 1.0
+      }
+    },
+    {
+      "name": "lightgbm_2",
+      "family": "lightgbm",
+      "variant": "engineered",
+      "params": {
+        "n_estimators": 600,
+        "num_leaves": 31,
+        "learning_rate": 0.07,
+        "min_child_samples": 100,
+        "reg_lambda": 10.0,
+        "colsample_bytree": 0.7
+      }
+    },
+    {
+      "name": "extra_trees_0",
+      "family": "extra_trees",
+      "variant": "engineered",
+      "params": {
+        "n_estimators": 200,
+        "max_depth": 20,
+        "min_samples_leaf": 20,
+        "max_features": 0.5,
+        "class_weight": null
+      }
+    },
+    {
+      "name": "extra_trees_1",
+      "family": "extra_trees",
+      "variant": "engineered",
+      "params": {
+        "n_estimators": 200,
+        "max_depth": 14,
+        "min_samples_leaf": 50,
+        "max_features": 0.5,
+        "class_weight": null
+      }
+    },
+    {
+      "name": "extra_trees_2",
+      "family": "extra_trees",
+      "variant": "engineered",
+      "params": {
+        "n_estimators": 200,
+        "max_depth": 14,
+        "min_samples_leaf": 5,
+        "max_features": 1.0,
+        "class_weight": null
+      }
+    },
+    {
+      "name": "random_forest_0",
+      "family": "random_forest",
+      "variant": "engineered",
+      "params": {
+        "n_estimators": 100,
+        "max_depth": 8,
+        "min_samples_leaf": 20,
+        "max_features": 0.5,
+        "class_weight": null
+      }
+    },
+    {
+      "name": "random_forest_1",
+      "family": "random_forest",
+      "variant": "engineered",
+      "params": {
+        "n_estimators": 100,
+        "max_depth": 8,
+        "min_samples_leaf": 100,
+        "max_features": "sqrt",
+        "class_weight": null
+      }
+    },
+    {
+      "name": "random_forest_2",
+      "family": "random_forest",
+      "variant": "engineered",
+      "params": {
+        "n_estimators": 100,
+        "max_depth": 8,
+        "min_samples_leaf": 20,
+        "max_features": "sqrt",
+        "class_weight": null
+      }
+    }
+  ],
+  "versions": {
+    "numpy": "2.5.2",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.9.0",
+    "xgboost": "3.1.3",
+    "catboost": "1.2.10",
+    "lightgbm": "4.6.0"
+  },
+  "leads": [
+    1,
+    3,
+    7
+  ],
+  "tasks": [
+    "ongoing",
+    "onset"
+  ],
+  "fingerprint": "e5662793c49334689f4b74520a4fbb8a4668d5b74b366095a7ec040446261827"
+}

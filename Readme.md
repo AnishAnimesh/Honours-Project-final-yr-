@@ -1,5 +1,50 @@
 # HeatCast: Regional Robustness and Heatwave Early Warning
 
+## Expanded model and feature experiment
+
+The separate [model-search protocol](MODEL_SEARCH_PROTOCOL.md) compares tuned
+HistGradientBoosting, XGBoost, CatBoost, LightGBM, Extra Trees, Random Forest,
+and probability ensembles using the existing seven-location dataset. Added
+features include hot-day streaks, exact daily threshold margins, temperature
+trajectories, nighttime conditions and trailing dryness history. Models are
+selected with expanding chronological folds; calibration and final cutoffs use
+development/validation data. The original benchmark is preserved.
+
+```bash
+python3 -m venv --system-site-packages .venv-model-search
+.venv-model-search/bin/python -m pip install -r requirements-model-search.txt
+.venv-model-search/bin/python -m heatcast.model_search
+.venv-model-search/bin/python -m heatcast.model_search_forecast --date 2025-07-15 --task ongoing --lead 1 --policy f1 --output results/model_search/example_forecast.csv
+.venv-model-search/bin/python -m unittest discover -s tests -p test_model_search.py -v
+PYTHONPATH=. .venv-model-search/bin/python tests/check_model_search_artifacts.py
+```
+
+Results are written to [the model comparison report](results/model_search/REPORT.md)
+and `results/model_search/comparison.csv`. Each candidate reports both an F1
+threshold and an accuracy threshold constrained to at least 85% validation recall;
+test recall can differ. This amendment uses already inspected test years and is
+exploratory. It cannot guarantee 98–99% accuracy or establish prospective skill.
+The completed environment's versions are pinned in
+`requirements-model-search-lock.txt`; exact search settings and source/data
+hashes are saved in `results/model_search/manifest.json`.
+The initial dense Random Forest run's completed results are retained in
+`results/model_search_initial`; the final search uses bounded Random Forest
+settings recorded in the protocol. `CACHE_REUSE.json` documents the verified
+reuse of unchanged development evaluations.
+
+## Model and research improvements
+
+The [research improvement guide](RESEARCH_IMPROVEMENTS.md) adds event-level and calibration audits, dependence checks at multiple block lengths, timestamped prospective forecast capture, and independent station-data verification tooling. A separate model amendment evaluates forecast-based alternatives using development-only selection; the original benchmark results remain unchanged. These changes strengthen the evidence and the route to better onset/long-lead forecasts, without claiming that uncollected future or station observations have already been validated.
+
+```bash
+python3 -m heatcast.improvement_study
+python3 -m heatcast.improvement_study --check
+python3 -m heatcast.validation_audit
+python3 -m heatcast.prospective capture
+```
+
+See [the model amendment report](results/improvement_study/REPORT.md) for all nine candidates per task/lead and [the additional validation report](results/validation_audit/REPORT.md) for measured reliability and episode detection. The one-day onset amendment increases point F1 from 0.390 to 0.448 with ten fewer false alerts, but probability Brier worsens and uncertainty does not establish improvement over raw GFS. Other leads remain mixed; the amendment does not replace the original models. Prospective captures are stored locally under `data/prospective/` and verified separately after observations become available.
+
 The expanded research project downloads **45 years of ERA5 daily data (1981–2025) for seven European locations** and evaluates both ongoing events and first-day onset at 1-, 3- and 7-day lead. It uses a fixed 30-year historical reference, validation-only selection, regional failure analysis, earlier temporal backtesting, nested location holdout and matched one-day linear/LSTM comparisons.
 
 Start with the [expanded research report](results/research/REPORT.md), [research manuscript](researchpaper.md), and [predeclared protocol](RESEARCH_PROTOCOL.md). The original France-grid experiment is preserved below and in [its report](results/REPORT.md); its scores describe a different task/domain and cannot be compared directly with the expanded benchmark.
