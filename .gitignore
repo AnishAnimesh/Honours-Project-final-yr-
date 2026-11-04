@@ -22,3 +22,11 @@ data/issued_forecasts/*.json
 !data/issued_forecasts/manifest.json
 data/issued_forecasts/runs/
 data/issued_forecasts/*.npz
+
+# Timestamped prospective captures and separate verification responses.
+data/prospective/
+
+# Regenerable chronological search fitting cache.
+results/model_search/cache/
+results/model_search_initial/cache/
+.venv-model-search/

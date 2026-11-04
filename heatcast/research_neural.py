@@ -10,8 +10,8 @@ from .models import LSTM
 from .evaluation import choose_threshold
 
 
-def neural_comparison(raw,anomaly,idx,lead,y,train,val,test,lat,lon,epochs=20):
-    torch.set_num_threads(4);torch.manual_seed(42)
+def neural_comparison(raw,anomaly,idx,lead,y,train,val,test,lat,lon,epochs=20,seed=42):
+    torch.set_num_threads(4);torch.manual_seed(seed)
     # Fitted on observations no later than the latest training target; all precede validation.
     end=int(idx[train].max())
     values=np.concatenate([raw,anomaly[:,:,None]],axis=-1)

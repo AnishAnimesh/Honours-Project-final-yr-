@@ -1,0 +1,843 @@
+{
+  "protocol_sha256": "0473ab36af25be33786c5f3a187096219e869f12f0bde07c302b22a557cd3e16",
+  "seeds": [
+    7,
+    21,
+    42
+  ],
+  "status": "Retrospective seed sensitivity; no seed selected or benchmark replaced.",
+  "spatial_target_days": {
+    "train": 348,
+    "validation": 232,
+    "test": 211
+  },
+  "location_target_days": {
+    "train": 5508,
+    "validation": 612,
+    "test": 765
+  },
+  "experiments": [
+    {
+      "experiment": "lstm_Paris",
+      "seed": 42,
+      "parameter_count": 4769,
+      "epochs_completed": 22,
+      "validation": {
+        "threshold": 0.20423513650894165,
+        "n": 232,
+        "prevalence": 0.008620689655172414,
+        "accuracy": 0.9913793103448276,
+        "f1": 0.5,
+        "precision": 0.5,
+        "recall": 0.5,
+        "roc_auc": 0.6804347826086956,
+        "average_precision": 0.25675675675675674,
+        "brier": 0.01040971651673317,
+        "confusion_matrix": [
+          [
+            229,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "test": {
+        "threshold": 0.20423513650894165,
+        "n": 211,
+        "prevalence": 0.15639810426540285,
+        "accuracy": 0.7677725118483413,
+        "f1": 0.5504587155963303,
+        "precision": 0.39473684210526316,
+        "recall": 0.9090909090909091,
+        "roc_auc": 0.8874702076949268,
+        "average_precision": 0.5563641595657144,
+        "brier": 0.09942939132452011,
+        "confusion_matrix": [
+          [
+            132,
+            46
+          ],
+          [
+            3,
+            30
+          ]
+        ]
+      },
+      "source": "saved benchmark",
+      "checkpoint_sha256": "dcc5d559720e3e54a7a29ad128e4c10df57456f2fc457d78c983d90409d217da"
+    },
+    {
+      "experiment": "lstm_Paris",
+      "seed": 7,
+      "parameter_count": 4769,
+      "epochs_completed": 17,
+      "validation": {
+        "threshold": 0.19657842814922333,
+        "n": 232,
+        "prevalence": 0.008620689655172414,
+        "accuracy": 0.9956896551724138,
+        "f1": 0.6666666666666666,
+        "precision": 1.0,
+        "recall": 0.5,
+        "roc_auc": 0.6804347826086956,
+        "average_precision": 0.5067114093959731,
+        "brier": 0.009521215222775936,
+        "confusion_matrix": [
+          [
+            230,
+            0
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "test": {
+        "threshold": 0.19657842814922333,
+        "n": 211,
+        "prevalence": 0.15639810426540285,
+        "accuracy": 0.7962085308056872,
+        "f1": 0.5742574257425742,
+        "precision": 0.4264705882352941,
+        "recall": 0.8787878787878788,
+        "roc_auc": 0.8861082737487233,
+        "average_precision": 0.5592076565351839,
+        "brier": 0.10042533278465271,
+        "confusion_matrix": [
+          [
+            139,
+            39
+          ],
+          [
+            4,
+            29
+          ]
+        ]
+      },
+      "source": "fixed-protocol retraining",
+      "checkpoint_sha256": "ab5c97d4f7b1932fd24c93b7bd577fdebe0d0098f600bfe1722e5f615425dafe"
+    },
+    {
+      "experiment": "lstm_Paris",
+      "seed": 21,
+      "parameter_count": 4769,
+      "epochs_completed": 18,
+      "validation": {
+        "threshold": 0.15438947081565857,
+        "n": 232,
+        "prevalence": 0.008620689655172414,
+        "accuracy": 0.9827586206896551,
+        "f1": 0.3333333333333333,
+        "precision": 0.25,
+        "recall": 0.5,
+        "roc_auc": 0.6934782608695652,
+        "average_precision": 0.13214285714285715,
+        "brier": 0.01071076188236475,
+        "confusion_matrix": [
+          [
+            227,
+            3
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      },
+      "test": {
+        "threshold": 0.15438947081565857,
+        "n": 211,
+        "prevalence": 0.15639810426540285,
+        "accuracy": 0.6966824644549763,
+        "f1": 0.49206349206349204,
+        "precision": 0.3333333333333333,
+        "recall": 0.9393939393939394,
+        "roc_auc": 0.893598910452843,
+        "average_precision": 0.587705987497256,
+        "brier": 0.0978718250989914,
+        "confusion_matrix": [
+          [
+            116,
+            62
+          ],
+          [
+            2,
+            31
+          ]
+        ]
+      },
+      "source": "fixed-protocol retraining",
+      "checkpoint_sha256": "7d3b4e0d0c8b859f873ab81c93051d3467c7f6108439be541ef4edb0ef010f83"
+    },
+    {
+      "experiment": "convlstm",
+      "seed": 42,
+      "parameter_count": 6541,
+      "epochs_completed": 30,
+      "validation": {
+        "threshold": 0.5303535461425781,
+        "n": 349624,
+        "prevalence": 0.018259616044665125,
+        "accuracy": 0.976986705718143,
+        "f1": 0.3642541087231353,
+        "precision": 0.3675063775510204,
+        "recall": 0.36105889724310775,
+        "roc_auc": 0.9098231563569802,
+        "average_precision": 0.3315289590796,
+        "brier": 0.02095647342503071,
+        "confusion_matrix": [
+          [
+            339273,
+            3967
+          ],
+          [
+            4079,
+            2305
+          ]
+        ]
+      },
+      "test": {
+        "threshold": 0.5303535461425781,
+        "n": 317977,
+        "prevalence": 0.14554511804312892,
+        "accuracy": 0.8806265861996307,
+        "f1": 0.5671046028922038,
+        "precision": 0.6004975364699063,
+        "recall": 0.5372299049265341,
+        "roc_auc": 0.8976865322343915,
+        "average_precision": 0.6045019256725551,
+        "brier": 0.08582525700330734,
+        "confusion_matrix": [
+          [
+            255156,
+            16541
+          ],
+          [
+            21417,
+            24863
+          ]
+        ]
+      },
+      "source": "saved benchmark",
+      "checkpoint_sha256": "799b120d2fbc64fdfdec354d9e797e85eb3f2ef74144e7156f293a41ee29ffe4"
+    },
+    {
+      "experiment": "convlstm",
+      "seed": 7,
+      "parameter_count": 6541,
+      "epochs_completed": 34,
+      "validation": {
+        "threshold": 0.630618691444397,
+        "n": 349624,
+        "prevalence": 0.018259616044665125,
+        "accuracy": 0.9779792005125506,
+        "f1": 0.3824496671212,
+        "precision": 0.3919118855827717,
+        "recall": 0.37343358395989973,
+        "roc_auc": 0.9214579271257475,
+        "average_precision": 0.3440637733043483,
+        "brier": 0.025399217382073402,
+        "confusion_matrix": [
+          [
+            339541,
+            3699
+          ],
+          [
+            4000,
+            2384
+          ]
+        ]
+      },
+      "test": {
+        "threshold": 0.630618691444397,
+        "n": 317977,
+        "prevalence": 0.14554511804312892,
+        "accuracy": 0.8884133129125692,
+        "f1": 0.5691631453688863,
+        "precision": 0.6496562811841667,
+        "recall": 0.5064174589455488,
+        "roc_auc": 0.9134724911017273,
+        "average_precision": 0.6275906459902327,
+        "brier": 0.08366144448518753,
+        "confusion_matrix": [
+          [
+            259058,
+            12639
+          ],
+          [
+            22843,
+            23437
+          ]
+        ]
+      },
+      "source": "fixed-protocol retraining",
+      "checkpoint_sha256": "afe2d40487744d1485b4c7adfa169f8346e66dd39f3ced616a2cd8e1746817a2"
+    },
+    {
+      "experiment": "convlstm",
+      "seed": 21,
+      "parameter_count": 6541,
+      "epochs_completed": 35,
+      "validation": {
+        "threshold": 0.574198842048645,
+        "n": 349624,
+        "prevalence": 0.018259616044665125,
+        "accuracy": 0.9770067272269638,
+        "f1": 0.38032837431588684,
+        "precision": 0.37441189861891033,
+        "recall": 0.38643483709273185,
+        "roc_auc": 0.9221146412547655,
+        "average_precision": 0.346721340212227,
+        "brier": 0.021396420896053314,
+        "confusion_matrix": [
+          [
+            339118,
+            4122
+          ],
+          [
+            3917,
+            2467
+          ]
+        ]
+      },
+      "test": {
+        "threshold": 0.574198842048645,
+        "n": 317977,
+        "prevalence": 0.14554511804312892,
+        "accuracy": 0.8798749595096501,
+        "f1": 0.5473591903966251,
+        "precision": 0.6060566300154827,
+        "recall": 0.4990276577355229,
+        "roc_auc": 0.8994480360829784,
+        "average_precision": 0.5960269056351367,
+        "brier": 0.08664840459823608,
+        "confusion_matrix": [
+          [
+            256685,
+            15012
+          ],
+          [
+            23185,
+            23095
+          ]
+        ]
+      },
+      "source": "fixed-protocol retraining",
+      "checkpoint_sha256": "7d09f147a3ee95bf513ff6da673df2af07a29f73e5c0f66dc2ce227be4a00e2a"
+    },
+    {
+      "experiment": "convlstm_no_soil",
+      "seed": 42,
+      "parameter_count": 6109,
+      "epochs_completed": 33,
+      "validation": {
+        "threshold": 0.579331636428833,
+        "n": 349624,
+        "prevalence": 0.018259616044665125,
+        "accuracy": 0.978702835045649,
+        "f1": 0.36866203154146177,
+        "precision": 0.4018484288354898,
+        "recall": 0.3405388471177945,
+        "roc_auc": 0.9039151059277666,
+        "average_precision": 0.3292145306590272,
+        "brier": 0.023157911375164986,
+        "confusion_matrix": [
+          [
+            340004,
+            3236
+          ],
+          [
+            4210,
+            2174
+          ]
+        ]
+      },
+      "test": {
+        "threshold": 0.579331636428833,
+        "n": 317977,
+        "prevalence": 0.14554511804312892,
+        "accuracy": 0.8879856090220362,
+        "f1": 0.5704534491075736,
+        "precision": 0.6454967248908297,
+        "recall": 0.5110414866032843,
+        "roc_auc": 0.9155882934157528,
+        "average_precision": 0.6437931253235329,
+        "brier": 0.07981546223163605,
+        "confusion_matrix": [
+          [
+            258708,
+            12989
+          ],
+          [
+            22629,
+            23651
+          ]
+        ]
+      },
+      "source": "saved benchmark",
+      "checkpoint_sha256": "f6dcb474b08fc836c0e790f17317eec50a4bc3637c008761f351a11b7282554f"
+    },
+    {
+      "experiment": "convlstm_no_soil",
+      "seed": 7,
+      "parameter_count": 6109,
+      "epochs_completed": 28,
+      "validation": {
+        "threshold": 0.6385635733604431,
+        "n": 349624,
+        "prevalence": 0.018259616044665125,
+        "accuracy": 0.9776874585268746,
+        "f1": 0.3510523250977456,
+        "precision": 0.3743125776122051,
+        "recall": 0.33051378446115287,
+        "roc_auc": 0.9048749581151193,
+        "average_precision": 0.31947183675527496,
+        "brier": 0.03161304071545601,
+        "confusion_matrix": [
+          [
+            339713,
+            3527
+          ],
+          [
+            4274,
+            2110
+          ]
+        ]
+      },
+      "test": {
+        "threshold": 0.6385635733604431,
+        "n": 317977,
+        "prevalence": 0.14554511804312892,
+        "accuracy": 0.8890643033930127,
+        "f1": 0.5577745182845036,
+        "precision": 0.664317496341864,
+        "recall": 0.4806828003457217,
+        "roc_auc": 0.913253604870014,
+        "average_precision": 0.6359781473930254,
+        "brier": 0.08436576277017593,
+        "confusion_matrix": [
+          [
+            260456,
+            11241
+          ],
+          [
+            24034,
+            22246
+          ]
+        ]
+      },
+      "source": "fixed-protocol retraining",
+      "checkpoint_sha256": "27de15f45aad49745e2c7e86f0b98eaf4bad18611fd64859dc1f5e0d0df5b429"
+    },
+    {
+      "experiment": "convlstm_no_soil",
+      "seed": 21,
+      "parameter_count": 6109,
+      "epochs_completed": 27,
+      "validation": {
+        "threshold": 0.5592148303985596,
+        "n": 349624,
+        "prevalence": 0.018259616044665125,
+        "accuracy": 0.9769037594673134,
+        "f1": 0.3673117605578626,
+        "precision": 0.3674557140617652,
+        "recall": 0.36716791979949875,
+        "roc_auc": 0.9135335356695257,
+        "average_precision": 0.32086805737633306,
+        "brier": 0.022319277748465538,
+        "confusion_matrix": [
+          [
+            339205,
+            4035
+          ],
+          [
+            4040,
+            2344
+          ]
+        ]
+      },
+      "test": {
+        "threshold": 0.5592148303985596,
+        "n": 317977,
+        "prevalence": 0.14554511804312892,
+        "accuracy": 0.8946338886145854,
+        "f1": 0.6278739142990426,
+        "precision": 0.6459980801755268,
+        "recall": 0.6107389801210026,
+        "roc_auc": 0.9229234546142009,
+        "average_precision": 0.6637171288946656,
+        "brier": 0.07660623639822006,
+        "confusion_matrix": [
+          [
+            256208,
+            15489
+          ],
+          [
+            18015,
+            28265
+          ]
+        ]
+      },
+      "source": "fixed-protocol retraining",
+      "checkpoint_sha256": "b397403ed7e3cd9bb9b1575d8e37aa1548491b011ffd06365f6f3940254bde22"
+    },
+    {
+      "experiment": "ongoing_lead1_lstm",
+      "seed": 42,
+      "parameter_count": 5281,
+      "epochs_completed": 20,
+      "validation": {
+        "threshold": 0.5274665355682373,
+        "n": 4284,
+        "prevalence": 0.07026143790849673,
+        "accuracy": 0.9544817927170869,
+        "f1": 0.7477360931435963,
+        "precision": 0.6122881355932204,
+        "recall": 0.9601328903654485,
+        "roc_auc": 0.9836406054635857,
+        "average_precision": 0.7599546734635132,
+        "brier": 0.03598649427294731,
+        "confusion_matrix": [
+          [
+            3800,
+            183
+          ],
+          [
+            12,
+            289
+          ]
+        ]
+      },
+      "test": {
+        "threshold": 0.5274665355682373,
+        "n": 5355,
+        "prevalence": 0.09281045751633987,
+        "accuracy": 0.9488328664799253,
+        "f1": 0.7701342281879194,
+        "precision": 0.660431654676259,
+        "recall": 0.9235412474849095,
+        "roc_auc": 0.9822376001583812,
+        "average_precision": 0.7875769481739819,
+        "brier": 0.03746706247329712,
+        "confusion_matrix": [
+          [
+            4622,
+            236
+          ],
+          [
+            38,
+            459
+          ]
+        ]
+      },
+      "source": "saved benchmark",
+      "checkpoint_sha256": "7c7a94732a0127ab7377ddcc31f6c541fc95c4a8de1746423e05c25205d60f3a"
+    },
+    {
+      "experiment": "ongoing_lead1_lstm",
+      "seed": 7,
+      "parameter_count": 5281,
+      "epochs_completed": 20,
+      "validation": {
+        "threshold": 0.5495892763137817,
+        "n": 4284,
+        "prevalence": 0.07026143790849673,
+        "accuracy": 0.9533146591970122,
+        "f1": 0.7395833333333334,
+        "precision": 0.6081370449678801,
+        "recall": 0.9435215946843853,
+        "roc_auc": 0.9826129822509787,
+        "average_precision": 0.7443371266103639,
+        "brier": 0.037608079612255096,
+        "confusion_matrix": [
+          [
+            3800,
+            183
+          ],
+          [
+            17,
+            284
+          ]
+        ]
+      },
+      "test": {
+        "threshold": 0.5495892763137817,
+        "n": 5355,
+        "prevalence": 0.09281045751633987,
+        "accuracy": 0.9495798319327731,
+        "f1": 0.7715736040609137,
+        "precision": 0.6656934306569343,
+        "recall": 0.9175050301810865,
+        "roc_auc": 0.9814837978053583,
+        "average_precision": 0.7673289497485242,
+        "brier": 0.03856959193944931,
+        "confusion_matrix": [
+          [
+            4629,
+            229
+          ],
+          [
+            41,
+            456
+          ]
+        ]
+      },
+      "source": "fixed-protocol retraining",
+      "checkpoint_sha256": "7158a61faff85614c760f4441156270c826be722c443910c3e27e2e3670de5bc"
+    },
+    {
+      "experiment": "ongoing_lead1_lstm",
+      "seed": 21,
+      "parameter_count": 5281,
+      "epochs_completed": 20,
+      "validation": {
+        "threshold": 0.6947392821311951,
+        "n": 4284,
+        "prevalence": 0.07026143790849673,
+        "accuracy": 0.9591503267973857,
+        "f1": 0.7638326585695007,
+        "precision": 0.6431818181818182,
+        "recall": 0.9401993355481728,
+        "roc_auc": 0.9843762902635204,
+        "average_precision": 0.7614198275097409,
+        "brier": 0.03876015543937683,
+        "confusion_matrix": [
+          [
+            3826,
+            157
+          ],
+          [
+            18,
+            283
+          ]
+        ]
+      },
+      "test": {
+        "threshold": 0.6947392821311951,
+        "n": 5355,
+        "prevalence": 0.09281045751633987,
+        "accuracy": 0.9544351073762839,
+        "f1": 0.7825311942959001,
+        "precision": 0.7024,
+        "recall": 0.8832997987927566,
+        "roc_auc": 0.9816494686521766,
+        "average_precision": 0.7762522380686537,
+        "brier": 0.04074777290225029,
+        "confusion_matrix": [
+          [
+            4672,
+            186
+          ],
+          [
+            58,
+            439
+          ]
+        ]
+      },
+      "source": "fixed-protocol retraining",
+      "checkpoint_sha256": "2dbd6a39aa86b1cc762606866d77a3aabdb8c661ca051fde895f774181a052a3"
+    },
+    {
+      "experiment": "onset_lead1_lstm",
+      "seed": 42,
+      "parameter_count": 5281,
+      "epochs_completed": 20,
+      "validation": {
+        "threshold": 0.37856781482696533,
+        "n": 4284,
+        "prevalence": 0.028478057889822595,
+        "accuracy": 0.9400093370681606,
+        "f1": 0.25507246376811593,
+        "precision": 0.19730941704035873,
+        "recall": 0.36065573770491804,
+        "roc_auc": 0.8471573408118731,
+        "average_precision": 0.14475203181825444,
+        "brier": 0.039962705224752426,
+        "confusion_matrix": [
+          [
+            3983,
+            179
+          ],
+          [
+            78,
+            44
+          ]
+        ]
+      },
+      "test": {
+        "threshold": 0.37856781482696533,
+        "n": 5355,
+        "prevalence": 0.028944911297852476,
+        "accuracy": 0.9450980392156862,
+        "f1": 0.21808510638297873,
+        "precision": 0.18552036199095023,
+        "recall": 0.2645161290322581,
+        "roc_auc": 0.8639007444168734,
+        "average_precision": 0.13849473995400965,
+        "brier": 0.03751219063997269,
+        "confusion_matrix": [
+          [
+            5020,
+            180
+          ],
+          [
+            114,
+            41
+          ]
+        ]
+      },
+      "source": "saved benchmark",
+      "checkpoint_sha256": "e55abd93ac3bdd67a1184ebe9d0fa9389c5fd88143c7732ed1a5cb23e6fa4286"
+    },
+    {
+      "experiment": "onset_lead1_lstm",
+      "seed": 7,
+      "parameter_count": 5281,
+      "epochs_completed": 20,
+      "validation": {
+        "threshold": 0.38203829526901245,
+        "n": 4284,
+        "prevalence": 0.028478057889822595,
+        "accuracy": 0.9267040149393091,
+        "f1": 0.2523809523809524,
+        "precision": 0.17785234899328858,
+        "recall": 0.4344262295081967,
+        "roc_auc": 0.8406720444931111,
+        "average_precision": 0.14465509979061042,
+        "brier": 0.045982904732227325,
+        "confusion_matrix": [
+          [
+            3917,
+            245
+          ],
+          [
+            69,
+            53
+          ]
+        ]
+      },
+      "test": {
+        "threshold": 0.38203829526901245,
+        "n": 5355,
+        "prevalence": 0.028944911297852476,
+        "accuracy": 0.9331465919701214,
+        "f1": 0.22510822510822512,
+        "precision": 0.16938110749185667,
+        "recall": 0.33548387096774196,
+        "roc_auc": 0.8589367245657569,
+        "average_precision": 0.1391016822139505,
+        "brier": 0.043562620878219604,
+        "confusion_matrix": [
+          [
+            4945,
+            255
+          ],
+          [
+            103,
+            52
+          ]
+        ]
+      },
+      "source": "fixed-protocol retraining",
+      "checkpoint_sha256": "1a2be26cd2c8f7b8bd8e056df65c1b9818d45bee9d5132d9893e806f137c299e"
+    },
+    {
+      "experiment": "onset_lead1_lstm",
+      "seed": 21,
+      "parameter_count": 5281,
+      "epochs_completed": 20,
+      "validation": {
+        "threshold": 0.3834596276283264,
+        "n": 4284,
+        "prevalence": 0.028478057889822595,
+        "accuracy": 0.919234360410831,
+        "f1": 0.2543103448275862,
+        "precision": 0.17251461988304093,
+        "recall": 0.48360655737704916,
+        "roc_auc": 0.83639446672076,
+        "average_precision": 0.13075234999639684,
+        "brier": 0.05148394778370857,
+        "confusion_matrix": [
+          [
+            3879,
+            283
+          ],
+          [
+            63,
+            59
+          ]
+        ]
+      },
+      "test": {
+        "threshold": 0.3834596276283264,
+        "n": 5355,
+        "prevalence": 0.028944911297852476,
+        "accuracy": 0.9225023342670402,
+        "f1": 0.22429906542056074,
+        "precision": 0.15789473684210525,
+        "recall": 0.3870967741935484,
+        "roc_auc": 0.8581873449131514,
+        "average_precision": 0.1361136831154773,
+        "brier": 0.04892786592245102,
+        "confusion_matrix": [
+          [
+            4880,
+            320
+          ],
+          [
+            95,
+            60
+          ]
+        ]
+      },
+      "source": "fixed-protocol retraining",
+      "checkpoint_sha256": "5907fc9d9d832b0338a56e35b644bab5045a777d43a22ac93ec70118fdeb4b13"
+    }
+  ],
+  "summary": [
+    {
+      "experiment": "convlstm",
+      "n_seeds": 3,
+      "mean_f1": 0.5612089795525718,
+      "sd_f1": 0.012038350968060782,
+      "min_f1": 0.5473591903966251,
+      "max_f1": 0.5691631453688863
+    },
+    {
+      "experiment": "convlstm_no_soil",
+      "n_seeds": 3,
+      "mean_f1": 0.5853672938970399,
+      "sd_f1": 0.03735369332748785,
+      "min_f1": 0.5577745182845036,
+      "max_f1": 0.6278739142990426
+    },
+    {
+      "experiment": "lstm_Paris",
+      "n_seeds": 3,
+      "mean_f1": 0.5389265444674655,
+      "sd_f1": 0.04229307167396815,
+      "min_f1": 0.49206349206349204,
+      "max_f1": 0.5742574257425742
+    },
+    {
+      "experiment": "ongoing_lead1_lstm",
+      "n_seeds": 3,
+      "mean_f1": 0.7747463421815777,
+      "sd_f1": 0.0067801838144213806,
+      "min_f1": 0.7701342281879194,
+      "max_f1": 0.7825311942959001
+    },
+    {
+      "experiment": "onset_lead1_lstm",
+      "n_seeds": 3,
+      "mean_f1": 0.2224974656372549,
+      "sd_f1": 0.0038425734204608824,
+      "min_f1": 0.21808510638297873,
+      "max_f1": 0.22510822510822512
+    }
+  ]
+}

@@ -1,0 +1,2370 @@
+{
+  "scope": "Descriptive audit of already inspected held-out results; no model selection.",
+  "bootstrap": "Paired full-length moving blocks within each contiguous season; whole spatial fields.",
+  "experiments": {
+    "research/ongoing_lead1": {
+      "source_sha256": "00e658d0d4860503f6a014a5774808c5619d86aa0c8ac516312198e80f88a17d",
+      "reliability": {
+        "n": 5355,
+        "positives": 497,
+        "brier": 0.024755941714721407,
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 4646,
+            "mean_probability": 0.0005972553317745767,
+            "observed_frequency": 0.0017219113215669393
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 45,
+            "mean_probability": 0.15716369992504411,
+            "observed_frequency": 0.3333333333333333
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 61,
+            "mean_probability": 0.2541626122807275,
+            "observed_frequency": 0.36065573770491804
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 70,
+            "mean_probability": 0.3534450366275227,
+            "observed_frequency": 0.34285714285714286
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 59,
+            "mean_probability": 0.4541927936126337,
+            "observed_frequency": 0.6271186440677966
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 82,
+            "mean_probability": 0.5464281760978457,
+            "observed_frequency": 0.6585365853658537
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 97,
+            "mean_probability": 0.654839239893019,
+            "observed_frequency": 0.7525773195876289
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 111,
+            "mean_probability": 0.7546693913044461,
+            "observed_frequency": 0.8918918918918919
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 134,
+            "mean_probability": 0.8467184482678286,
+            "observed_frequency": 0.8731343283582089
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 50,
+            "mean_probability": 0.9227298470850178,
+            "observed_frequency": 0.96
+          }
+        ],
+        "expected_calibration_error": 0.013053419245009435,
+        "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+        "baseline_brier": 0.08766002999728813,
+        "brier_skill_score": 0.7175914528492944
+      },
+      "baseline": "temperature persistence",
+      "uncertainty": [
+        {
+          "block_days": 3,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.7892755918084923,
+            0.845478398631745
+          ],
+          "f1_difference_95_interval": [
+            -0.006015483705386906,
+            0.03882135573069022
+          ]
+        },
+        {
+          "block_days": 7,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.7893302180685359,
+            0.8469284313932163
+          ],
+          "f1_difference_95_interval": [
+            -0.005725258684561083,
+            0.04022092573964282
+          ]
+        },
+        {
+          "block_days": 14,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.7932627832582885,
+            0.8511884046507949
+          ],
+          "f1_difference_95_interval": [
+            -0.0036553459799647157,
+            0.03628989833767855
+          ]
+        }
+      ],
+      "sites": {
+        "Paris": {
+          "n": 765,
+          "positives": 55,
+          "brier": 0.02079759211430511,
+          "expected_calibration_error": 0.01486372849235161,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.06913326395397416,
+          "brier_skill_score": 0.6991666395477694
+        },
+        "London": {
+          "n": 765,
+          "positives": 64,
+          "brier": 0.026742179980480524,
+          "expected_calibration_error": 0.016223574539177898,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.08039690683229848,
+          "brier_skill_score": 0.6673730242350919
+        },
+        "Madrid": {
+          "n": 765,
+          "positives": 68,
+          "brier": 0.02415359410697317,
+          "expected_calibration_error": 0.01648058584350045,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.08499965042254307,
+          "brier_skill_score": 0.7158389006672043
+        },
+        "Rome": {
+          "n": 765,
+          "positives": 173,
+          "brier": 0.04295634928710622,
+          "expected_calibration_error": 0.03654163489879294,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.20765479281872706,
+          "brier_skill_score": 0.7931357677614256
+        },
+        "Athens": {
+          "n": 765,
+          "positives": 34,
+          "brier": 0.012753866225510401,
+          "expected_calibration_error": 0.005618678966002844,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.04270920005579772,
+          "brier_skill_score": 0.701378948590748
+        },
+        "Berlin": {
+          "n": 765,
+          "positives": 36,
+          "brier": 0.01863699092486045,
+          "expected_calibration_error": 0.00909422289555902,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.045231667769628524,
+          "brier_skill_score": 0.5879658689619547
+        },
+        "Warsaw": {
+          "n": 765,
+          "positives": 67,
+          "brier": 0.027251019363813963,
+          "expected_calibration_error": 0.015327698211589743,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.0834947281280479,
+          "brier_skill_score": 0.6736198802633182
+        }
+      },
+      "episodes": {
+        "n": 159,
+        "detected": 149,
+        "missed": 10,
+        "detection_fraction": 0.9371069182389937,
+        "note": "Episodes comprise third-and-later hot days; this is not advance-onset recall."
+      }
+    },
+    "research/ongoing_lead3": {
+      "source_sha256": "7bf18a4a9622fffd9e27b2fad152c1de4bdbdf8252e78bbf191b83fe0ae78376",
+      "reliability": {
+        "n": 5355,
+        "positives": 497,
+        "brier": 0.06844807303131521,
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 4351,
+            "mean_probability": 0.015444550340091031,
+            "observed_frequency": 0.03355550448172834
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 492,
+            "mean_probability": 0.14479595185619684,
+            "observed_frequency": 0.25609756097560976
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 274,
+            "mean_probability": 0.245910149295059,
+            "observed_frequency": 0.41605839416058393
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 147,
+            "mean_probability": 0.3495410356955328,
+            "observed_frequency": 0.36054421768707484
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 59,
+            "mean_probability": 0.4379592855249887,
+            "observed_frequency": 0.559322033898305
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 24,
+            "mean_probability": 0.5421408534766202,
+            "observed_frequency": 0.75
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 7,
+            "mean_probability": 0.6366149189588527,
+            "observed_frequency": 0.8571428571428571
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 1,
+            "mean_probability": 0.7115973439009436,
+            "observed_frequency": 1.0
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          }
+        ],
+        "expected_calibration_error": 0.03656029129727347,
+        "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+        "baseline_brier": 0.08766002999728813,
+        "brier_skill_score": 0.21916438959200968
+      },
+      "baseline": "temperature persistence",
+      "uncertainty": [
+        {
+          "block_days": 3,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.41225517584769117,
+            0.5037439679215807
+          ],
+          "f1_difference_95_interval": [
+            0.022307378858498622,
+            0.08054357130674526
+          ]
+        },
+        {
+          "block_days": 7,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.41451333609936025,
+            0.5140169432861404
+          ],
+          "f1_difference_95_interval": [
+            0.016363390472927543,
+            0.08154759302808569
+          ]
+        },
+        {
+          "block_days": 14,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.4218267540419915,
+            0.5110740380396421
+          ],
+          "f1_difference_95_interval": [
+            0.01697018034970025,
+            0.0827867654625623
+          ]
+        }
+      ],
+      "sites": {
+        "Paris": {
+          "n": 765,
+          "positives": 55,
+          "brier": 0.05740389558629806,
+          "expected_calibration_error": 0.03136688991807278,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.06913326395397416,
+          "brier_skill_score": 0.16966316497778833
+        },
+        "London": {
+          "n": 765,
+          "positives": 64,
+          "brier": 0.06451585532479562,
+          "expected_calibration_error": 0.03860961797925703,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.08039690683229848,
+          "brier_skill_score": 0.19753311580294342
+        },
+        "Madrid": {
+          "n": 765,
+          "positives": 68,
+          "brier": 0.07328022302009782,
+          "expected_calibration_error": 0.04541021298345824,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.08499965042254307,
+          "brier_skill_score": 0.13787618353942188
+        },
+        "Rome": {
+          "n": 765,
+          "positives": 173,
+          "brier": 0.14062541037403115,
+          "expected_calibration_error": 0.10097130412742773,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.20765479281872706,
+          "brier_skill_score": 0.32279236869437167
+        },
+        "Athens": {
+          "n": 765,
+          "positives": 34,
+          "brier": 0.038851226949273766,
+          "expected_calibration_error": 0.015733361972392265,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.04270920005579772,
+          "brier_skill_score": 0.09033119565535486
+        },
+        "Berlin": {
+          "n": 765,
+          "positives": 36,
+          "brier": 0.04021272618566008,
+          "expected_calibration_error": 0.01720115462490998,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.045231667769628524,
+          "brier_skill_score": 0.11096078989460756
+        },
+        "Warsaw": {
+          "n": 765,
+          "positives": 67,
+          "brier": 0.06424717377905002,
+          "expected_calibration_error": 0.04175465382778528,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.0834947281280479,
+          "brier_skill_score": 0.23052418734126223
+        }
+      },
+      "episodes": {
+        "n": 159,
+        "detected": 114,
+        "missed": 45,
+        "detection_fraction": 0.7169811320754716,
+        "note": "Episodes comprise third-and-later hot days; this is not advance-onset recall."
+      }
+    },
+    "research/ongoing_lead7": {
+      "source_sha256": "f858e9c122de6c42d719c1d48c18c4d0023d9b5ca84bb1b89d60b496b27ee0e5",
+      "reliability": {
+        "n": 5355,
+        "positives": 497,
+        "brier": 0.08457401873938503,
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 5041,
+            "mean_probability": 0.03380349779000868,
+            "observed_frequency": 0.08232493552866495
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 280,
+            "mean_probability": 0.13457507267316132,
+            "observed_frequency": 0.24285714285714285
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 31,
+            "mean_probability": 0.23189534497295985,
+            "observed_frequency": 0.3870967741935484
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 3,
+            "mean_probability": 0.34400845047601464,
+            "observed_frequency": 0.6666666666666666
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          }
+        ],
+        "expected_calibration_error": 0.05241732329532984,
+        "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+        "baseline_brier": 0.08766002999728813,
+        "brier_skill_score": 0.035204314417854654
+      },
+      "baseline": "temperature persistence",
+      "uncertainty": [
+        {
+          "block_days": 3,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.18327437948255793,
+            0.25799447497108996
+          ],
+          "f1_difference_95_interval": [
+            -0.031139134113315065,
+            0.033049729543631966
+          ]
+        },
+        {
+          "block_days": 7,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.1825410054270554,
+            0.26600687794637595
+          ],
+          "f1_difference_95_interval": [
+            -0.027339354154135805,
+            0.037862115787500907
+          ]
+        },
+        {
+          "block_days": 14,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.18503902033105432,
+            0.27473361713331723
+          ],
+          "f1_difference_95_interval": [
+            -0.029884133482943696,
+            0.03778570073610722
+          ]
+        }
+      ],
+      "sites": {
+        "Paris": {
+          "n": 765,
+          "positives": 55,
+          "brier": 0.06711553191090588,
+          "expected_calibration_error": 0.04121576507592838,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.06913326395397416,
+          "brier_skill_score": 0.029186124416338832
+        },
+        "London": {
+          "n": 765,
+          "positives": 64,
+          "brier": 0.07909460001780398,
+          "expected_calibration_error": 0.05269490937141869,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.08039690683229848,
+          "brier_skill_score": 0.01619846914273715
+        },
+        "Madrid": {
+          "n": 765,
+          "positives": 68,
+          "brier": 0.08398481007420641,
+          "expected_calibration_error": 0.05774981643242494,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.08499965042254307,
+          "brier_skill_score": 0.01193934731839208
+        },
+        "Rome": {
+          "n": 765,
+          "positives": 173,
+          "brier": 0.19272801258817057,
+          "expected_calibration_error": 0.15278225978939466,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.20765479281872706,
+          "brier_skill_score": 0.07188266655413478
+        },
+        "Athens": {
+          "n": 765,
+          "positives": 34,
+          "brier": 0.042943165647065774,
+          "expected_calibration_error": 0.006958103849510412,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.04270920005579772,
+          "brier_skill_score": -0.005478107549717226
+        },
+        "Berlin": {
+          "n": 765,
+          "positives": 36,
+          "brier": 0.04350843056517332,
+          "expected_calibration_error": 0.01211196355334434,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.045231667769628524,
+          "brier_skill_score": 0.03809802488893188
+        },
+        "Warsaw": {
+          "n": 765,
+          "positives": 67,
+          "brier": 0.08264358037236916,
+          "expected_calibration_error": 0.051353029121546094,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.0834947281280479,
+          "brier_skill_score": 0.010194029907773516
+        }
+      },
+      "episodes": {
+        "n": 159,
+        "detected": 68,
+        "missed": 91,
+        "detection_fraction": 0.4276729559748428,
+        "note": "Episodes comprise third-and-later hot days; this is not advance-onset recall."
+      }
+    },
+    "research/onset_lead1": {
+      "source_sha256": "990d84dced2560c67bd41151f9d50252fc12706120028812f1858d88b072cfdd",
+      "reliability": {
+        "n": 5355,
+        "positives": 155,
+        "brier": 0.025603246472901707,
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 5159,
+            "mean_probability": 0.010235942120532228,
+            "observed_frequency": 0.021128125605737545
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 169,
+            "mean_probability": 0.13236428920676,
+            "observed_frequency": 0.23076923076923078
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 24,
+            "mean_probability": 0.22797044123804602,
+            "observed_frequency": 0.25
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 2,
+            "mean_probability": 0.31060817894136644,
+            "observed_frequency": 0.5
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 1,
+            "mean_probability": 0.5023740095850201,
+            "observed_frequency": 0.0
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          }
+        ],
+        "expected_calibration_error": 0.013862385954476373,
+        "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+        "baseline_brier": 0.02836529478287586,
+        "brier_skill_score": 0.09737421490298082
+      },
+      "baseline": "temperature persistence",
+      "uncertainty": [
+        {
+          "block_days": 3,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.22687358338816993,
+            0.349958840517125
+          ],
+          "f1_difference_95_interval": [
+            0.1523155208543968,
+            0.2970119482243611
+          ]
+        },
+        {
+          "block_days": 7,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.22572178477690288,
+            0.35081324925074925
+          ],
+          "f1_difference_95_interval": [
+            0.1535067633585418,
+            0.29353393425238594
+          ]
+        },
+        {
+          "block_days": 14,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.23064298474469533,
+            0.3543114711262085
+          ],
+          "f1_difference_95_interval": [
+            0.15285317283279862,
+            0.2903736015741822
+          ]
+        }
+      ],
+      "sites": {
+        "Paris": {
+          "n": 765,
+          "positives": 22,
+          "brier": 0.0246419505678433,
+          "expected_calibration_error": 0.01520668458338363,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.028228465333301922,
+          "brier_skill_score": 0.12705312609493902
+        },
+        "London": {
+          "n": 765,
+          "positives": 23,
+          "brier": 0.02694250195887417,
+          "expected_calibration_error": 0.01570861700629425,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.02953087474428682,
+          "brier_skill_score": 0.08764971602859162
+        },
+        "Madrid": {
+          "n": 765,
+          "positives": 26,
+          "brier": 0.030454648705119,
+          "expected_calibration_error": 0.020176955437673016,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.033251589259216875,
+          "brier_skill_score": 0.084114492462119
+        },
+        "Rome": {
+          "n": 765,
+          "positives": 36,
+          "brier": 0.041726259422935105,
+          "expected_calibration_error": 0.030015204343317455,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.045870130666507386,
+          "brier_skill_score": 0.09033920730899458
+        },
+        "Athens": {
+          "n": 765,
+          "positives": 12,
+          "brier": 0.01450745525518556,
+          "expected_calibration_error": 0.0011988281410003454,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.015481225749556847,
+          "brier_skill_score": 0.06290009009132635
+        },
+        "Berlin": {
+          "n": 765,
+          "positives": 14,
+          "brier": 0.015847060717354224,
+          "expected_calibration_error": 0.0018996259493216923,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.018011690545157624,
+          "brier_skill_score": 0.12017915932857026
+        },
+        "Warsaw": {
+          "n": 765,
+          "positives": 22,
+          "brier": 0.025102848683000605,
+          "expected_calibration_error": 0.01579516649562303,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.028183087182103553,
+          "brier_skill_score": 0.10929386405400332
+        }
+      },
+      "exact_onsets": {
+        "n": 155,
+        "detected": 61,
+        "false_alerts": 196
+      }
+    },
+    "research/onset_lead3": {
+      "source_sha256": "4b030f1e369301e8fb48078a957f7dd81e5572b8bff3d6e592318c31737c914a",
+      "reliability": {
+        "n": 5355,
+        "positives": 155,
+        "brier": 0.028213336687257017,
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 5351,
+            "mean_probability": 0.015501571433111906,
+            "observed_frequency": 0.02896654830872734
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 4,
+            "mean_probability": 0.1201663565180425,
+            "observed_frequency": 0.0
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          }
+        ],
+        "expected_calibration_error": 0.013544679119979525,
+        "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+        "baseline_brier": 0.02836529478287586,
+        "brier_skill_score": 0.005357183726875325
+      },
+      "baseline": "temperature persistence",
+      "uncertainty": [
+        {
+          "block_days": 3,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.03696528631952986,
+            0.08384540287995537
+          ],
+          "f1_difference_95_interval": [
+            0.017067058975957655,
+            0.07871563185749322
+          ]
+        },
+        {
+          "block_days": 7,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.037979914177381884,
+            0.08345941402497598
+          ],
+          "f1_difference_95_interval": [
+            0.017902648454922895,
+            0.08123030518276288
+          ]
+        },
+        {
+          "block_days": 14,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.041125718713575954,
+            0.08290552995391705
+          ],
+          "f1_difference_95_interval": [
+            0.020997069200084626,
+            0.07854967036180292
+          ]
+        }
+      ],
+      "sites": {
+        "Paris": {
+          "n": 765,
+          "positives": 22,
+          "brier": 0.0278094735139998,
+          "expected_calibration_error": 0.015472119589241388,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.028228465333301922,
+          "brier_skill_score": 0.01484288339287887
+        },
+        "London": {
+          "n": 765,
+          "positives": 23,
+          "brier": 0.029607218188987046,
+          "expected_calibration_error": 0.015641201033693514,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.02953087474428682,
+          "brier_skill_score": -0.002585207697411551
+        },
+        "Madrid": {
+          "n": 765,
+          "positives": 26,
+          "brier": 0.03308941391324538,
+          "expected_calibration_error": 0.01986550831458265,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.033251589259216875,
+          "brier_skill_score": 0.004877220896337797
+        },
+        "Rome": {
+          "n": 765,
+          "positives": 36,
+          "brier": 0.04526585441194996,
+          "expected_calibration_error": 0.02407134070160996,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.045870130666507386,
+          "brier_skill_score": 0.01317363272737837
+        },
+        "Athens": {
+          "n": 765,
+          "positives": 12,
+          "brier": 0.015493911643761417,
+          "expected_calibration_error": 0.0010840448279480514,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.015481225749556847,
+          "brier_skill_score": -0.0008194373242655928
+        },
+        "Berlin": {
+          "n": 765,
+          "positives": 14,
+          "brier": 0.017944954330496216,
+          "expected_calibration_error": 0.004481366865732412,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.018011690545157624,
+          "brier_skill_score": 0.0037051610726983597
+        },
+        "Warsaw": {
+          "n": 765,
+          "positives": 22,
+          "brier": 0.028282530808359296,
+          "expected_calibration_error": 0.01419717250704872,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.028183087182103553,
+          "brier_skill_score": -0.0035284859182811434
+        }
+      },
+      "exact_onsets": {
+        "n": 155,
+        "detected": 19,
+        "false_alerts": 462
+      }
+    },
+    "research/onset_lead7": {
+      "source_sha256": "d3515e978a3fff4b3fa39c310e8c822acbab497185b50ea791adfcf5481548dc",
+      "reliability": {
+        "n": 5355,
+        "positives": 155,
+        "brier": 0.028302826966305508,
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 5351,
+            "mean_probability": 0.015335170954701771,
+            "observed_frequency": 0.02896654830872734
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 4,
+            "mean_probability": 0.11590024896533227,
+            "observed_frequency": 0.0
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          }
+        ],
+        "expected_calibration_error": 0.013707768668020944,
+        "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+        "baseline_brier": 0.02836529478287586,
+        "brier_skill_score": 0.002202262202755767
+      },
+      "baseline": "temperature persistence",
+      "uncertainty": [
+        {
+          "block_days": 3,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.04835164268399608,
+            0.08619037735065797
+          ],
+          "f1_difference_95_interval": [
+            0.031152680314066306,
+            0.07933999849720262
+          ]
+        },
+        {
+          "block_days": 7,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.05040164421261857,
+            0.08632893823733517
+          ],
+          "f1_difference_95_interval": [
+            0.03338088312014131,
+            0.07960823466291371
+          ]
+        },
+        {
+          "block_days": 14,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.052270170054980185,
+            0.08951047102265831
+          ],
+          "f1_difference_95_interval": [
+            0.041230496292312714,
+            0.08335275080906146
+          ]
+        }
+      ],
+      "sites": {
+        "Paris": {
+          "n": 765,
+          "positives": 22,
+          "brier": 0.028143637026834093,
+          "expected_calibration_error": 0.014413727090979385,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.028228465333301922,
+          "brier_skill_score": 0.003005062636818434
+        },
+        "London": {
+          "n": 765,
+          "positives": 23,
+          "brier": 0.029517178652155383,
+          "expected_calibration_error": 0.01707394320278101,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.02953087474428682,
+          "brier_skill_score": 0.00046378890737341916
+        },
+        "Madrid": {
+          "n": 765,
+          "positives": 26,
+          "brier": 0.033394492850878366,
+          "expected_calibration_error": 0.019245623827280334,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.033251589259216875,
+          "brier_skill_score": -0.004297646965005786
+        },
+        "Rome": {
+          "n": 765,
+          "positives": 36,
+          "brier": 0.0455143728953721,
+          "expected_calibration_error": 0.02754222557113988,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.045870130666507386,
+          "brier_skill_score": 0.00775576101410691
+        },
+        "Athens": {
+          "n": 765,
+          "positives": 12,
+          "brier": 0.015562780288377778,
+          "expected_calibration_error": 0.00012652118765001455,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.015481225749556847,
+          "brier_skill_score": -0.005267963928713204
+        },
+        "Berlin": {
+          "n": 765,
+          "positives": 14,
+          "brier": 0.01776988028266321,
+          "expected_calibration_error": 0.004155321655234388,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.018011690545157624,
+          "brier_skill_score": 0.013425184154045033
+        },
+        "Warsaw": {
+          "n": 765,
+          "positives": 22,
+          "brier": 0.02821744676785762,
+          "expected_calibration_error": 0.013650060516381611,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.028183087182103553,
+          "brier_skill_score": -0.0012191562099657105
+        }
+      },
+      "exact_onsets": {
+        "n": 155,
+        "detected": 48,
+        "false_alerts": 1256
+      }
+    },
+    "issued_forecasts/ongoing_lead1": {
+      "source_sha256": "e8041733fcd608ff6326c78069d14bcede4192a538b074c73b9150bfa1a98936",
+      "reliability": {
+        "n": 595,
+        "positives": 105,
+        "brier": 0.04754285714285715,
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 399,
+            "mean_probability": 0.004912280701754386,
+            "observed_frequency": 0.0
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 31,
+            "mean_probability": 0.12645161290322585,
+            "observed_frequency": 0.03225806451612903
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 13,
+            "mean_probability": 0.24769230769230774,
+            "observed_frequency": 0.07692307692307693
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 20,
+            "mean_probability": 0.34199999999999997,
+            "observed_frequency": 0.35
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 6,
+            "mean_probability": 0.42333333333333334,
+            "observed_frequency": 0.16666666666666666
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 11,
+            "mean_probability": 0.5418181818181819,
+            "observed_frequency": 0.18181818181818182
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 9,
+            "mean_probability": 0.6533333333333334,
+            "observed_frequency": 0.4444444444444444
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 7,
+            "mean_probability": 0.76,
+            "observed_frequency": 0.8571428571428571
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 20,
+            "mean_probability": 0.845,
+            "observed_frequency": 0.6
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 79,
+            "mean_probability": 0.9825316455696205,
+            "observed_frequency": 0.8987341772151899
+          }
+        ],
+        "expected_calibration_error": 0.045109243697479026,
+        "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+        "baseline_brier": 0.16502494203061424,
+        "brier_skill_score": 0.7119050213995086
+      },
+      "baseline": "raw GFS",
+      "uncertainty": [
+        {
+          "block_days": 3,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.6972116119174943,
+            0.8364028776978417
+          ],
+          "f1_difference_95_interval": [
+            -0.03008831047921905,
+            0.0427660868035932
+          ]
+        },
+        {
+          "block_days": 7,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.678223880597015,
+            0.8244149648705541
+          ],
+          "f1_difference_95_interval": [
+            -0.0406208953542089,
+            0.04879755159017682
+          ]
+        },
+        {
+          "block_days": 14,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.6607516519823788,
+            0.813796720061022
+          ],
+          "f1_difference_95_interval": [
+            -0.0498706264564527,
+            0.047225193942345756
+          ]
+        }
+      ],
+      "sites": {
+        "Paris": {
+          "n": 85,
+          "positives": 23,
+          "brier": 0.07600470588235295,
+          "expected_calibration_error": 0.10329411764705883,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.258851385970043,
+          "brier_skill_score": 0.7063770564815557
+        },
+        "London": {
+          "n": 85,
+          "positives": 16,
+          "brier": 0.10297411764705883,
+          "expected_calibration_error": 0.09929411764705884,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.17919858504931244,
+          "brier_skill_score": 0.4253631097660616
+        },
+        "Madrid": {
+          "n": 85,
+          "positives": 13,
+          "brier": 0.035585882352941176,
+          "expected_calibration_error": 0.03576470588235295,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.1432925016077268,
+          "brier_skill_score": 0.7516556557135139
+        },
+        "Rome": {
+          "n": 85,
+          "positives": 46,
+          "brier": 0.08912941176470587,
+          "expected_calibration_error": 0.10447058823529405,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.494308892863809,
+          "brier_skill_score": 0.8196888361681516
+        },
+        "Athens": {
+          "n": 85,
+          "positives": 3,
+          "brier": 0.019303529411764705,
+          "expected_calibration_error": 0.03341176470588235,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.0337453912462584,
+          "brier_skill_score": 0.42796545842671097
+        },
+        "Berlin": {
+          "n": 85,
+          "positives": 2,
+          "brier": 0.007002352941176473,
+          "expected_calibration_error": 0.028705882352941175,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.02301258712140963,
+          "brier_skill_score": 0.6957163962385666
+        },
+        "Warsaw": {
+          "n": 85,
+          "positives": 2,
+          "brier": 0.0028,
+          "expected_calibration_error": 0.018588235294117645,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.022765250355740247,
+          "brier_skill_score": 0.8770055256917488
+        }
+      },
+      "episodes": {
+        "n": 25,
+        "detected": 23,
+        "missed": 2,
+        "detection_fraction": 0.92,
+        "note": "Episodes comprise third-and-later hot days; this is not advance-onset recall."
+      }
+    },
+    "issued_forecasts/ongoing_lead3": {
+      "source_sha256": "493866d7cdbc52ed0f82d80407af385f12f518708a94519ec9814e978894fb63",
+      "reliability": {
+        "n": 595,
+        "positives": 105,
+        "brier": 0.06829915966386554,
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 384,
+            "mean_probability": 0.009114583333333334,
+            "observed_frequency": 0.015625
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 38,
+            "mean_probability": 0.1394736842105263,
+            "observed_frequency": 0.05263157894736842
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 19,
+            "mean_probability": 0.24105263157894738,
+            "observed_frequency": 0.05263157894736842
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 10,
+            "mean_probability": 0.33799999999999997,
+            "observed_frequency": 0.3
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 14,
+            "mean_probability": 0.4428571428571429,
+            "observed_frequency": 0.2857142857142857
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 12,
+            "mean_probability": 0.5233333333333334,
+            "observed_frequency": 0.3333333333333333
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 11,
+            "mean_probability": 0.6363636363636364,
+            "observed_frequency": 0.2727272727272727
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 15,
+            "mean_probability": 0.7346666666666667,
+            "observed_frequency": 0.6666666666666666
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 19,
+            "mean_probability": 0.8431578947368421,
+            "observed_frequency": 0.42105263157894735
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 73,
+            "mean_probability": 0.9728767123287673,
+            "observed_frequency": 0.8767123287671232
+          }
+        ],
+        "expected_calibration_error": 0.05764705882352944,
+        "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+        "baseline_brier": 0.16502494203061424,
+        "brier_skill_score": 0.5861282614406544
+      },
+      "baseline": "raw GFS",
+      "uncertainty": [
+        {
+          "block_days": 3,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.6315155888672035,
+            0.7709018567639256
+          ],
+          "f1_difference_95_interval": [
+            -0.02711825531132309,
+            0.04456976267410835
+          ]
+        },
+        {
+          "block_days": 7,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.6041304347826087,
+            0.7765481651376146
+          ],
+          "f1_difference_95_interval": [
+            -0.02839357053799594,
+            0.04982745914868475
+          ]
+        },
+        {
+          "block_days": 14,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.6069826007326007,
+            0.7668379801364126
+          ],
+          "f1_difference_95_interval": [
+            -0.03199404673354256,
+            0.040869435178994294
+          ]
+        }
+      ],
+      "sites": {
+        "Paris": {
+          "n": 85,
+          "positives": 23,
+          "brier": 0.1020094117647059,
+          "expected_calibration_error": 0.10658823529411764,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.258851385970043,
+          "brier_skill_score": 0.6059151416847677
+        },
+        "London": {
+          "n": 85,
+          "positives": 16,
+          "brier": 0.14663999999999996,
+          "expected_calibration_error": 0.15176470588235294,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.17919858504931244,
+          "brier_skill_score": 0.1816899672525477
+        },
+        "Madrid": {
+          "n": 85,
+          "positives": 13,
+          "brier": 0.07038117647058822,
+          "expected_calibration_error": 0.08141176470588235,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.1432925016077268,
+          "brier_skill_score": 0.5088286150292665
+        },
+        "Rome": {
+          "n": 85,
+          "positives": 46,
+          "brier": 0.1113270588235294,
+          "expected_calibration_error": 0.11835294117647056,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.494308892863809,
+          "brier_skill_score": 0.7747824074567033
+        },
+        "Athens": {
+          "n": 85,
+          "positives": 3,
+          "brier": 0.015374117647058823,
+          "expected_calibration_error": 0.050117647058823524,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.0337453912462584,
+          "brier_skill_score": 0.5444083746172756
+        },
+        "Berlin": {
+          "n": 85,
+          "positives": 2,
+          "brier": 0.015058823529411767,
+          "expected_calibration_error": 0.037647058823529415,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.02301258712140963,
+          "brier_skill_score": 0.3456266585775627
+        },
+        "Warsaw": {
+          "n": 85,
+          "positives": 2,
+          "brier": 0.017303529411764707,
+          "expected_calibration_error": 0.02752941176470588,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.022765250355740247,
+          "brier_skill_score": 0.23991482011522747
+        }
+      },
+      "episodes": {
+        "n": 25,
+        "detected": 23,
+        "missed": 2,
+        "detection_fraction": 0.92,
+        "note": "Episodes comprise third-and-later hot days; this is not advance-onset recall."
+      }
+    },
+    "issued_forecasts/ongoing_lead7": {
+      "source_sha256": "eb6208916b1f70a369141c64e36ab96c8ac1a6f923329ae3840a26d015e2d3ac",
+      "reliability": {
+        "n": 595,
+        "positives": 105,
+        "brier": 0.09819966386554622,
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 258,
+            "mean_probability": 0.02612403100775194,
+            "observed_frequency": 0.011627906976744186
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 121,
+            "mean_probability": 0.13768595041322315,
+            "observed_frequency": 0.08264462809917356
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 43,
+            "mean_probability": 0.2395348837209303,
+            "observed_frequency": 0.16279069767441862
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 35,
+            "mean_probability": 0.33828571428571436,
+            "observed_frequency": 0.2
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 30,
+            "mean_probability": 0.44866666666666677,
+            "observed_frequency": 0.43333333333333335
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 33,
+            "mean_probability": 0.547878787878788,
+            "observed_frequency": 0.5454545454545454
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 30,
+            "mean_probability": 0.634,
+            "observed_frequency": 0.43333333333333335
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 24,
+            "mean_probability": 0.7316666666666668,
+            "observed_frequency": 0.7916666666666666
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 15,
+            "mean_probability": 0.8333333333333334,
+            "observed_frequency": 0.7333333333333333
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 6,
+            "mean_probability": 0.96,
+            "observed_frequency": 0.6666666666666666
+          }
+        ],
+        "expected_calibration_error": 0.05008403361344539,
+        "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+        "baseline_brier": 0.16502494203061424,
+        "brier_skill_score": 0.4049404734992791
+      },
+      "baseline": "raw GFS",
+      "uncertainty": [
+        {
+          "block_days": 3,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.4701737070667193,
+            0.6294344821969131
+          ],
+          "f1_difference_95_interval": [
+            -0.11997811580498134,
+            -0.03325305631713941
+          ]
+        },
+        {
+          "block_days": 7,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.43444894588806027,
+            0.627083841091884
+          ],
+          "f1_difference_95_interval": [
+            -0.11994443033482348,
+            -0.03279664892966304
+          ]
+        },
+        {
+          "block_days": 14,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.43068173882681565,
+            0.5896388414927592
+          ],
+          "f1_difference_95_interval": [
+            -0.12948419527116986,
+            -0.04161388663735701
+          ]
+        }
+      ],
+      "sites": {
+        "Paris": {
+          "n": 85,
+          "positives": 23,
+          "brier": 0.14155294117647058,
+          "expected_calibration_error": 0.10729411764705883,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.258851385970043,
+          "brier_skill_score": 0.45314976527553696
+        },
+        "London": {
+          "n": 85,
+          "positives": 16,
+          "brier": 0.1418964705882353,
+          "expected_calibration_error": 0.1315294117647059,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.17919858504931244,
+          "brier_skill_score": 0.20816076449940846
+        },
+        "Madrid": {
+          "n": 85,
+          "positives": 13,
+          "brier": 0.1388376470588235,
+          "expected_calibration_error": 0.1108235294117647,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.1432925016077268,
+          "brier_skill_score": 0.03108923704255484
+        },
+        "Rome": {
+          "n": 85,
+          "positives": 46,
+          "brier": 0.16973176470588236,
+          "expected_calibration_error": 0.1708235294117647,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.494308892863809,
+          "brier_skill_score": 0.6566281384853692
+        },
+        "Athens": {
+          "n": 85,
+          "positives": 3,
+          "brier": 0.031378823529411765,
+          "expected_calibration_error": 0.09317647058823529,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.0337453912462584,
+          "brier_skill_score": 0.0701301016063649
+        },
+        "Berlin": {
+          "n": 85,
+          "positives": 2,
+          "brier": 0.03655058823529411,
+          "expected_calibration_error": 0.0891764705882353,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.02301258712140963,
+          "brier_skill_score": -0.5882867946337715
+        },
+        "Warsaw": {
+          "n": 85,
+          "positives": 2,
+          "brier": 0.02744941176470588,
+          "expected_calibration_error": 0.08211764705882353,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.022765250355740247,
+          "brier_skill_score": -0.20575927502525904
+        }
+      },
+      "episodes": {
+        "n": 25,
+        "detected": 23,
+        "missed": 2,
+        "detection_fraction": 0.92,
+        "note": "Episodes comprise third-and-later hot days; this is not advance-onset recall."
+      }
+    },
+    "issued_forecasts/onset_lead1": {
+      "source_sha256": "31390afafcab428b92a53691562bfe9ab596aceafe9a8ff9d65742d7b4b42bfa",
+      "reliability": {
+        "n": 595,
+        "positives": 23,
+        "brier": 0.032539159663865544,
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 514,
+            "mean_probability": 0.005875486381322958,
+            "observed_frequency": 0.013618677042801557
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 32,
+            "mean_probability": 0.1375,
+            "observed_frequency": 0.03125
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 16,
+            "mean_probability": 0.2525,
+            "observed_frequency": 0.1875
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 7,
+            "mean_probability": 0.3314285714285714,
+            "observed_frequency": 0.2857142857142857
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 8,
+            "mean_probability": 0.43000000000000005,
+            "observed_frequency": 0.125
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 6,
+            "mean_probability": 0.54,
+            "observed_frequency": 0.5
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 4,
+            "mean_probability": 0.625,
+            "observed_frequency": 0.75
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 2,
+            "mean_probability": 0.73,
+            "observed_frequency": 0.0
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 4,
+            "mean_probability": 0.85,
+            "observed_frequency": 0.5
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 2,
+            "mean_probability": 0.9299999999999999,
+            "observed_frequency": 0.5
+          }
+        ],
+        "expected_calibration_error": 0.026285714285714287,
+        "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+        "baseline_brier": 0.03787371752956009,
+        "brier_skill_score": 0.1408511816018846
+      },
+      "baseline": "raw GFS",
+      "uncertainty": [
+        {
+          "block_days": 3,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.22062404870624047,
+            0.489993978321959
+          ],
+          "f1_difference_95_interval": [
+            -0.09275394084864341,
+            0.1421416083916084
+          ]
+        },
+        {
+          "block_days": 7,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.23529411764705882,
+            0.5
+          ],
+          "f1_difference_95_interval": [
+            -0.08395178544800809,
+            0.11269397269397269
+          ]
+        },
+        {
+          "block_days": 14,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.24393939393939393,
+            0.46069849690539344
+          ],
+          "f1_difference_95_interval": [
+            -0.07708805579773324,
+            0.07615384294100715
+          ]
+        }
+      ],
+      "sites": {
+        "Paris": {
+          "n": 85,
+          "positives": 5,
+          "brier": 0.035863529411764704,
+          "expected_calibration_error": 0.04117647058823529,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.05770152127602496,
+          "brier_skill_score": 0.3784647506916592
+        },
+        "London": {
+          "n": 85,
+          "positives": 6,
+          "brier": 0.04730823529411765,
+          "expected_calibration_error": 0.04964705882352942,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.06928946222956753,
+          "brier_skill_score": 0.3172376610836206
+        },
+        "Madrid": {
+          "n": 85,
+          "positives": 3,
+          "brier": 0.03798117647058824,
+          "expected_calibration_error": 0.03788235294117647,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.034536190666192096,
+          "brier_skill_score": -0.09975002274262068
+        },
+        "Rome": {
+          "n": 85,
+          "positives": 5,
+          "brier": 0.053011764705882355,
+          "expected_calibration_error": 0.04352941176470588,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.05730760932730898,
+          "brier_skill_score": 0.07496115562753924
+        },
+        "Athens": {
+          "n": 85,
+          "positives": 1,
+          "brier": 0.012032941176470588,
+          "expected_calibration_error": 0.019058823529411763,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.011576416707662754,
+          "brier_skill_score": -0.03943573217312135
+        },
+        "Berlin": {
+          "n": 85,
+          "positives": 1,
+          "brier": 0.015105882352941179,
+          "expected_calibration_error": 0.04047058823529412,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.011670641586884882,
+          "brier_skill_score": -0.29434892164940774
+        },
+        "Warsaw": {
+          "n": 85,
+          "positives": 2,
+          "brier": 0.026470588235294117,
+          "expected_calibration_error": 0.032235294117647056,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.023034180913279474,
+          "brier_skill_score": -0.14918730277200853
+        }
+      },
+      "exact_onsets": {
+        "n": 23,
+        "detected": 15,
+        "false_alerts": 39
+      }
+    },
+    "issued_forecasts/onset_lead3": {
+      "source_sha256": "4f0cd60068ac618debc661baaedfe9b56b84b2ef57edd2ed93bc0efa98d176f0",
+      "reliability": {
+        "n": 595,
+        "positives": 23,
+        "brier": 0.03181848739495799,
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 502,
+            "mean_probability": 0.01103585657370518,
+            "observed_frequency": 0.01593625498007968
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 57,
+            "mean_probability": 0.13298245614035087,
+            "observed_frequency": 0.08771929824561403
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 15,
+            "mean_probability": 0.22933333333333342,
+            "observed_frequency": 0.06666666666666667
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 11,
+            "mean_probability": 0.3363636363636363,
+            "observed_frequency": 0.5454545454545454
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 5,
+            "mean_probability": 0.44399999999999995,
+            "observed_frequency": 0.0
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 4,
+            "mean_probability": 0.55,
+            "observed_frequency": 0.5
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 1,
+            "mean_probability": 0.6,
+            "observed_frequency": 1.0
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          }
+        ],
+        "expected_calibration_error": 0.021176470588235297,
+        "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+        "baseline_brier": 0.03787371752956009,
+        "brier_skill_score": 0.15987947657570323
+      },
+      "baseline": "raw GFS",
+      "uncertainty": [
+        {
+          "block_days": 3,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.19464744222792812,
+            0.45003001200480186
+          ],
+          "f1_difference_95_interval": [
+            -0.08891037974410154,
+            0.14892643796684388
+          ]
+        },
+        {
+          "block_days": 7,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.18885856079404467,
+            0.45767351416035096
+          ],
+          "f1_difference_95_interval": [
+            -0.058197151424287864,
+            0.13207239540607052
+          ]
+        },
+        {
+          "block_days": 14,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.2054864253393665,
+            0.4241853201457574
+          ],
+          "f1_difference_95_interval": [
+            -0.05118327088718769,
+            0.11975749605097707
+          ]
+        }
+      ],
+      "sites": {
+        "Paris": {
+          "n": 85,
+          "positives": 5,
+          "brier": 0.04386352941176471,
+          "expected_calibration_error": 0.028470588235294112,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.05770152127602496,
+          "brier_skill_score": 0.23982022584922635
+        },
+        "London": {
+          "n": 85,
+          "positives": 6,
+          "brier": 0.059171764705882354,
+          "expected_calibration_error": 0.0531764705882353,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.06928946222956753,
+          "brier_skill_score": 0.14602072520296894
+        },
+        "Madrid": {
+          "n": 85,
+          "positives": 3,
+          "brier": 0.038743529411764704,
+          "expected_calibration_error": 0.03976470588235294,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.034536190666192096,
+          "brier_skill_score": -0.12182405367860172
+        },
+        "Rome": {
+          "n": 85,
+          "positives": 5,
+          "brier": 0.050164705882352945,
+          "expected_calibration_error": 0.04188235294117647,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.05730760932730898,
+          "brier_skill_score": 0.12464144864532334
+        },
+        "Athens": {
+          "n": 85,
+          "positives": 1,
+          "brier": 0.012174117647058823,
+          "expected_calibration_error": 0.015764705882352938,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.011576416707662754,
+          "brier_skill_score": -0.051630910884577386
+        },
+        "Berlin": {
+          "n": 85,
+          "positives": 1,
+          "brier": 0.009515294117647058,
+          "expected_calibration_error": 0.04,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.011670641586884882,
+          "brier_skill_score": 0.1846811465498126
+        },
+        "Warsaw": {
+          "n": 85,
+          "positives": 2,
+          "brier": 0.009096470588235296,
+          "expected_calibration_error": 0.036470588235294116,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.023034180913279474,
+          "brier_skill_score": 0.6050881677763035
+        }
+      },
+      "exact_onsets": {
+        "n": 23,
+        "detected": 15,
+        "false_alerts": 50
+      }
+    },
+    "issued_forecasts/onset_lead7": {
+      "source_sha256": "4806908d45065d65e3517b6ab250f48ee49fac1d14f06aeab5ca266fac321774",
+      "reliability": {
+        "n": 595,
+        "positives": 23,
+        "brier": 0.04090487394957983,
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "count": 471,
+            "mean_probability": 0.026794055201698516,
+            "observed_frequency": 0.027600849256900213
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "count": 89,
+            "mean_probability": 0.12921348314606743,
+            "observed_frequency": 0.0898876404494382
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "count": 25,
+            "mean_probability": 0.23040000000000002,
+            "observed_frequency": 0.08
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "count": 7,
+            "mean_probability": 0.32,
+            "observed_frequency": 0.0
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "count": 2,
+            "mean_probability": 0.41000000000000003,
+            "observed_frequency": 0.0
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "count": 1,
+            "mean_probability": 0.74,
+            "observed_frequency": 0.0
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "count": 0,
+            "mean_probability": null,
+            "observed_frequency": null
+          }
+        ],
+        "expected_calibration_error": 0.019226890756302524,
+        "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+        "baseline_brier": 0.03787371752956009,
+        "brier_skill_score": -0.08003324251584099
+      },
+      "baseline": "raw GFS",
+      "uncertainty": [
+        {
+          "block_days": 3,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.0,
+            0.17391304347826086
+          ],
+          "f1_difference_95_interval": [
+            -0.12888925158763131,
+            0.06317364983576483
+          ]
+        },
+        {
+          "block_days": 7,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.0,
+            0.1856823979591836
+          ],
+          "f1_difference_95_interval": [
+            -0.10407567593117792,
+            0.05305494505494504
+          ]
+        },
+        {
+          "block_days": 14,
+          "available": true,
+          "repeats": 500,
+          "f1_95_interval": [
+            0.0,
+            0.15566119273984436
+          ],
+          "f1_difference_95_interval": [
+            -0.07839393408134641,
+            0.04287760112228196
+          ]
+        }
+      ],
+      "sites": {
+        "Paris": {
+          "n": 85,
+          "positives": 5,
+          "brier": 0.059091764705882344,
+          "expected_calibration_error": 0.05247058823529412,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.05770152127602496,
+          "brier_skill_score": -0.024093704968486396
+        },
+        "London": {
+          "n": 85,
+          "positives": 6,
+          "brier": 0.07367529411764706,
+          "expected_calibration_error": 0.029176470588235293,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.06928946222956753,
+          "brier_skill_score": -0.06329724242264345
+        },
+        "Madrid": {
+          "n": 85,
+          "positives": 3,
+          "brier": 0.03892705882352941,
+          "expected_calibration_error": 0.072,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.034536190666192096,
+          "brier_skill_score": -0.12713817223726398
+        },
+        "Rome": {
+          "n": 85,
+          "positives": 5,
+          "brier": 0.05429176470588235,
+          "expected_calibration_error": 0.01811764705882352,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.05730760932730898,
+          "brier_skill_score": 0.05262555281623793
+        },
+        "Athens": {
+          "n": 85,
+          "positives": 1,
+          "brier": 0.016922352941176468,
+          "expected_calibration_error": 0.02776470588235294,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.011576416707662754,
+          "brier_skill_score": -0.46179542154655584
+        },
+        "Berlin": {
+          "n": 85,
+          "positives": 1,
+          "brier": 0.016818823529411765,
+          "expected_calibration_error": 0.04141176470588236,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.011670641586884882,
+          "brier_skill_score": -0.4411224442289665
+        },
+        "Warsaw": {
+          "n": 85,
+          "positives": 2,
+          "brier": 0.026607058823529418,
+          "expected_calibration_error": 0.02258823529411764,
+          "note": "Descriptive fixed-bin reliability; small bin support limits interpretation.",
+          "baseline_brier": 0.023034180913279474,
+          "brier_skill_score": -0.1551120017551888
+        }
+      },
+      "exact_onsets": {
+        "n": 23,
+        "detected": 4,
+        "false_alerts": 69
+      }
+    }
+  }
+}

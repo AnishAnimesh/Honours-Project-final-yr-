@@ -1,0 +1,4715 @@
+{
+  "checked_utc": "2026-11-02T19:13:19.276455+00:00",
+  "records": {
+    "1": {
+      "doi": "10.1109/ACCESS.2021.3116809",
+      "status": 200,
+      "title": [
+        "Using Long Short-Term Memory (LSTM) and Internet of Things (IoT) for Localized Surface Temperature Forecasting in an Urban Environment"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6769-7517",
+          "authenticated-orcid": false,
+          "given": "Manzhu",
+          "family": "Yu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Fangcao",
+          "family": "Xu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4501-1435",
+          "authenticated-orcid": false,
+          "given": "Weiming",
+          "family": "Hu",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jian",
+          "family": "Sun",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6509-0735",
+          "authenticated-orcid": false,
+          "given": "Guido",
+          "family": "Cervone",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "IEEE Access"
+      ],
+      "volume": "9",
+      "issue": null,
+      "page": "137406-137418",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1109/access.2021.3116809",
+      "type": "journal-article"
+    },
+    "2": {
+      "doi": "10.1109/ACCESS.2022.3196381",
+      "status": 200,
+      "title": [
+        "Short-Term Weather Forecasting Using Spatial Feature Attention Based LSTM Model"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-1883-2158",
+          "authenticated-orcid": false,
+          "given": "Masooma Ali Raza",
+          "family": "Suleman",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "School of Computer Science and Engineering, Vellore Institute of Technology, Chennai, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0038-7212",
+          "authenticated-orcid": false,
+          "given": "S.",
+          "family": "Shridevi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Centre for Advanced Data Science, Vellore Institute of Technology, Chennai, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "IEEE Access"
+      ],
+      "volume": "10",
+      "issue": null,
+      "page": "82456-82468",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1109/access.2022.3196381",
+      "type": "journal-article"
+    },
+    "3": {
+      "doi": "10.1109/TGRS.2024.3409084",
+      "status": 200,
+      "title": [
+        "Numerical Weather Forecasting Using Convolutional-LSTM With Attention and Context Matcher Mechanisms"
+      ],
+      "authors": [
+        {
+          "given": "Selim",
+          "family": "Furkan Tekin",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science, Georgia Institute of Technology, Atlanta, GA, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6763-7266",
+          "authenticated-orcid": false,
+          "given": "Arda",
+          "family": "Fazla",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical and Electronics Engineering, Bilkent University, Ankara, Turkey"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6488-3848",
+          "authenticated-orcid": false,
+          "given": "Suleyman",
+          "family": "Serdar Kozat",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Electrical and Electronics Engineering, Bilkent University, Ankara, Turkey"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "IEEE Transactions on Geoscience and Remote Sensing"
+      ],
+      "volume": "62",
+      "issue": null,
+      "page": "1-13",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1109/tgrs.2024.3409084",
+      "type": "journal-article"
+    },
+    "4": {
+      "doi": "10.1109/ACCESS.2021.3057500",
+      "status": 200,
+      "title": [
+        "Augmented Convolutional LSTMs for Generation of High-Resolution Climate Change Projections"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-2649-2811",
+          "authenticated-orcid": false,
+          "given": "Nidhin",
+          "family": "Harilal",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8757-2623",
+          "authenticated-orcid": false,
+          "given": "Mayank",
+          "family": "Singh",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0017-9085",
+          "authenticated-orcid": false,
+          "given": "Udit",
+          "family": "Bhatia",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "IEEE Access"
+      ],
+      "volume": "9",
+      "issue": null,
+      "page": "25208-25218",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1109/access.2021.3057500",
+      "type": "journal-article"
+    },
+    "5": {
+      "doi": "10.1109/LGRS.2026.3727525",
+      "status": 200,
+      "title": [
+        "A Hybrid Spatiotemporal Approach for Severe Rainfall Nowcasting Using Kriging and Recurrent Neural Networks"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0009-0009-6283-9024",
+          "authenticated-orcid": false,
+          "given": "Debora S.",
+          "family": "Rodrigues",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Pontifical Catholic University of Rio de Janeiro (PUC-Rio)",
+              "place": [
+                "Rio de Janeiro, Brazil"
+              ],
+              "department": [
+                "Department of Mathematics"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0703-3986",
+          "authenticated-orcid": false,
+          "given": "Angelica N.",
+          "family": "Caseri",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Pontifical Catholic University of Rio de Janeiro (PUC-Rio)",
+              "place": [
+                "Rio de Janeiro, Brazil"
+              ],
+              "department": [
+                "Department of Mathematics"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1864-7828",
+          "authenticated-orcid": false,
+          "given": "Sinesio",
+          "family": "Pesco",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Pontifical Catholic University of Rio de Janeiro (PUC-Rio)",
+              "place": [
+                "Rio de Janeiro, Brazil"
+              ],
+              "department": [
+                "Department of Mathematics"
+              ]
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "IEEE Geoscience and Remote Sensing Letters"
+      ],
+      "volume": "23",
+      "issue": null,
+      "page": "7507205-7507205",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2026
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1109/lgrs.2026.3727525",
+      "type": "journal-article"
+    },
+    "6": {
+      "doi": "10.1109/JSTARS.2020.3040648",
+      "status": 200,
+      "title": [
+        "PFST-LSTM: A SpatioTemporal LSTM Model With Pseudoflow Prediction for Precipitation Nowcasting"
+      ],
+      "authors": [
+        {
+          "given": "Chuyao",
+          "family": "Luo",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1894-984X",
+          "authenticated-orcid": false,
+          "given": "Xutao",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1807-8581",
+          "authenticated-orcid": false,
+          "given": "Yunming",
+          "family": "Ye",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing"
+      ],
+      "volume": "14",
+      "issue": null,
+      "page": "843-857",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1109/jstars.2020.3040648",
+      "type": "journal-article"
+    },
+    "7": {
+      "doi": "10.1109/JSTARS.2021.3128522",
+      "status": 200,
+      "title": [
+        "Contextual Sa-Attention Convolutional LSTM for Precipitation Nowcasting: A Spatiotemporal Sequence Forecasting View"
+      ],
+      "authors": [
+        {
+          "given": "Taisong",
+          "family": "Xiong",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jianxing",
+          "family": "He",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0090-2840",
+          "authenticated-orcid": false,
+          "given": "Hao",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Xiaowen",
+          "family": "Tang",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Zhao",
+          "family": "Shi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1123-2790",
+          "authenticated-orcid": false,
+          "given": "Qiangyu",
+          "family": "Zeng",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing"
+      ],
+      "volume": "14",
+      "issue": null,
+      "page": "12479-12491",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2021
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1109/jstars.2021.3128522",
+      "type": "journal-article"
+    },
+    "8": {
+      "doi": "10.1109/TGRS.2022.3198222",
+      "status": 200,
+      "title": [
+        "PrecipLSTM: A Meteorological Spatiotemporal LSTM for Precipitation Nowcasting"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0346-5757",
+          "authenticated-orcid": false,
+          "given": "Zhifeng",
+          "family": "Ma",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Faculty of Computing, Harbin Institute of Technology, Harbin, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6769-2115",
+          "authenticated-orcid": false,
+          "given": "Hao",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Faculty of Computing, Harbin Institute of Technology, Harbin, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jie",
+          "family": "Liu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "International Institute for Artificial Intelligence, Harbin Institute of Technology, Shenzhen, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "IEEE Transactions on Geoscience and Remote Sensing"
+      ],
+      "volume": "60",
+      "issue": null,
+      "page": "1-8",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1109/tgrs.2022.3198222",
+      "type": "journal-article"
+    },
+    "9": {
+      "doi": "10.1109/TGRS.2022.3158888",
+      "status": 200,
+      "title": [
+        "NowCasting-Nets: Representation Learning to Mitigate Latency Gap of Satellite Precipitation Products Using Convolutional and Recurrent Neural Networks"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0202-6901",
+          "authenticated-orcid": false,
+          "given": "Mohammad Reza",
+          "family": "Ehsani",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Hydrology and Atmospheric Sciences, The University of Arizona, Tucson, AZ, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3670-2472",
+          "authenticated-orcid": false,
+          "given": "Ariyan",
+          "family": "Zarei",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science, The University of Arizona, Tucson, AZ, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9855-2839",
+          "authenticated-orcid": false,
+          "given": "Hoshin Vijai",
+          "family": "Gupta",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Hydrology and Atmospheric Sciences, The University of Arizona, Tucson, AZ, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kobus",
+          "family": "Barnard",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Computer Science, The University of Arizona, Tucson, AZ, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Eric",
+          "family": "Lyons",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Plant Science, The University of Arizona, Tucson, AZ, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7594-8793",
+          "authenticated-orcid": false,
+          "given": "Ali",
+          "family": "Behrangi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Hydrology and Atmospheric Sciences, The University of Arizona, Tucson, AZ, USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "IEEE Transactions on Geoscience and Remote Sensing"
+      ],
+      "volume": "60",
+      "issue": null,
+      "page": "1-21",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2022
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1109/tgrs.2022.3158888",
+      "type": "journal-article"
+    },
+    "10": {
+      "doi": "10.1109/JSTARS.2024.3376987",
+      "status": 200,
+      "title": [
+        "FsrGAN: A Satellite and Radar-Based Fusion Prediction Network for Precipitation Nowcasting"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-0715-7946",
+          "authenticated-orcid": false,
+          "given": "Dan",
+          "family": "Niu",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "School of Automation, Southeast University, Nanjing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0000-7926-8939",
+          "authenticated-orcid": false,
+          "given": "Yinghao",
+          "family": "Li",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Automation, Southeast University, Nanjing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4741-1179",
+          "authenticated-orcid": false,
+          "given": "Hongbin",
+          "family": "Wang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Key Laboratory of Transportation Meteorology of China Meteorological Administration, Nanjing Joint Institute for Atmospheric Sciences, Nanjing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0002-8979-4507",
+          "authenticated-orcid": false,
+          "given": "Zengliang",
+          "family": "Zang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "High Impact Weather Key Laboratory of CMA, and College of Meteorology and Oceanography, National University of Defense Technology, Changsha, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0006-1828-9756",
+          "authenticated-orcid": false,
+          "given": "Mingbo",
+          "family": "Jiang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Key Laboratory of Smart Earth, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6906-2654",
+          "authenticated-orcid": false,
+          "given": "Xunlai",
+          "family": "Chen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Shenzhen Key Laboratory of Severe Weather in South China, and Shenzhen Meteorological Bureau, Shenzhen, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9844-9786",
+          "authenticated-orcid": false,
+          "given": "Qunbo",
+          "family": "Huang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "93110 Troops, PLA, Beijing, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing"
+      ],
+      "volume": "17",
+      "issue": null,
+      "page": "7002-7013",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2024
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1109/jstars.2024.3376987",
+      "type": "journal-article"
+    },
+    "11": {
+      "doi": "10.1109/LGRS.2024.3522463",
+      "status": 200,
+      "title": [
+        "MT-GAN: A Multitask GAN for Severe Convective Weather Nowcasting"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0009-0003-6280-1137",
+          "authenticated-orcid": false,
+          "given": "Ling",
+          "family": "Fan",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "School of Computer Science, Chengdu Normal University, Chengdu, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Changhai",
+          "family": "Zhou",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Network and Information Center and the Key Laboratory of Exploitation and Study of Distinctive Plants in the Education Department of Sichuan Province, Chengdu Normal University, Chengdu, China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6100-6532",
+          "authenticated-orcid": false,
+          "given": "Ferrante",
+          "family": "Neri",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "NICE Research Group, School of Computer Science and Electronic Engineering, University of Surrey, Guildford, Surrey, U.K."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "IEEE Geoscience and Remote Sensing Letters"
+      ],
+      "volume": "22",
+      "issue": null,
+      "page": "1-5",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1109/lgrs.2024.3522463",
+      "type": "journal-article"
+    },
+    "12": {
+      "doi": "10.1109/ACCESS.2025.3640667",
+      "status": 200,
+      "title": [
+        "Multi-Scale Weather Forecasting Using Deep Learning Architectures With Chennai Climate Data"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0009-0008-1946-0388",
+          "authenticated-orcid": false,
+          "given": "M. S.",
+          "family": "Pavithran",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "School of Computer Science and Engineering, Vellore Institute of Technology, Chennai, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0000-3176-8264",
+          "authenticated-orcid": false,
+          "given": "B.",
+          "family": "Sreeram",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Computer Science and Engineering, Vellore Institute of Technology, Chennai, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0008-5744-3984",
+          "authenticated-orcid": false,
+          "given": "Adwait V.",
+          "family": "Pillai",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Computer Science and Engineering, Vellore Institute of Technology, Chennai, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1198-6448",
+          "authenticated-orcid": false,
+          "given": "R.",
+          "family": "Jothi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Computer Science and Engineering, Vellore Institute of Technology, Chennai, India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "IEEE Access"
+      ],
+      "volume": "13",
+      "issue": null,
+      "page": "207303-207319",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1109/access.2025.3640667",
+      "type": "journal-article"
+    },
+    "13": {
+      "doi": "10.1002/qj.3803",
+      "status": 200,
+      "title": [
+        "The ERA5 global reanalysis"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-5330-7071",
+          "authenticated-orcid": false,
+          "given": "Hans",
+          "family": "Hersbach",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bill",
+          "family": "Bell",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Paul",
+          "family": "Berrisford",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shoji",
+          "family": "Hirahara",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Japan Meteorological Agency  Tokyo Japan"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Andr\u00e1s",
+          "family": "Hor\u00e1nyi",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5997-290X",
+          "authenticated-orcid": false,
+          "given": "Joaqu\u00edn",
+          "family": "Mu\u00f1oz\u2010Sabater",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-0518-100X",
+          "authenticated-orcid": false,
+          "given": "Julien",
+          "family": "Nicolas",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Carole",
+          "family": "Peubey",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Raluca",
+          "family": "Radu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-2611-487X",
+          "authenticated-orcid": false,
+          "given": "Dinand",
+          "family": "Schepers",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7327-6310",
+          "authenticated-orcid": false,
+          "given": "Adrian",
+          "family": "Simmons",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Cornel",
+          "family": "Soci",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4469-7949",
+          "authenticated-orcid": false,
+          "given": "Saleh",
+          "family": "Abdalla",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1999-1823",
+          "authenticated-orcid": false,
+          "given": "Xavier",
+          "family": "Abellan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1745-3634",
+          "authenticated-orcid": false,
+          "given": "Gianpaolo",
+          "family": "Balsamo",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1967-3382",
+          "authenticated-orcid": false,
+          "given": "Peter",
+          "family": "Bechtold",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1675-6967",
+          "authenticated-orcid": false,
+          "given": "Gionata",
+          "family": "Biavati",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7423-5118",
+          "authenticated-orcid": false,
+          "given": "Jean",
+          "family": "Bidlot",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Massimo",
+          "family": "Bonavita",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4540-0687",
+          "authenticated-orcid": false,
+          "given": "Giovanna",
+          "family": "De Chiara",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Per",
+          "family": "Dahlgren",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "The Norwegian Meteorological Institute  Oslo Norway"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8321-9125",
+          "authenticated-orcid": false,
+          "given": "Dick",
+          "family": "Dee",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2279-9717",
+          "authenticated-orcid": false,
+          "given": "Michail",
+          "family": "Diamantakis",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Rossana",
+          "family": "Dragani",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4880-5329",
+          "authenticated-orcid": false,
+          "given": "Johannes",
+          "family": "Flemming",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3596-8287",
+          "authenticated-orcid": false,
+          "given": "Richard",
+          "family": "Forbes",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1544-9612",
+          "authenticated-orcid": false,
+          "given": "Manuel",
+          "family": "Fuentes",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alan",
+          "family": "Geer",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-0379-6353",
+          "authenticated-orcid": false,
+          "given": "Leo",
+          "family": "Haimberger",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Meteorology and Geophysics Universit\u00e4t Wien  Vienna Austria"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4810-9593",
+          "authenticated-orcid": false,
+          "given": "Sean",
+          "family": "Healy",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3180-5157",
+          "authenticated-orcid": false,
+          "given": "Robin J.",
+          "family": "Hogan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "El\u00edas",
+          "family": "H\u00f3lm",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2644-8068",
+          "authenticated-orcid": false,
+          "given": "Marta",
+          "family": "Janiskov\u00e1",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8046-765X",
+          "authenticated-orcid": false,
+          "given": "Sarah",
+          "family": "Keeley",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2808-0463",
+          "authenticated-orcid": false,
+          "given": "Patrick",
+          "family": "Laloyaux",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Philippe",
+          "family": "Lopez",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3530-8104",
+          "authenticated-orcid": false,
+          "given": "Cristina",
+          "family": "Lupu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gabor",
+          "family": "Radnoti",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7374-3820",
+          "authenticated-orcid": false,
+          "given": "Patricia",
+          "family": "de Rosnay",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Iryna",
+          "family": "Rozum",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3092-0775",
+          "authenticated-orcid": false,
+          "given": "Freja",
+          "family": "Vamborg",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3041-076X",
+          "authenticated-orcid": false,
+          "given": "Sebastien",
+          "family": "Villaume",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3214-5266",
+          "authenticated-orcid": false,
+          "given": "Jean\u2010No\u00ebl",
+          "family": "Th\u00e9paut",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "European Centre for Medium\u2010Range Weather Forecasts  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Quarterly Journal of the Royal Meteorological Society"
+      ],
+      "volume": "146",
+      "issue": "730",
+      "page": "1999-2049",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2020,
+            6,
+            15
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2020,
+            7
+          ]
+        ]
+      },
+      "published_online": {
+        "date-parts": [
+          [
+            2020,
+            6,
+            15
+          ]
+        ]
+      },
+      "url": "https://doi.org/10.1002/qj.3803",
+      "type": "journal-article"
+    },
+    "19": {
+      "doi": "10.1111/ecog.02881",
+      "status": 200,
+      "title": [
+        "Cross\u2010validation strategies for data with temporal, spatial, hierarchical, or phylogenetic structure"
+      ],
+      "authors": [
+        {
+          "given": "David R.",
+          "family": "Roberts",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Volker",
+          "family": "Bahn",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Dept of Biological Sciences Wright State Univ. Dayton OH USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Simone",
+          "family": "Ciuti",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Mark S.",
+          "family": "Boyce",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Dept of Biological Sciences Univ. of Alberta Edmonton AB Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jane",
+          "family": "Elith",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Gurutzeta",
+          "family": "Guillera\u2010Arroita",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Severin",
+          "family": "Hauenstein",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Jos\u00e9 J.",
+          "family": "Lahoz\u2010Monfort",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Boris",
+          "family": "Schr\u00f6der",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Inst. of Geoecology, Div. of Landscape Ecology and Environmental Systems Analysis, Technische Univ. Braunschweig, Braunschweig, Germany, and: Berlin\u2010Brandenburg Inst. of Advanced Biodiversity Research (BBIB) Berlin Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Wilfried",
+          "family": "Thuiller",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Lab. d\u2019\u00c9cologie Alpine, Univ. Joseph Fourier Grenoble France"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "David I.",
+          "family": "Warton",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of Mathematics and Statistics and Evolution and Ecology Research Centre, The Univ. of New South Wales Sydney Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Brendan A.",
+          "family": "Wintle",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "School of BioSciences, Univ. of Melbourne Melbourne Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Florian",
+          "family": "Hartig",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+            },
+            {
+              "name": "Theoretical Ecology, Univ. of Regensburg Regensburg Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Carsten F.",
+          "family": "Dormann",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Dept of Biometry and Environmental System Analysis Univ. of Freiburg Freiburg Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Ecography"
+      ],
+      "volume": "40",
+      "issue": "8",
+      "page": "913-929",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            3
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2017,
+            8
+          ]
+        ]
+      },
+      "published_online": {
+        "date-parts": [
+          [
+            2017,
+            3,
+            3
+          ]
+        ]
+      },
+      "url": "https://doi.org/10.1111/ecog.02881",
+      "type": "journal-article"
+    },
+    "20": {
+      "doi": "10.1016/j.ijforecast.2023.09.007",
+      "status": 200,
+      "title": [
+        "Evaluating probabilistic classifiers: The triptych"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-8322-360X",
+          "authenticated-orcid": false,
+          "given": "Timo",
+          "family": "Dimitriadis",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9397-3271",
+          "authenticated-orcid": false,
+          "given": "Tilmann",
+          "family": "Gneiting",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7423-1352",
+          "authenticated-orcid": false,
+          "given": "Alexander I.",
+          "family": "Jordan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4910-4439",
+          "authenticated-orcid": false,
+          "given": "Peter",
+          "family": "Vogel",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "International Journal of Forecasting"
+      ],
+      "volume": "40",
+      "issue": "3",
+      "page": "1101-1122",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            7
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2024,
+            7
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1016/j.ijforecast.2023.09.007",
+      "type": "journal-article"
+    },
+    "16": {
+      "doi": "10.1029/2005JD006290",
+      "status": 200,
+      "title": [
+        "Global observed changes in daily climate extremes of temperature and precipitation"
+      ],
+      "authors": [
+        {
+          "given": "L. V.",
+          "family": "Alexander",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Hadley Centre Met Office  Exeter UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "X.",
+          "family": "Zhang",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Climate Research Branch Meteorological Service of Canada  Downsview, Ontario Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "T. C.",
+          "family": "Peterson",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "National Climatic Data Center/NOAA  Asheville North Carolina USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "J.",
+          "family": "Caesar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Hadley Centre Met Office  Exeter UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "B.",
+          "family": "Gleason",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "National Climatic Data Center/NOAA  Asheville North Carolina USA"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "A. M. G.",
+          "family": "Klein Tank",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Royal Netherlands Meteorological Institute  De Bilt Netherlands"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "M.",
+          "family": "Haylock",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Climatic Research Unit University of East Anglia  Norwich UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "D.",
+          "family": "Collins",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Bureau of Meteorology  Melbourne, Victoria Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "B.",
+          "family": "Trewin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Bureau of Meteorology  Melbourne, Victoria Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "F.",
+          "family": "Rahimzadeh",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Atmospheric Science and Meteorological Research Center Iran Meteorological Organization  Tehran Iran"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "A.",
+          "family": "Tagipour",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Atmospheric Science and Meteorological Research Center Iran Meteorological Organization  Tehran Iran"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "K.",
+          "family": "Rupa Kumar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Indian Institute of Tropical Meteorology  Pune India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "J.",
+          "family": "Revadekar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Indian Institute of Tropical Meteorology  Pune India"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "G.",
+          "family": "Griffiths",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "National Institute of Water and Atmospheric Research  Auckland New Zealand"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "L.",
+          "family": "Vincent",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Climate Research Branch Meteorological Service of Canada  Downsview, Ontario Canada"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "D. B.",
+          "family": "Stephenson",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Meteorology University of Reading  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "J.",
+          "family": "Burn",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Meteorology University of Reading  Reading UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "E.",
+          "family": "Aguilar",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Climate Change Research Group Universitat Rovira i Virgili  Tarragona Spain"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "M.",
+          "family": "Brunet",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Climate Change Research Group Universitat Rovira i Virgili  Tarragona Spain"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "M.",
+          "family": "Taylor",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Physics Department University of the West Indies  Kingston Jamaica"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "M.",
+          "family": "New",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Climate Research Group, Oxford University Centre for the Environment University of Oxford  Oxford UK"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "P.",
+          "family": "Zhai",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "China Meteorological Administration  Beijing China"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "M.",
+          "family": "Rusticucci",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Departamento de Ciencias de la Atm\u00f3sfera y los Oc\u00e9anos, Facultad de Ciencias Exactas y Naturales Universidad de Buenos Aires  Buenos Aires Argentina"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "J. L.",
+          "family": "Vazquez\u2010Aguirre",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Departamento de Meteorologia General, Centro de Ciencias de la Atmosfera Universidad Nacional Aut\u00f3noma de M\u00e9xico  Coyoac\u00e1n Mexico"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Journal of Geophysical Research: Atmospheres"
+      ],
+      "volume": "111",
+      "issue": "D5",
+      "page": null,
+      "article_number": "2005JD006290",
+      "published": {
+        "date-parts": [
+          [
+            2006,
+            3,
+            15
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2006,
+            3,
+            16
+          ]
+        ]
+      },
+      "published_online": {
+        "date-parts": [
+          [
+            2006,
+            3,
+            15
+          ]
+        ]
+      },
+      "url": "https://doi.org/10.1029/2005jd006290",
+      "type": "journal-article"
+    },
+    "23": {
+      "doi": "10.1175/JCLI-D-12-00383.1",
+      "status": 200,
+      "title": [
+        "On the Measurement of Heat Waves"
+      ],
+      "authors": [
+        {
+          "given": "S. E.",
+          "family": "Perkins",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Centre of Excellence for Climate System Science, Climate Change Research Centre, The University of New South Wales, Sydney, Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "L. V.",
+          "family": "Alexander",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Centre of Excellence for Climate System Science, Climate Change Research Centre, The University of New South Wales, Sydney, Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Journal of Climate"
+      ],
+      "volume": "26",
+      "issue": "13",
+      "page": "4500-4517",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            1
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            1
+          ]
+        ]
+      },
+      "published_online": {
+        "date-parts": [
+          [
+            2013,
+            7,
+            3
+          ]
+        ]
+      },
+      "url": "https://doi.org/10.1175/jcli-d-12-00383.1",
+      "type": "journal-article"
+    },
+    "24": {
+      "doi": "10.1038/s43017-022-00371-z",
+      "status": 200,
+      "title": [
+        "Prediction and projection of heatwaves"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-1463-929X",
+          "authenticated-orcid": false,
+          "given": "Daniela I. V.",
+          "family": "Domeisen",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-6148-7997",
+          "authenticated-orcid": false,
+          "given": "Elfatih A. B.",
+          "family": "Eltahir",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-1931-6737",
+          "authenticated-orcid": false,
+          "given": "Erich M.",
+          "family": "Fischer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-8303-6700",
+          "authenticated-orcid": false,
+          "given": "Reto",
+          "family": "Knutti",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9443-4915",
+          "authenticated-orcid": false,
+          "given": "Sarah E.",
+          "family": "Perkins-Kirkpatrick",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4171-1613",
+          "authenticated-orcid": false,
+          "given": "Christoph",
+          "family": "Sch\u00e4r",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9528-2917",
+          "authenticated-orcid": false,
+          "given": "Sonia I.",
+          "family": "Seneviratne",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7231-6974",
+          "authenticated-orcid": false,
+          "given": "Antje",
+          "family": "Weisheimer",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9674-4837",
+          "authenticated-orcid": false,
+          "given": "Heini",
+          "family": "Wernli",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Nature Reviews Earth &amp; Environment"
+      ],
+      "volume": "4",
+      "issue": "1",
+      "page": "36-50",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            13
+          ]
+        ]
+      },
+      "published_print": null,
+      "published_online": {
+        "date-parts": [
+          [
+            2022,
+            12,
+            13
+          ]
+        ]
+      },
+      "url": "https://doi.org/10.1038/s43017-022-00371-z",
+      "type": "journal-article"
+    },
+    "28": {
+      "doi": "10.1175/AIES-D-22-0038.1",
+      "status": 200,
+      "title": [
+        "Subseasonal Prediction of Central European Summer Heatwaves with Linear and Random Forest Machine Learning Models"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-0372-8657",
+          "authenticated-orcid": true,
+          "given": "Elizabeth",
+          "family": "Weirich-Benet",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "a Institute for Atmospheric and Climate Science, ETH Z\u00fcrich, Zurich, Switzerland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4890-0732",
+          "authenticated-orcid": true,
+          "given": "Maria",
+          "family": "Pyrina",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "a Institute for Atmospheric and Climate Science, ETH Z\u00fcrich, Zurich, Switzerland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2706-5309",
+          "authenticated-orcid": true,
+          "given": "Bernat",
+          "family": "Jim\u00e9nez-Esteve",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "a Institute for Atmospheric and Climate Science, ETH Z\u00fcrich, Zurich, Switzerland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-9249-8181",
+          "authenticated-orcid": true,
+          "given": "Ernest",
+          "family": "Fraenkel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "b Department of Biological Engineering, Massachusetts Institute of Technology, Cambridge, Massachusetts"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7762-4482",
+          "authenticated-orcid": true,
+          "given": "Judah",
+          "family": "Cohen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "c Atmospheric and Environmental Research, Lexington, Massachusetts"
+            },
+            {
+              "name": "d Department of Civil and Environmental Engineering, Massachusetts Institute of Technology, Cambridge, Massachusetts"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1463-929X",
+          "authenticated-orcid": true,
+          "given": "Daniela I. V.",
+          "family": "Domeisen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "e Institute of Earth Surface Dynamics, Universit\u00e9 de Lausanne, Lausanne, Switzerland"
+            },
+            {
+              "name": "a Institute for Atmospheric and Climate Science, ETH Z\u00fcrich, Zurich, Switzerland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Artificial Intelligence for the Earth Systems"
+      ],
+      "volume": "2",
+      "issue": "2",
+      "page": null,
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            4
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2023,
+            4
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1175/aies-d-22-0038.1",
+      "type": "journal-article"
+    },
+    "29": {
+      "doi": "10.1007/s00382-024-07390-0",
+      "status": 200,
+      "title": [
+        "Pattern-based forecasting enhances the prediction skill of European heatwaves into the sub-seasonal range"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-5306-0870",
+          "authenticated-orcid": false,
+          "given": "Emmanuel",
+          "family": "Rouges",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Laura",
+          "family": "Ferranti",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Holger",
+          "family": "Kantz",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Florian",
+          "family": "Pappenberger",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Climate Dynamics"
+      ],
+      "volume": "62",
+      "issue": "9",
+      "page": "9269-9285",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            8,
+            9
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2024,
+            9
+          ]
+        ]
+      },
+      "published_online": {
+        "date-parts": [
+          [
+            2024,
+            8,
+            9
+          ]
+        ]
+      },
+      "url": "https://doi.org/10.1007/s00382-024-07390-0",
+      "type": "journal-article"
+    },
+    "30": {
+      "doi": "10.3389/fclim.2022.789641",
+      "status": 200,
+      "title": [
+        "Deep Learning-Based Extreme Heatwave Forecast"
+      ],
+      "authors": [
+        {
+          "given": "Val\u00e9rian",
+          "family": "Jacques-Dumas",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Francesco",
+          "family": "Ragone",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Pierre",
+          "family": "Borgnat",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Patrice",
+          "family": "Abry",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Freddy",
+          "family": "Bouchet",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Frontiers in Climate"
+      ],
+      "volume": "4",
+      "issue": null,
+      "page": null,
+      "article_number": "789641",
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            2
+          ]
+        ]
+      },
+      "published_print": null,
+      "published_online": {
+        "date-parts": [
+          [
+            2022,
+            2,
+            2
+          ]
+        ]
+      },
+      "url": "https://doi.org/10.3389/fclim.2022.789641",
+      "type": "journal-article"
+    },
+    "31": {
+      "doi": "10.1175/MWR-D-21-0201.1",
+      "status": 200,
+      "title": [
+        "Using Explainable Machine Learning Forecasts to Discover Subseasonal Drivers of High Summer Temperatures in Western and Central Europe"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0002-7291-6777",
+          "authenticated-orcid": true,
+          "given": "Chiem",
+          "family": "van Straaten",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "a Royal Netherlands Meteorological Institute (KNMI), De Bilt, Netherlands"
+            },
+            {
+              "name": "b Institute for Environmental Studies (IVM), Vrije Universiteit Amsterdam, Amsterdam, Netherlands"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Kirien",
+          "family": "Whan",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "a Royal Netherlands Meteorological Institute (KNMI), De Bilt, Netherlands"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Dim",
+          "family": "Coumou",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "b Institute for Environmental Studies (IVM), Vrije Universiteit Amsterdam, Amsterdam, Netherlands"
+            },
+            {
+              "name": "c Potsdam Institute for Climate Impact Research, Postdam, Germany"
+            },
+            {
+              "name": "a Royal Netherlands Meteorological Institute (KNMI), De Bilt, Netherlands"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Bart",
+          "family": "van den Hurk",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "d Deltares, Delft, Netherlands"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Maurice",
+          "family": "Schmeits",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "a Royal Netherlands Meteorological Institute (KNMI), De Bilt, Netherlands"
+            },
+            {
+              "name": "b Institute for Environmental Studies (IVM), Vrije Universiteit Amsterdam, Amsterdam, Netherlands"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Monthly Weather Review"
+      ],
+      "volume": "150",
+      "issue": "5",
+      "page": "1115-1134",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2022,
+            5
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2022,
+            5
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1175/mwr-d-21-0201.1",
+      "type": "journal-article"
+    },
+    "32": {
+      "doi": "10.1029/2022RG000780",
+      "status": 200,
+      "title": [
+        "Heat Waves: Physical Understanding and Scientific Challenges"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0001-6476-944X",
+          "authenticated-orcid": false,
+          "given": "D.",
+          "family": "Barriopedro",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Instituto de Geociencias (IGEO) Consejo Superior de Investigaciones Cient\u00edficas\u2013Universidad Complutense de Madrid (CSIC\u2013UCM)  Madrid Spain"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-3845-7458",
+          "authenticated-orcid": false,
+          "given": "R.",
+          "family": "Garc\u00eda\u2010Herrera",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Instituto de Geociencias (IGEO) Consejo Superior de Investigaciones Cient\u00edficas\u2013Universidad Complutense de Madrid (CSIC\u2013UCM)  Madrid Spain"
+            },
+            {
+              "name": "Departamento de F\u00edsica de la Tierra y Astrof\u00edsica Facultad de Ciencias F\u00edsicas Universidad Complutense de Madrid  Madrid Spain"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2990-0195",
+          "authenticated-orcid": false,
+          "given": "C.",
+          "family": "Ord\u00f3\u00f1ez",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Departamento de F\u00edsica de la Tierra y Astrof\u00edsica Facultad de Ciencias F\u00edsicas Universidad Complutense de Madrid  Madrid Spain"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-6186-5751",
+          "authenticated-orcid": false,
+          "given": "D. G.",
+          "family": "Miralles",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Hydro\u2010Climate Extremes Lab (H\u2010CEL) Ghent University  Ghent Belgium"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-4048-1676",
+          "authenticated-orcid": false,
+          "given": "S.",
+          "family": "Salcedo\u2010Sanz",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Signal Processing and Communication Universidad de Alcal\u00e1  Alcal\u00e1 de Henares Spain"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Reviews of Geophysics"
+      ],
+      "volume": "61",
+      "issue": "2",
+      "page": null,
+      "article_number": "e2022RG000780",
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            8
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2023,
+            6
+          ]
+        ]
+      },
+      "published_online": {
+        "date-parts": [
+          [
+            2023,
+            5,
+            8
+          ]
+        ]
+      },
+      "url": "https://doi.org/10.1029/2022rg000780",
+      "type": "journal-article"
+    },
+    "33": {
+      "doi": "10.3390/ijerph120100227",
+      "status": 200,
+      "title": [
+        "The Excess Heat Factor: A Metric for Heatwave Intensity and Its Use in Classifying Heatwave Severity"
+      ],
+      "authors": [
+        {
+          "given": "John",
+          "family": "Nairn",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "South Australian Regional Office, Bureau of Meteorology, Adelaide, South Australia 5067, Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Robert",
+          "family": "Fawcett",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Bureau of Meteorology, Melbourne, Victoria 3008, Australia"
+            },
+            {
+              "name": "Bushfire Cooperative Research Centre, East Melbourne, Victoria 3002, Australia"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "International Journal of Environmental Research and Public Health"
+      ],
+      "volume": "12",
+      "issue": "1",
+      "page": "227-253",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2014,
+            12,
+            23
+          ]
+        ]
+      },
+      "published_print": null,
+      "published_online": {
+        "date-parts": [
+          [
+            2014,
+            12,
+            23
+          ]
+        ]
+      },
+      "url": "https://doi.org/10.3390/ijerph120100227",
+      "type": "journal-article"
+    },
+    "34": {
+      "doi": "10.1175/MWR2904.1",
+      "status": 200,
+      "title": [
+        "Calibrated Probabilistic Forecasting Using Ensemble Model Output Statistics and Minimum CRPS Estimation"
+      ],
+      "authors": [
+        {
+          "given": "Tilmann",
+          "family": "Gneiting",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Statistics, University of Washington, Seattle, Washington"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Adrian E.",
+          "family": "Raftery",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Statistics, University of Washington, Seattle, Washington"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "suffix": "III",
+          "given": "Anton H.",
+          "family": "Westveld",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Statistics, University of Washington, Seattle, Washington"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Tom",
+          "family": "Goldman",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Department of Statistics, University of Washington, Seattle, Washington"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Monthly Weather Review"
+      ],
+      "volume": "133",
+      "issue": "5",
+      "page": "1098-1118",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2005,
+            5,
+            1
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2005,
+            5,
+            1
+          ]
+        ]
+      },
+      "published_online": {
+        "date-parts": [
+          [
+            2005,
+            5,
+            1
+          ]
+        ]
+      },
+      "url": "https://doi.org/10.1175/mwr2904.1",
+      "type": "journal-article"
+    },
+    "35": {
+      "doi": "10.1175/1525-7541(2004)005<0243:TSSAMF>2.0.CO;2",
+      "status": 200,
+      "title": [
+        "The Schaake Shuffle: A Method for Reconstructing Space\u2013Time Variability in Forecasted Precipitation and Temperature Fields"
+      ],
+      "authors": [
+        {
+          "given": "Martyn",
+          "family": "Clark",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Subhrendu",
+          "family": "Gangopadhyay",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lauren",
+          "family": "Hay",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Balaji",
+          "family": "Rajagopalan",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Robert",
+          "family": "Wilby",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Journal of Hydrometeorology"
+      ],
+      "volume": "5",
+      "issue": "1",
+      "page": "243-262",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2004,
+            2
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2004,
+            2
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1175/1525-7541(2004)005<0243:tssamf>2.0.co;2",
+      "type": "journal-article"
+    },
+    "36": {
+      "doi": "10.1175/MWR-D-16-0088.1",
+      "status": 200,
+      "title": [
+        "Nonhomogeneous Boosting for Predictor Selection in Ensemble Postprocessing"
+      ],
+      "authors": [
+        {
+          "given": "Jakob W.",
+          "family": "Messner",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Innsbruck, Innsbruck, Austria"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Georg J.",
+          "family": "Mayr",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Innsbruck, Innsbruck, Austria"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Achim",
+          "family": "Zeileis",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "University of Innsbruck, Innsbruck, Austria"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Monthly Weather Review"
+      ],
+      "volume": "145",
+      "issue": "1",
+      "page": "137-147",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            16
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2017,
+            1,
+            1
+          ]
+        ]
+      },
+      "published_online": {
+        "date-parts": [
+          [
+            2016,
+            12,
+            16
+          ]
+        ]
+      },
+      "url": "https://doi.org/10.1175/mwr-d-16-0088.1",
+      "type": "journal-article"
+    },
+    "37": {
+      "doi": "10.1038/s41586-024-08252-9",
+      "status": 200,
+      "title": [
+        "Probabilistic weather forecasting with machine learning"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4765-2703",
+          "authenticated-orcid": false,
+          "given": "Ilan",
+          "family": "Price",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alvaro",
+          "family": "Sanchez-Gonzalez",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Ferran",
+          "family": "Alet",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1556-9932",
+          "authenticated-orcid": false,
+          "given": "Tom R.",
+          "family": "Andersson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0009-6510-0831",
+          "authenticated-orcid": false,
+          "given": "Andrew",
+          "family": "El-Kadi",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0000-6945-8325",
+          "authenticated-orcid": false,
+          "given": "Dominic",
+          "family": "Masters",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9693-7986",
+          "authenticated-orcid": false,
+          "given": "Timo",
+          "family": "Ewalds",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0004-7859-3384",
+          "authenticated-orcid": false,
+          "given": "Jacklynn",
+          "family": "Stott",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Shakir",
+          "family": "Mohamed",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3622-7111",
+          "authenticated-orcid": false,
+          "given": "Peter",
+          "family": "Battaglia",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-4222-5358",
+          "authenticated-orcid": false,
+          "given": "Remi",
+          "family": "Lam",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8730-1927",
+          "authenticated-orcid": false,
+          "given": "Matthew",
+          "family": "Willson",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Nature"
+      ],
+      "volume": "637",
+      "issue": "8044",
+      "page": "84-90",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            4
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2025,
+            1,
+            2
+          ]
+        ]
+      },
+      "published_online": {
+        "date-parts": [
+          [
+            2024,
+            12,
+            4
+          ]
+        ]
+      },
+      "url": "https://doi.org/10.1038/s41586-024-08252-9",
+      "type": "journal-article"
+    },
+    "38": {
+      "doi": "10.1126/science.adi2336",
+      "status": 200,
+      "title": [
+        "Learning skillful medium-range global weather forecasting"
+      ],
+      "authors": [
+        {
+          "ORCID": "https://orcid.org/0000-0003-4222-5358",
+          "authenticated-orcid": true,
+          "given": "Remi",
+          "family": "Lam",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Google DeepMind, London, UK."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5055-5790",
+          "authenticated-orcid": true,
+          "given": "Alvaro",
+          "family": "Sanchez-Gonzalez",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind, London, UK."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-8730-1927",
+          "authenticated-orcid": true,
+          "given": "Matthew",
+          "family": "Willson",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind, London, UK."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-5961-5817",
+          "authenticated-orcid": true,
+          "given": "Peter",
+          "family": "Wirnsberger",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind, London, UK."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0002-7058-4657",
+          "authenticated-orcid": true,
+          "given": "Meire",
+          "family": "Fortunato",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind, London, UK."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0000-3059-0062",
+          "authenticated-orcid": true,
+          "given": "Ferran",
+          "family": "Alet",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind, London, UK."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-7481-7633",
+          "authenticated-orcid": true,
+          "given": "Suman",
+          "family": "Ravuri",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind, London, UK."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-9693-7986",
+          "authenticated-orcid": true,
+          "given": "Timo",
+          "family": "Ewalds",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind, London, UK."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0002-2102-6982",
+          "authenticated-orcid": true,
+          "given": "Zach",
+          "family": "Eaton-Rosen",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind, London, UK."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2956-2616",
+          "authenticated-orcid": true,
+          "given": "Weihua",
+          "family": "Hu",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind, London, UK."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-2944-5639",
+          "authenticated-orcid": true,
+          "given": "Alexander",
+          "family": "Merose",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google Research, Mountain View, CA, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-5207-0380",
+          "authenticated-orcid": true,
+          "given": "Stephan",
+          "family": "Hoyer",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google Research, Mountain View, CA, USA."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "George",
+          "family": "Holland",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind, London, UK."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0001-7848-7283",
+          "authenticated-orcid": true,
+          "given": "Oriol",
+          "family": "Vinyals",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind, London, UK."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0009-0004-7859-3384",
+          "authenticated-orcid": true,
+          "given": "Jacklynn",
+          "family": "Stott",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind, London, UK."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alexander",
+          "family": "Pritzel",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind, London, UK."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0002-1184-5776",
+          "authenticated-orcid": true,
+          "given": "Shakir",
+          "family": "Mohamed",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind, London, UK."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "ORCID": "https://orcid.org/0000-0003-3622-7111",
+          "authenticated-orcid": true,
+          "given": "Peter",
+          "family": "Battaglia",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Google DeepMind, London, UK."
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Science"
+      ],
+      "volume": "382",
+      "issue": "6677",
+      "page": "1416-1421",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            22
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2023,
+            12,
+            22
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1126/science.adi2336",
+      "type": "journal-article"
+    },
+    "39": {
+      "doi": "10.1162/neco.1997.9.8.1735",
+      "status": 200,
+      "title": [
+        "Long Short-Term Memory"
+      ],
+      "authors": [
+        {
+          "given": "Sepp",
+          "family": "Hochreiter",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Fakult\u00e4t f\u00fcr Informatik, Technische Universit\u00e4t M\u00fcnchen, 80290 M\u00fcnchen, Germany"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "J\u00fcrgen",
+          "family": "Schmidhuber",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "IDSIA, Corso Elvezia 36, 6900 Lugano, Switzerland"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Neural Computation"
+      ],
+      "volume": "9",
+      "issue": "8",
+      "page": "1735-1780",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            1997,
+            11,
+            1
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            1997,
+            11,
+            1
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1162/neco.1997.9.8.1735",
+      "type": "journal-article"
+    },
+    "40": {
+      "doi": "10.1214/aos/1013203451",
+      "status": 200,
+      "title": [
+        "Greedy function approximation: A gradient boosting machine."
+      ],
+      "authors": [
+        {
+          "given": "Jerome H.",
+          "family": "Friedman",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "The Annals of Statistics"
+      ],
+      "volume": "29",
+      "issue": "5",
+      "page": "1189-1232",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            2001,
+            10,
+            1
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            2001,
+            10,
+            1
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1214/aos/1013203451",
+      "type": "journal-article"
+    },
+    "43": {
+      "doi": "10.1175/1520-0493(1950)078<0001:VOFEIT>2.0.CO;2",
+      "status": 200,
+      "title": [
+        "VERIFICATION OF FORECASTS EXPRESSED IN TERMS OF PROBABILITY"
+      ],
+      "authors": [
+        {
+          "given": "GLENN W.",
+          "family": "BRIER",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "journal": [
+        "Monthly Weather Review"
+      ],
+      "volume": "78",
+      "issue": "1",
+      "page": "1-3",
+      "article_number": null,
+      "published": {
+        "date-parts": [
+          [
+            1950,
+            1
+          ]
+        ]
+      },
+      "published_print": {
+        "date-parts": [
+          [
+            1950,
+            1
+          ]
+        ]
+      },
+      "published_online": null,
+      "url": "https://doi.org/10.1175/1520-0493(1950)078<0001:vofeit>2.0.co;2",
+      "type": "journal-article"
+    }
+  }
+}
