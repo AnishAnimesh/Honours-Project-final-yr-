@@ -1,0 +1,178 @@
+{
+  "generator": "scripts/plot_evaluation_metrics.py",
+  "figures": [
+    {
+      "file": "01_original_grid_classification.png",
+      "caption": "Original grid experiment \u00b7 test 2025\u20132026"
+    },
+    {
+      "file": "01_original_Paris_classification.png",
+      "caption": "Original Paris experiment \u00b7 test 2025\u20132026"
+    },
+    {
+      "file": "02_original_grid_roc.png",
+      "caption": "Original France land grid \u00b7 2025\u20132026 | Roc"
+    },
+    {
+      "file": "02_original_grid_precision_recall.png",
+      "caption": "Original France land grid \u00b7 2025\u20132026 | Precision Recall"
+    },
+    {
+      "file": "02_original_grid_confusion.png",
+      "caption": "Original France land grid \u00b7 2025\u20132026 | Confusion"
+    },
+    {
+      "file": "02_original_grid_calibration.png",
+      "caption": "Original France land grid \u00b7 2025\u20132026 | Calibration"
+    },
+    {
+      "file": "02_original_grid_probability_distribution.png",
+      "caption": "Original France land grid \u00b7 2025\u20132026 | Probability Distribution"
+    },
+    {
+      "file": "03_learning_curves.png",
+      "caption": "Neural training and validation loss \u00b7 original experiments"
+    },
+    {
+      "file": "04_daily_spatial_performance.png",
+      "caption": "Original selected model \u00b7 daily extent and spatial overlap"
+    },
+    {
+      "file": "05_research_roc.png",
+      "caption": "Seven-location research \u00b7 2021\u20132025 | Roc"
+    },
+    {
+      "file": "05_research_precision_recall.png",
+      "caption": "Seven-location research \u00b7 2021\u20132025 | Precision Recall"
+    },
+    {
+      "file": "05_research_confusion.png",
+      "caption": "Seven-location research \u00b7 2021\u20132025 | Confusion"
+    },
+    {
+      "file": "05_research_calibration.png",
+      "caption": "Seven-location research \u00b7 2021\u20132025 | Calibration"
+    },
+    {
+      "file": "05_research_probability_distribution.png",
+      "caption": "Seven-location research \u00b7 2021\u20132025 | Probability Distribution"
+    },
+    {
+      "file": "06_research_classification.png",
+      "caption": "Seven-location research \u00b7 2021\u20132025 | primary model"
+    },
+    {
+      "file": "07_research_probability_metrics.png",
+      "caption": "Seven-location research \u00b7 2021\u20132025 | Brier: lower is better"
+    },
+    {
+      "file": "08_research_regional_f1.png",
+      "caption": "Seven-location research \u00b7 2021\u20132025 | regional F1"
+    },
+    {
+      "file": "09_research_lead_time.png",
+      "caption": "Seven-location research \u00b7 2021\u20132025 | lead-time and baseline comparison"
+    },
+    {
+      "file": "05_issued_forecasts_roc.png",
+      "caption": "Archived GFS replay \u00b7 July 8\u2013September 30, 2026 | Roc"
+    },
+    {
+      "file": "05_issued_forecasts_precision_recall.png",
+      "caption": "Archived GFS replay \u00b7 July 8\u2013September 30, 2026 | Precision Recall"
+    },
+    {
+      "file": "05_issued_forecasts_confusion.png",
+      "caption": "Archived GFS replay \u00b7 July 8\u2013September 30, 2026 | Confusion"
+    },
+    {
+      "file": "05_issued_forecasts_calibration.png",
+      "caption": "Archived GFS replay \u00b7 July 8\u2013September 30, 2026 | Calibration"
+    },
+    {
+      "file": "05_issued_forecasts_probability_distribution.png",
+      "caption": "Archived GFS replay \u00b7 July 8\u2013September 30, 2026 | Probability Distribution"
+    },
+    {
+      "file": "06_issued_forecasts_classification.png",
+      "caption": "Archived GFS replay \u00b7 July 8\u2013September 30, 2026 | primary model"
+    },
+    {
+      "file": "07_issued_forecasts_probability_metrics.png",
+      "caption": "Archived GFS replay \u00b7 July 8\u2013September 30, 2026 | Brier: lower is better"
+    },
+    {
+      "file": "08_issued_forecasts_regional_f1.png",
+      "caption": "Archived GFS replay \u00b7 July 8\u2013September 30, 2026 | regional F1"
+    },
+    {
+      "file": "09_issued_forecasts_lead_time.png",
+      "caption": "Archived GFS replay \u00b7 July 8\u2013September 30, 2026 | lead-time and baseline comparison"
+    },
+    {
+      "file": "10_matched_models.png",
+      "caption": "Matched one-day research models \u00b7 same sites and test dates"
+    },
+    {
+      "file": "11_feature_ablation.png",
+      "caption": "Feature ablation \u00b7 best validation macro-site F1 across leaf settings"
+    },
+    {
+      "file": "12_annual_robustness.png",
+      "caption": "Research benchmark \u00b7 annual performance"
+    },
+    {
+      "file": "13_spatial_transfer.png",
+      "caption": "Research \u00b7 location excluded from supervised development; local climatology retained"
+    },
+    {
+      "file": "14_neural_seed_sensitivity.png",
+      "caption": "Neural seed sensitivity \u00b7 rows belong to their respective experiments"
+    },
+    {
+      "file": "15_warning_uncertainty.png",
+      "caption": "Archived GFS replay \u00b7 conditional uncertainty"
+    },
+    {
+      "file": "16_warning_outcomes.png",
+      "caption": "Archived GFS replay \u00b7 event-day hits, misses and false alerts (counts)"
+    },
+    {
+      "file": "17_temperature_error.png",
+      "caption": "Raw GFS temperature \u00b7 equal-site mean MAE and RMSE (\u00b0C; lower is better)"
+    },
+    {
+      "file": "18_model_search_champions.png",
+      "caption": "Exploratory expanded model search \u00b7 development-selected F1 champions"
+    },
+    {
+      "file": "19_model_search_roc.png",
+      "caption": "Exploratory model search \u00b7 frozen development selection; test 2021\u20132025 | Roc"
+    },
+    {
+      "file": "19_model_search_precision_recall.png",
+      "caption": "Exploratory model search \u00b7 frozen development selection; test 2021\u20132025 | Precision Recall"
+    },
+    {
+      "file": "19_model_search_confusion.png",
+      "caption": "Exploratory model search \u00b7 frozen development selection; test 2021\u20132025 | Confusion"
+    },
+    {
+      "file": "19_model_search_calibration.png",
+      "caption": "Exploratory model search \u00b7 frozen development selection; test 2021\u20132025 | Calibration"
+    },
+    {
+      "file": "19_model_search_probability_distribution.png",
+      "caption": "Exploratory model search \u00b7 frozen development selection; test 2021\u20132025 | Probability Distribution"
+    },
+    {
+      "file": "20_all_search_candidates.png",
+      "caption": "Exploratory expanded search \u00b7 all candidate test F1 scores; F1 cutoff policy"
+    },
+    {
+      "file": "21_forecast_amendment.png",
+      "caption": "Forecast amendment \u00b7 development-selected alternatives and original baselines"
+    }
+  ],
+  "note": "Saved results only. No model training, cutoff optimization, or synthetic values."
+}
