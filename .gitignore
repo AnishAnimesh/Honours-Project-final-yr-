@@ -30,3 +30,7 @@ data/prospective/
 results/model_search/cache/
 results/model_search_initial/cache/
 .venv-model-search/
+
+# Local presentation assembly, renders, and chart-packaging scratch files.
+.presentation-build/
+.chart-data-*/
